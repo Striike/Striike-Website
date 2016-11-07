@@ -1,0 +1,14 @@
+<section id="formulaire">
+  <section id="add">
+<%= form_tag "/admin/update_cate", method: "patch" do %>
+<h1> Ajouter une estimation</h1>
+  <p><input type="hidden" name="id" value="<%= @category.id %>"></p>
+  <p><input type="string" name="name" placeholder="name" value="<%= @category.name%>"/></br></p>
+  <p><select name="sub_id">
+    <% @cate.each do |category| %>
+      <option value="<%= category.id %>" <% if category.id == @category.sub_id%> selected="selected"<%end%>><%= category.name %></option>
+    <% end %>
+<input type="submit" value="Edit" id="add_button">
+<% end %></p>
+  </section>
+</section>

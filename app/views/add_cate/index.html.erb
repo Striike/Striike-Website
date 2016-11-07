@@ -1,7 +1,8 @@
+<!--- Add site ---->
 <section id="formulaire">
   <section id="add">
-    <%= form_tag "/admin/add_site", method: "post" do %>
     <h1> Ajouter une estimation</h1>
+    <%= form_tag "/admin/add_site", method: "post" do %>
       <p><input type="string" name="title" placeholder="title"/></br></p>
       <p><input type="string" name="image" placeholder="image"/></br></p>
       <p><input type="integer" name="min_price" placeholder="min_price"/></br></p>
@@ -14,12 +15,32 @@
         <% end %>
     <input type="submit" value="Ajouter" id="add_button">
     <% end %></p>
-    <h1> Modifier une Estimation </h1>
+
+<!--- Delete site ---->
+<h1> Delete Estimation </h1>
+    <%= form_tag "/admin/delete_site", method: "delete" do %>
+        <p><select name="sub_id">
+        <% @site.each do |site| %>
+          <option value="<%= site.id %>"><%= site.title %></option>
+        <% end %>
+      <input type="submit" value="Delete" id="add_button">
+    <% end %></p>
+
+<!--- Edit site ---->
+<h1>Edit Estimation</h1>
+    <%= form_tag "/admin/edit_site", method: "post" do %>
+        <p><select name="id">
+        <% @site.each do |site| %>
+          <option value="<%= site.id %>"><%= site.title %></option>
+        <% end %>
+      <input type="submit" value="Edit" id="add_button">
+    <% end %></p>
   </section>
 
   <section id="add">
+<!--- Add category ---->
+    <h1> Ajouter une Catégorie</h1></br>
     <%= form_tag "/admin/add_cate", method: "post" do %>
-      <h1> Ajouter une Catégorie / Sous-Catégorie </h1>
       <p><input type="string" name="name" placeholder="name"/></br></p>
       <p><select name="sub_id">
         <% @category.each do |category| %>
@@ -27,6 +48,25 @@
         <% end %>
       <input type="submit" value="Ajouter" id="add_button">
     <% end %></p>
-    <h1>Modifier une Catégorie / Sous-Catégorie </h1>
+
+<!--- Delete category ---->
+    <h1>Delete Catégorie/Sous-Catégorie </h1>
+    <%= form_tag "/admin/delete_cate", method: "delete" do %>
+        <p><select name="sub_id">
+        <% @category.each do |category| %>
+          <option value="<%= category.id %>"><%= category.name %></option>
+        <% end %>
+      <input type="submit" value="Delete" id="add_button">
+    <% end %></p>
+
+<!--- Edit category ---->
+<h1>Edit Catégorie/Sous-Catégorie </h1>
+<%= form_tag "/admin/edit_cate", method: "post" do %>
+    <p><select name="id">
+    <% @category.each do |category| %>
+      <option value="<%= category.id %>"><%= category.name %></option>
+    <% end %>
+  <input type="submit" value="Edit" id="add_button">
+<% end %></p>
   </section>
 </section>

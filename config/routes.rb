@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get  'admin' => 'user#login'
+  post 'admin/check' => 'user#check'
+
+  get 'user/home'
+
+  get 'user/login'
+
   get 'category/index'
 
   get 'category/show'
@@ -25,6 +32,12 @@ Rails.application.routes.draw do
 
   post 'admin/add_site' => 'add_cate#create_sites'
   post 'admin/add_cate' => 'add_cate#create_cat'
+  delete 'admin/delete_cate' => 'add_cate#delete_item'
+  delete 'admin/delete_site' => 'add_cate#delete_site'
+  post 'admin/edit_site' => 'add_cate#edit_site'
+  post 'admin/edit_cate' => 'add_cate#edit_cate'
+  patch '/admin/update_site' => 'add_cate#update_site'
+  patch '/admin/update_cate' => 'add_cate#update_cate'
 
   get 'books/:id' => 'books#show'
 

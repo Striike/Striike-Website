@@ -1,0 +1,10 @@
+<section id="formulaire">
+  <section id="add">
+    <%= form_tag "admin/check", method: :post do %>
+      <h1>Log in</h1>
+    <p><input type="string" name="name"></p>
+    <p><input type="password" name="password"></p>
+    <p><input type="submit" value="Log in" id="add_button"></p>
+    <%end%>
+  </section>
+</section>

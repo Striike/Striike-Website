@@ -1,0 +1,32 @@
+<section id="formulaire">
+  <section id="add">
+    <%= form_tag "/admin/add_site", method: "post" do %>
+    <h1> Ajouter une estimation</h1>
+      <p><input type="string" name="title" placeholder="title"/></br></p>
+      <p><input type="string" name="image" placeholder="image"/></br></p>
+      <p><input type="integer" name="min_price" placeholder="min_price"/></br></p>
+      <p><input type="integer" name="max_price" placeholder="max_price"/></br></p>
+      <p><input type="string" name="time" placeholder="time"/></br></p>
+      <p><input type="text" name="def" placeholder="def"/></br></p>
+      <p><select name="category_id">
+        <% @category.each do |category| %>
+          <option value="<%= category.id %>"><%= category.name %></option>
+        <% end %>
+    <input type="submit" value="Ajouter" id="add_button">
+    <% end %></p>
+    <h1> Modifier une Estimation </h1>
+  </section>
+
+  <section id="add">
+    <%= form_tag "/admin/add_cate", method: "post" do %>
+      <h1> Ajouter une Catégorie / Sous-Catégorie </h1>
+      <p><input type="string" name="name" placeholder="name"/></br></p>
+      <p><select name="sub_id">
+        <% @category.each do |category| %>
+          <option value="<%= category.id %>"><%= category.name %></option>
+        <% end %>
+      <input type="submit" value="Ajouter" id="add_button">
+    <% end %></p>
+    <h1>Modifier une Catégorie / Sous-Catégorie </h1>
+  </section>
+</section>

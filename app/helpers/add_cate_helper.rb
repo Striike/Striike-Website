@@ -1,0 +1,2 @@
+module AddCateHelper
+end

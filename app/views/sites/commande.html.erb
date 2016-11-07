@@ -1,0 +1,102 @@
+<!-- Formulaire -->
+
+<section id="formulaire">
+
+
+<!-- Gauche -->
+
+  <section id="gauche">
+
+    <div>
+
+      <h2> Lieu de l'intervention </h2>
+      
+      <%= form_tag "add", method: "post" do %>
+
+        <p>
+          <label for="adresse">Adresse*</label> <br/>
+          <input type="text" name="adresse" placeholder="4 rue du Général Vauban">
+        </p>
+
+        <p>
+          <label for="postal">Code postal*</label> <br/>
+          <input type="text" name="postal" placeholder="75014">
+        </p>
+
+        <p>
+          <label for="etage">Interphone/Digicode/Étage</label> <br/>
+          <input type="text" name="etage" placeholder="75014">
+        </p>
+
+	<br/>
+	
+	<h2> Vos informations </h2>
+	
+        <p>
+          <label for="prenom">Prénom*</label> <br/>
+          <input type="text" name="prenom" placeholder="Arnold">
+        </p>
+	
+        <p>
+          <label for="nom">Nom*</label> <br/>
+          <input type="text" name="nom" placeholder="Dupont">
+        </p>
+
+        <p>
+          <label for="mail">Adresse email*</label> <br/>
+          <input type="email" name="mail" placeholder="arnold.dupont@gmail.com">
+        </p>
+
+        <p>
+          <label for="tel">Téléphone</label> <br/>
+          <input type="tel" name="tel" placeholder="0612345678">
+        </p>
+      
+	<div class="asterix">
+	  <p>
+            * Les champs qui comportent une image doivent être remplis
+	  </p>
+	</div>
+	
+    </div>
+    
+  </section>
+  
+  <!-- Droite -->
+  
+  <section id="droite">
+    
+    <div>
+      
+      <h1> <%= @page.title%> </h2>
+	
+	<h2> Commander un dépanneur </h2>
+	
+	<p> Disposez vous d'un code promo ? </p>
+	
+	  
+          <p class="promo" >
+            <label for="promo">Code promo</label> <br/>
+            <input type="text" name="promo" id="promo" placeholder="Code promo">
+          </p>
+	  
+	  <div class="check"
+	    <form>
+            <p>
+              <input type="checkbox" name="promo"> J'accepte les : <br/>
+              <%= link_to "Conditions générales d'utilisation" %>
+	
+          <p>
+            <input type="checkbox" name="promo"> J'accepte les : <br/>
+            <%= link_to "Dispositions relatives aux droits de rétractation" %>
+
+	  </div>
+	  
+      	  <input type="submit" value="Passer commande"<br/>
+	  
+    </div>
+    
+      <% end %>
+      
+  </section>
+</section>

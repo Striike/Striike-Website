@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr" >
+	<head>
+		<meta charset="utf-8">
+		<title>LEBOB - Trouver un dépanneur fiable</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div id="block_page">
+
+
+<!--Header-->
+
+
+		<header>
+
+			<nav>
+				<div id= header>
+					<div class="logo">
+							<%= link_to image_tag("Logo-Lebob.png"), "/index" %>
+					</div>
+
+					<h3><%= link_to "PLOMBERIE", '/PLOMBERIE' %></h3>
+					<h3><%= link_to "SERRURERIE", '/SERRURERIE' %></h3>
+					<h3><%= link_to "ÉLECTRICITÉ", '/ÉLECTRICITÉ' %></h3>
+					<h3><%= link_to "CHAUFFAGE", '/CHAUFFAGE' %></h3>
+					<h3><%= link_to "VITRERIE", '/VITRERIE' %></h3>
+				</div>
+			</nav>
+		</header>
+
+
+<%= yield %>
+
+
+		<footer>
+			<nav>
+				<ul id= footer>
+					<li><%= link_to "MENTIONS LÉGALES", '#' %></li>
+					<li><%= link_to "CONTACTS", '#' %></li>
+					<li><%= link_to "À PROPOS", '#' %></li>
+					<li><%= link_to "F.A.Q", '#' %></li>
+					<li><%= link_to "BLOG", '#' %></li>
+
+				</ul>
+			</nav>
+		</footer>
+
+</body>
+</html>

@@ -1,0 +1,778 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* Toute la page */
+
+
+body
+{
+	font-family: lato, arial, "arial black";
+    background: #fff;
+    width: auto;
+    margin: 0 0 0 0;
+}
+
+#bloc_page
+ {
+    background: #aaa;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+
+
+/* Le Header */
+
+
+header
+{
+	height: 100px;
+	width: auto;
+	background-image: url(asset-path('Header.jpg'));
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+#header
+{
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo
+{
+	margin-right: 20%;
+}
+
+#header img {
+	margin-left: 5%;
+	width: 180px;
+}
+
+h3 a
+{
+	width: 100%;
+	font-size: 0.8em;
+	color: #FC0;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+@media (max-width: 900px)
+{
+
+	#header
+	{
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 40%;
+	margin-right: 40%;
+
+	}
+
+	h3
+	{
+		display: none;
+	}
+
+	#header img
+	{
+		width: 160px;
+	}
+}
+
+
+
+
+/* Bandeau */
+
+
+#bandeau
+{
+	margin-top: 6%;
+	min-height: calc(100vh - 170px);
+}
+
+@font-face {
+	font-family: 'LilitaOne-Regular.ttf';
+	src: font-url('LilitaOne-Regular.ttf');
+}
+
+#bandeau h1
+{
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-family: 'LilitaOne-Regular.ttf', arial;
+	font-size: 2.4em;
+	color: #0CC;
+}
+
+#bandeau img
+{
+	max-width: 100%;
+	width: auto;
+	min-width: auto;
+	min-height: auto;
+	margin-bottom: 2%;
+}
+
+
+.bandeau
+{
+	margin-top: 50px;
+	min-width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: font-url('Lato-Regular.ttf');
+}
+
+#bandeau .search a
+{
+	text-decoration: none;
+	font-family: 'lato', arial;
+	font-size: 1.15em;
+	color: #0CC;
+	border: 3px solid #0CC;
+	text-align: center;
+	border-radius: 0.2em 0.2em 0.2em 0.2em;
+	margin-top: 30px;
+  	padding: 9px 9px 9px 9px;
+  	width: 240px;
+  	height: 27px;
+    display: -webkit-flex;
+    display:        flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+#bandeau .search a:hover
+{
+	color: white;
+	background-color: #0cc
+}
+
+#bandeau .search
+{
+  max-height: 50px;
+  min-width: 150px;
+  margin-right: 35%;
+  margin-left: 35%;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+@media (min-width: 1200px)
+	{
+		#bandeau h1
+		{
+			font-size: 2.8em;
+		}
+	}
+
+@media (max-width: 900px)
+{
+		#bandeau
+	{
+		margin-top: 6%;
+		min-height: calc(60vh);
+	}
+
+	#bandeau h1
+	{
+		font-size: 2em;
+	}
+
+	#bandeau .search a
+	{
+		font-size: 1em;
+	}
+
+	#bandeau .search
+	{
+		margin-left:25%;
+		margin-right:25%;
+	}
+}
+
+@media (max-width: 600px)
+{
+		#bandeau
+	{
+		margin-top: 6%;
+		min-height: calc(42vh);
+	}
+
+	#bandeau h1
+	{
+		font-size: 1.8em;
+	}
+
+		#bandeau .search a
+	{
+		font-size: 0.8em;
+		border: 2px solid #0CC;
+		padding: 6px 6px 6px 6px;
+	}
+
+	#bandeau .search
+	{
+		margin-left: 30%;
+		margin-right: 30%;
+
+	}
+}
+
+
+
+
+
+
+/* Les Etapes */
+
+
+ol
+{
+ list-style-type:none;
+ }
+
+#etape123 ol
+{
+	height: 300px;
+	margin-top: 50px;
+	margin-bottom: 0%;
+	background: #f7f7f7;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#etape123 li
+{
+	color: #667;
+}
+
+#etape123 img
+{
+	width: 65px
+}
+
+#etape123 .etape
+{
+	width: 280px
+}
+
+#etape123 .img
+{
+	float: left;
+}
+
+#etape123 h4
+{
+	font-style: bold;
+	margin-bottom: 0;
+}
+
+
+
+
+/* Les Dirigeants */
+
+
+#dirigeants
+{
+	height: auto;
+	background-color: #3aa;
+}
+
+#dirigeants h2
+{
+	padding-top: 25px;
+	text-align: center;
+	margin-top: 0px;
+	font-family: Lato, arial;
+	font-size: 2.2em;
+	color: white;
+}
+
+.dirigeants
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#dirigeants img
+{
+	width: 190px;
+	height: 190px;
+	margin-right: 20%;
+	overflow:hidden;
+	-webkit-border-radius:70px;
+	-moz-border-radius: 100%;
+	border-radius:100px;
+}
+
+
+.dessous
+{
+	clear: both;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.dirigeants p
+{
+    width: 175px;
+    text-align: center;
+}
+
+@media (max-width: 500px)
+{
+	.dirigeants
+	{
+		flex-direction: column;
+	}
+
+	#dirigeants
+	{
+		max-height: 1000px;
+	}
+}
+
+
+
+
+/* Notre Histoire */
+
+
+#Histoire img
+{
+	height: auto;
+	width: auto;
+	max-width: 100%;
+}
+
+.Histoire
+{
+	padding-top: 25px;
+	text-align: center;
+	margin-top: 0px;
+	font-family: Lato, arial;
+	font-size: 1.8em;
+	color: #3aa;
+}
+
+.dessin
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+
+
+/* Portail */
+
+.portail
+{
+    display: inline-block;
+	min-height: calc(100vh - 100px);
+	min-width: 100%;
+	margin-bottom: 0px;
+	background-color: #fff;
+}
+
+.portail h1
+{
+	font-size: 2.8em;
+	color: #0CC;
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+#dessin
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 8% 2% 8% 2%;
+}
+
+.portail h2 a
+{
+	text-decoration: none;
+	font-family: 'lato', arial;
+	font-size: 0.8em;
+	color: #0CC;
+	border: 2px solid #0CC;
+	text-align: center;
+	border-radius: 0.2em 0.2em 0.2em 0.2em;
+  	padding: 3px 3px 3px 3px;
+  	width: 120px;
+  	height: 27px;
+    display: -webkit-flex;
+    display:        flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+
+.portail h2 a:hover
+{
+	border: 2px solid #0CC;
+	color: white;
+	background-color: #0CC;
+	text-align: center;
+	border-radius: 0.2em 0.2em 0.2em 0.2em;
+  	padding: 3px 3px 3px 3px;
+  	width: 120px;
+}
+
+
+.portail h2
+{
+	font-size: 1.2em;
+	text-align: Center ;
+
+}
+
+
+
+
+img
+{
+	width: 130px;
+}
+
+
+
+
+
+/* L'entonnoire */
+
+.ento
+{
+    display: inline-block;
+	min-height: calc(100vh - 100px);
+	min-width: 100%;
+	margin-bottom: 0px;
+	background-color: #fff;
+}
+
+.ento h1
+{
+	font-size: 2.2em;
+	color: #0CC;
+	margin-top: 50px;
+	text-align: center;
+}
+
+#three
+{
+	margin-bottom: 8%;
+}
+
+#three .search a
+{
+	text-decoration: none;
+	font-family: 'lato', arial;
+	font-weight: bold;
+	font-size: 1.15em;
+	color: #fff;
+	background-color: #0cc;
+	border: 2px solid #fff;
+	text-align: center;
+	border-radius: 0.3em 0.3em 0.3em 0.3em;
+	margin-top: 10px;
+  	padding: 9px 9px 9px 9px;
+  	width: 50%;
+  	height: 25px;
+    display: -webkit-flex;
+    display:        flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+#three .search a:hover
+{
+	color: #0cc;
+	border: 2px solid #0cc;
+	background-color: #fff;
+}
+
+#three .search
+{
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+
+@media (max-width: 900px)
+{
+	#three .search a
+	{
+		width: 60%;
+		font-size: 1.05em;
+	}
+}
+
+@media (max-width: 700px)
+{
+	#three .search a
+	{
+		width: 70%;
+		font-size: 0.95em;
+	}
+}
+
+/* Description */
+
+#description
+{
+	margin: 5% 5% 5% 5%;
+	text-align: justify;
+	margin-bottom: 70px;
+}
+
+#description h4
+{
+	color : #bf80ff;
+	font-size: 1.2em;
+	margin-bottom: 0px;
+}
+
+#description h2
+{
+	color : #0CC;
+	font-size: 1.5em;
+}
+
+#description p, ul
+{
+	color: #585858;
+}
+
+@media (max-width: 950px)
+{
+	#description
+	{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media (max-width: 600px)
+{
+	#description
+	{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+
+/* Formulaire */
+
+/* All */
+
+#formulaire
+{
+	min-height: calc(100vh - 100px);
+	min-width: 100%;
+	margin-bottom: 0px;
+	height: auto;
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2em;
+	color: #424242;
+	background-color: #F8F8F8;
+}
+
+#formulaire h2
+{
+	font-size: 1.3em
+}
+
+/* Gauche */
+
+#gauche
+{
+	height: auto;
+	width: auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2em;
+	border-right: 1px solid #E8E8E8;
+	background-color: #F5F5F5 ;
+
+}
+
+
+#formulaire #gauche input
+{
+	width: 400px;
+	height: 30px;
+	font-size: 0.8em;
+}
+
+#formulaire #gauche .asterix
+{
+	font-size: 0.8em;
+	color: #585858;
+}
+
+
+/* Droite */
+
+#droite
+{
+	height: auto;
+	width: auto;
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2em;
+}
+
+#formulaire h1
+{
+	color: #0cc;
+	font-size: 1.45em;
+	max-width: 400px;
+}
+
+#formulaire #droite .promo input
+{
+	width: 200px;
+	height: 30px;
+	font-size: 0.8em;
+}
+
+#formulaire .check a
+{
+	text-decoration: none;
+	color: #0cc;
+	font-size: 0.9em;
+}
+
+#formulaire .search a
+{
+	text-decoration: none;
+	font-family: 'lato', arial;
+	font-size: 1em;
+	color: #0CC;
+	border: 3px solid #0CC;
+	text-align: center;
+	border-radius: 0.2em 0.2em 0.2em 0.2em;
+	margin-top: 30px;
+		padding: 9px 9px 9px 9px;
+		width: 200px;
+		height: 20px;
+		display: -webkit-flex;
+		display:        flex;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+}
+
+
+
+/* Footer */
+
+
+#footer
+{
+	height: 170px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 0px;
+}
+
+
+footer
+{
+	height: 170px;
+	width: auto;
+	background-image: url(asset-path('Footer.jpg'));
+	background-repeat: no-repeat;
+	flex-wrap: wrap;
+	margin-bottom: 0px;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+
+ul a
+{
+	margin-right: 80px;
+	display: inline-block;
+	justify-content: space-between;
+	font-size: 0.8em;
+	color: #FC0;
+	text-decoration: none;
+}
+
+@media (max-width: 410px)
+{
+	#footer
+	{
+		flex-direction: column;
+		align-items: left;
+		justify-content: space-around;
+	}
+
+	ul a
+	{
+		font-size: 0.7em;
+		font-weight: normal;
+		text-align: left;
+		justify-content: center;
+	}
+
+}

@@ -1,0 +1,18 @@
+
+			<nav class="ento">
+				<h1>D'où vient le problème ?</h1>
+
+				<nav id="three">
+
+          <% @category.each do |cat| %>
+            <% if cat.sub_id == @find && cat.sub_id != nil%>
+					     <div class="search"><a href="/<%= cat.name%>"><%= cat.name %></a> </div>
+              <% end %>
+            <% end %>
+          <% @site.each do |site| %>
+            <% if site.category_id == @find %>
+					     <div class="search"><a href="/Pages/<%= site.id%>"><%= site.title %></a> </div>
+              <% end %>
+            <% end %>
+				</nav>
+			</nav>

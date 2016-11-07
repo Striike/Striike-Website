@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: estimations
+#
+#  id         :integer          not null, primary key
+#  title      :string
+#  price      :string
+#  time       :string
+#  def        :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  price: MyString
+  time: MyString
+  def: MyText
+
+two:
+  title: MyString
+  price: MyString
+  time: MyString
+  def: MyText

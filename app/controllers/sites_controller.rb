@@ -2,7 +2,7 @@ class SitesController < ApplicationController
   def index
   end
 
-  def pages
+  def estimations
     @page = Site.find(params[:id])
   end
 

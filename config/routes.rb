@@ -42,7 +42,7 @@ Rails.application.routes.draw do
 
   get 'books/:id' => 'books#show'
 
-  get 'Pages/:id' => 'sites#pages'
+  get 'Pages/:id' => 'sites#estimations'
 
   post 'books' => 'books#create'
 

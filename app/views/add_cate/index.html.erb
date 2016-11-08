@@ -7,6 +7,7 @@
     <h1> Ajouter une estimation</h1>
     <%= form_tag "/admin/add_site", method: "post" do %>
       <p><input type="string" name="title" placeholder="title"/></br></p>
+      <p><input type="string" name="link" placeholder="link"/></br></p>
       <p><input type="string" name="image" placeholder="image"/></br></p>
       <p><input type="integer" name="min_price" placeholder="min_price"/></br></p>
       <p><input type="integer" name="max_price" placeholder="max_price"/></br></p>

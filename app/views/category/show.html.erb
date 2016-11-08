@@ -11,7 +11,7 @@
             <% end %>
           <% @site.each do |site| %>
             <% if site.category_id == @find %>
-					     <div class="search"><a href="/Pages/<%= site.id%>"><%= site.title %></a> </div>
+					     <div class="search"><a href="/Pages/<%= site.id%>"><%= site.link %></a> </div>
               <% end %>
             <% end %>
 				</nav>

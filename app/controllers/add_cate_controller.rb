@@ -9,7 +9,7 @@ class AddCateController < ApplicationController
   end
 
   def create_sites
-    Site.create title: params[:title], image: params[:image], min_price: params[:min_price],
+    Site.create title: params[:title], link: params[:link] ,image: params[:image], min_price: params[:min_price],
     max_price: params[:max_price], time: params[:time], def: params[:def], category_id: params[:category_id]
     redirect_to "/admin/add"
   end
@@ -48,7 +48,7 @@ class AddCateController < ApplicationController
   end
 
   def update_site
-    Site.find(params[:id]).update title: params[:title], image: params[:image], min_price: params[:min_price],
+    Site.find(params[:id]).update title: params[:title], link: params[:link] ,image: params[:image], min_price: params[:min_price],
     max_price: params[:max_price], time: params[:time], def: params[:def], category_id: params[:category_id]
     redirect_to "/admin/add"
   end

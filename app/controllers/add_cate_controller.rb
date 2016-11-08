@@ -1,5 +1,9 @@
 class AddCateController < ApplicationController
   def index
+    @current_user = session[:user_id]
+    if (@current_user != 4 && @current_user != 3)
+      redirect_to "/admin"
+    end
     @category = Category.all
     @site = Site.all
   end
@@ -26,11 +30,19 @@ class AddCateController < ApplicationController
   end
 
   def edit_site
+    @current_user = session[:user_id]
+    if (@current_user != 4 && @current_user != 3)
+      redirect_to "/admin"
+    end
     @category = Category.all
     @site = Site.find(params[:id])
   end
 
   def edit_cate
+    @current_user = session[:user_id]
+    if (@current_user != 4 && @current_user != 3)
+      redirect_to "/admin"
+    end
     @category = Category.find(params[:id])
     @cate = Category.all
   end

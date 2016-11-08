@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get  'admin' => 'user#login'
   post 'admin/check' => 'user#check'
-
+  get '/admin/delog' => 'user#delog'
+  
   get 'user/home'
 
   get 'user/login'

@@ -28819,3 +28819,442 @@ Processing by AddCateController#index as HTML
   [1m[35mSite Load (0.1ms)[0m  SELECT "sites".* FROM "sites"
   Rendered add_cate/index.html.erb within layouts/application (3.3ms)
 Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-11-08 09:47:26 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#login as HTML
+  Rendered user/login.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 891ms (Views: 883.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+Processing by UserController#login as HTML
+  Rendered user/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/category.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/index.self-f87e90ed56f97c1422b6d8be55a8a7c6874eafdad6508412c0e74e32234973fb.css?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/estimations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/add_cate.self-5615d574ee48a9dffcef4f80aa3eabd9f1de58368ab9592a8a3b746288012ba1.css?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/sites.self-22f30379e402e40c71ee8ef09864625a09f14a11245412a33fa9f8471a5d797a.css?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/add_cate.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:27 +0100
+
+
+Started GET "/assets/category.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/estimations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/index.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/sites.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/Logo-Lebob-4d3488c9cb2e29fe91e56457813237de999cfda87b462b02ef5e6e3d05f94a89.png" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/Header-b08dda8b7b3daab25d0a7259561712ea5ccebd71bd1ee848f6e19fa3f959f71b.jpg" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/Lato-Regular-6f6940be0835c3ddec9199e5fc42be4cbc61ebcfd58c623fdf719366253f1780.ttf" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/assets/Footer-e1339a486464b41dfddcc20c2bb08b934eb976638f0baaf46deaf3ceae888787.jpg" for 127.0.0.1 at 2016-11-08 09:47:28 +0100
+
+
+Started GET "/admin/add" for 127.0.0.1 at 2016-11-08 09:47:32 +0100
+Processing by AddCateController#index as HTML
+Redirected to http://127.0.0.1:3000/admin
+Completed 302 Found in 187ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-11-08 09:47:32 +0100
+Processing by UserController#login as HTML
+  Rendered user/login.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/check" for 127.0.0.1 at 2016-11-08 09:47:37 +0100
+Processing by UserController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YJitybpHTYRGopW0Ni7hbe88IEisdOGBgmX7vrb4BeuhiT0LFgwtZZb3es7Lxhg+lZ2Y7rhKkQm/TcJ/cXTrfA==", "name"=>"dev", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["name", "dev"]]
+Redirected to http://127.0.0.1:3000/admin/add
+Completed 302 Found in 208ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/add" for 127.0.0.1 at 2016-11-08 09:47:37 +0100
+Processing by AddCateController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mSite Load (0.1ms)[0m  SELECT "sites".* FROM "sites"
+  Rendered add_cate/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-11-08 09:48:28 +0100
+Processing by UserController#login as HTML
+Redirected to http://127.0.0.1:3000/admin/add
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 302 Found in 20ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/add" for 127.0.0.1 at 2016-11-08 09:48:28 +0100
+Processing by AddCateController#index as HTML
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mSite Load (0.1ms)[0m  [1mSELECT "sites".* FROM "sites"[0m
+  Rendered add_cate/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/delog" for 127.0.0.1 at 2016-11-08 09:48:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/admin/delog"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (50.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (66.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#login as HTML
+Redirected to http://127.0.0.1:3000/admin/add
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 302 Found in 14ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/add" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+Processing by AddCateController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mSite Load (0.1ms)[0m  SELECT "sites".* FROM "sites"
+  Rendered add_cate/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 240ms (Views: 235.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/add_cate.self-5615d574ee48a9dffcef4f80aa3eabd9f1de58368ab9592a8a3b746288012ba1.css?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/sites.self-22f30379e402e40c71ee8ef09864625a09f14a11245412a33fa9f8471a5d797a.css?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/index.self-f87e90ed56f97c1422b6d8be55a8a7c6874eafdad6508412c0e74e32234973fb.css?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/estimations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/category.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/add_cate.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/category.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/estimations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/index.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/sites.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/Logo-Lebob-4d3488c9cb2e29fe91e56457813237de999cfda87b462b02ef5e6e3d05f94a89.png" for 127.0.0.1 at 2016-11-08 09:49:32 +0100
+
+
+Started GET "/assets/Header-b08dda8b7b3daab25d0a7259561712ea5ccebd71bd1ee848f6e19fa3f959f71b.jpg" for 127.0.0.1 at 2016-11-08 09:49:33 +0100
+
+
+Started GET "/assets/Lato-Regular-6f6940be0835c3ddec9199e5fc42be4cbc61ebcfd58c623fdf719366253f1780.ttf" for 127.0.0.1 at 2016-11-08 09:49:33 +0100
+
+
+Started GET "/assets/Footer-e1339a486464b41dfddcc20c2bb08b934eb976638f0baaf46deaf3ceae888787.jpg" for 127.0.0.1 at 2016-11-08 09:49:33 +0100
+
+
+Started GET "/admin/delog" for 127.0.0.1 at 2016-11-08 09:49:34 +0100
+Processing by UserController#delog as HTML
+Redirected to http://127.0.0.1:3000/admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-11-08 09:49:34 +0100
+Processing by UserController#login as HTML
+  Rendered user/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sites_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sites_on_category_id' AND type='index'
+[0m
+
+
+Started GET "/admin/" for 127.0.0.1 at 2016-11-08 09:53:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#login as HTML
+  Rendered user/login.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 386ms (Views: 380.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/add_cate.self-5615d574ee48a9dffcef4f80aa3eabd9f1de58368ab9592a8a3b746288012ba1.css?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/category.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/estimations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/sites.self-22f30379e402e40c71ee8ef09864625a09f14a11245412a33fa9f8471a5d797a.css?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/add_cate.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/category.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/estimations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/index.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/sites.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/index.self-f87e90ed56f97c1422b6d8be55a8a7c6874eafdad6508412c0e74e32234973fb.css?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/Logo-Lebob-4d3488c9cb2e29fe91e56457813237de999cfda87b462b02ef5e6e3d05f94a89.png" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/Header-b08dda8b7b3daab25d0a7259561712ea5ccebd71bd1ee848f6e19fa3f959f71b.jpg" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/assets/Footer-e1339a486464b41dfddcc20c2bb08b934eb976638f0baaf46deaf3ceae888787.jpg" for 127.0.0.1 at 2016-11-08 09:53:29 +0100
+
+
+Started GET "/index" for 127.0.0.1 at 2016-11-08 09:53:30 +0100
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Homepage-d821eca2967480aa910dfca6a5e4c9f8f5e38f78814fd64f61b0f57d0ea59157.jpg" for 127.0.0.1 at 2016-11-08 09:53:30 +0100
+
+
+Started GET "/assets/check-e50c706fdccece76c4dece62c4a937e062209752943e99d78865f96701c6ff7e.png" for 127.0.0.1 at 2016-11-08 09:53:30 +0100
+
+
+Started GET "/assets/euro-4c1e094b252f3b3f44f08be1051664b8ce7fa6c14552e50f0780a514e02885c0.png" for 127.0.0.1 at 2016-11-08 09:53:31 +0100
+
+
+Started GET "/assets/casque-0520d34badf2272ca8bac4310eb625d184a7d45c448b4163ab581b5343a8586f.png" for 127.0.0.1 at 2016-11-08 09:53:31 +0100
+
+
+Started GET "/assets/Armand-3983796c6e2ae17947641cd0495d0dcd43ccdb188195fdd084d1f64e8a9ac787.jpg" for 127.0.0.1 at 2016-11-08 09:53:31 +0100
+
+
+Started GET "/assets/Michk-9cd1e9cafb1ad9036c8893d0ec4b8bbbd70fae9f04e05606b2f1fe7a4b29e1dd.jpg" for 127.0.0.1 at 2016-11-08 09:53:31 +0100
+
+
+Started GET "/assets/Histoire-v3-95b36128b8244df728fe4f2d14bae3ef73dc4006f2173cc5766b0d4cf33f1a45.jpg" for 127.0.0.1 at 2016-11-08 09:53:31 +0100
+
+
+Started GET "/CHAUFFAGE" for 127.0.0.1 at 2016-11-08 09:53:33 +0100
+Processing by CategoryController#show as HTML
+  Parameters: {"name"=>"CHAUFFAGE"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mSite Load (0.1ms)[0m  [1mSELECT "sites".* FROM "sites"[0m
+  Rendered category/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 147ms (Views: 32.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/toto2" for 127.0.0.1 at 2016-11-08 09:53:34 +0100
+Processing by CategoryController#show as HTML
+  Parameters: {"name"=>"toto2"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mSite Load (0.2ms)[0m  [1mSELECT "sites".* FROM "sites"[0m
+  Rendered category/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/%C3%89LECTRICIT%C3%89" for 127.0.0.1 at 2016-11-08 09:53:36 +0100
+Processing by CategoryController#show as HTML
+  Parameters: {"name"=>"ÉLECTRICITÉ"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mSite Load (0.2ms)[0m  [1mSELECT "sites".* FROM "sites"[0m
+  Rendered category/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/VITRERIE" for 127.0.0.1 at 2016-11-08 09:53:38 +0100
+Processing by CategoryController#show as HTML
+  Parameters: {"name"=>"VITRERIE"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mSite Load (0.1ms)[0m  [1mSELECT "sites".* FROM "sites"[0m
+  Rendered category/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Pages/3" for 127.0.0.1 at 2016-11-08 09:53:41 +0100
+Processing by SitesController#pages as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSite Load (0.2ms)[0m  SELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered sites/pages.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 174ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/formulaire/3" for 127.0.0.1 at 2016-11-08 09:53:44 +0100
+Processing by SitesController#commande as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSite Load (0.1ms)[0m  [1mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered sites/commande.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.1ms)

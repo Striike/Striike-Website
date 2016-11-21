@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css" media="screen">
+    #header_mail
+    {
+      width: 70%;
+      background-color: #167ca5;
+      margin: auto;
+    }
+
+    #body_mail
+    {
+      width: 100%;
+      background-color: #FFFFFF;
+      padding: 1%;
+    }
+
+    #title_mail
+    {
+      text-align: center;
+      color: #0CC;
+      font-size: 170%;
+    }
+
+    #info
+    {
+      text-align: left;
+      width: 50%;
+      margin: auto;
+      border: 1px solid black;
+      padding: 2%;
+    }
+
+    h1, h2, h3
+    {
+      text-align: center;
+      color: black;
+      font-size: 150%;
+    }
+
+    img
+    {
+      margin: auto;
+    }
+
+    </style>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <section id='header_mail'>
+    <img src="http://i.imgur.com/pGchaCW.png" width="25%" height="25%"/>
+    <section id='body_mail'>
+    <h3>Bonjour <%= get_name(@id)%></h3>
+    <h1 id='title_mail'>Merci, votre commande à bien été prise en compte</h1>
+    <h2>Nous cherchons un artisant pour vous</h2>
+    <h2>Votre numéro de commande :  <%= @id%></h1><br/><br/><br/>
+
+    <section id='info'>
+    <p>Intervention : <%= get_name_prod(@id) %></p>
+    <p>Estimation du prix: <%= get_price(@id) %></p>
+    <p>Temps d'intervention : <%= get_time(@id) %></p>
+    <br/>
+    <p>Somme totale bloquée sur votre compte : <%= get_max_price(@id)%>€</p>
+    <p>Prix du déplacement: 0€</p>
+    <p>Somme actuellement prélevée: 0€</p>
+    </section>
+    </section>
+  </section>
+  </body>
+</html>

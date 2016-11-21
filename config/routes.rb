@@ -1,9 +1,23 @@
 Rails.application.routes.draw do
+  get 'notification/index'
+
+  get 'notification/create'
+
+  get '/admin/pro' => 'add_cate#pro'
+
+  get '/admin/commande/edit/:id' => 'add_cate#edit_comm'
+  patch '/admin/commande/check_out/:id' => 'add_cate#check_out'
+  patch '/admin/commande/update/:id' => 'add_cate#update_comm'
+  delete '/admin/commande/delete/:id' => 'add_cate#delete_com'
+
   get  'admin' => 'user#login'
+  get '/admin/show_commande' => 'add_cate#show_commande'
   post '/admin/check' => 'user#check'
   get '/admin/delog' => 'user#delog'
-
-  get 'user/home'
+  post '/commande/add' => 'sites#create'
+  post '/commande/payement/validate' => 'sites#validate'
+  get '/commande/payement' => 'sites#payement'
+  get '/send/mail/:id_client' => 'user#create'
 
   get 'user/login'
 

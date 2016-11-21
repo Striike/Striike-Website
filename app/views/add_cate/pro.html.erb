@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prenom</th>
+      <th>Téléphone</th>
+      <th>Entreprise</th>
+      <th>Addresse</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%@pro.each do |pro| %>
+      <tr>
+        <td><%=pro.nom%></td>
+        <td><%=pro.prenom%></td>
+        <td><%=pro.telephone%></td>
+        <td><%=pro.entreprise%></td>
+        <td><%=pro.addresse%></td>
+        <td><%=pro.cate%></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

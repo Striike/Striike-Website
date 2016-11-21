@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161107114010) do
+ActiveRecord::Schema.define(version: 20161116121212) do
 
   create_table "categories", force: :cascade do |t|
     t.string  "name"
@@ -28,6 +28,13 @@ ActiveRecord::Schema.define(version: 20161107114010) do
     t.string  "inter_digi"
     t.string  "code_promo"
     t.integer "promo"
+    t.integer "id_prod"
+    t.string  "state"
+    t.integer "total"
+    t.integer "id_pro"
+  end
+
+  create_table "pros", force: :cascade do |t|
   end
 
   create_table "sites", force: :cascade do |t|

@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th>Client</th>
+      <th>Commande</th>
+      <th>Wallet</th>
+      <th>Pro</th>
+      <th>Total payé</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%@users.each do |user| %>
+      <tr>
+      <td><%= link_to user.mail, "/admin/commande/edit/#{user.id}"%></td>
+        <td><%= get_name_product(user.id_prod)%></td>
+        <td><%= get_wallet_value(user.mail)%></td>
+        <td><%= get_name_pro(user.id_pro)%></td>
+        <td><%= user.total%></td>
+        <td><%= user.state %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

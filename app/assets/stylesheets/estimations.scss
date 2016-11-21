@@ -1,3 +1,117 @@
-// Place all the styles related to the estimations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#command_button
+{
+	text-decoration: none;
+	font-family: 'lato', arial;
+	font-size: 1em;
+	color: #fdcb67;
+	border: 3px solid #fdcb67;
+	text-align: center;
+  background-color: #F5F5F5 ;
+	border-radius: 0.2em 0.2em 0.2em 0.2em;
+	margin-top: 30px;
+	display: -webkit-flex;
+  display:        flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#payement
+{
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 30%;
+	background-color: #F8F8F8;
+	padding: 2em;
+	padding-bottom: 8%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+#payement form
+{
+	width: 100%;
+}
+
+#payement h2
+{
+	text-align: center;
+	color: #0CC;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+#card_info
+{
+	width: 100%;
+}
+
+#card_info input[type="submit"]
+{
+	width: 75%;
+}
+
+#card_info input[type="submit"]:hover
+{
+	background-color: #0CC;
+	color: #FFFFFF;
+}
+
+#card_info input, select
+{
+	width: 90%;
+	text-align: center;
+	text-align-last: center;
+	height: auto;
+	text-decoration: none;
+	font-family: 'lato', arial;
+	font-size: 1em;
+	color: black;
+	border: 3px solid #0CC;
+	text-align: center;
+  background-color: #F5F5F5 ;
+	border-radius: 0.2em 0.2em 0.2em 0.2em;
+	margin-top: 30px;
+	display: -webkit-flex;
+  display:        flex;
+	-webkit-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 30px;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#payement input, select
+{
+	width: 90%;
+	text-align: center;
+	text-align-last: center;
+	height: auto;
+	text-decoration: none;
+	font-family: 'lato', arial;
+	font-size: 1em;
+	color: black;
+	border: 3px solid #0CC;
+	text-align: center;
+  background-color: #F5F5F5 ;
+	border-radius: 0.2em 0.2em 0.2em 0.2em;
+	margin-top: 30px;
+	display: -webkit-flex;
+  display:        flex;
+	-webkit-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 30px;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

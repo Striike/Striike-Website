@@ -1,20 +1,20 @@
-<section id="formulaire">
-  <section id="add">
+<section id="block">
+  <section id="payement">
 <%= form_tag "/admin/update_site", method: "patch" do %>
-<h1> Ajouter une estimation</h1>
-  <p><input type="hidden" name="id" value="<%= @site.id %>"></p>
-  <p><input type="string" name="title" placeholder="title" value="<%= @site.title%>"/></br></p>
-  <p><input type="string" name="link" placeholder="link" value="<%= @site.link%>"/></br></p>
-  <p><input type="string" name="image" placeholder="image" value="<%= @site.image%>"/></br></p>
-  <p><input type="integer" name="min_price" placeholder="min_price" value="<%= @site.min_price%>"/></br></p>
-  <p><input type="integer" name="max_price" placeholder="max_price" value="<%= @site.max_price%>"/></br></p>
-  <p><input type="string" name="time" placeholder="time" value="<%= @site.time%>"/></br></p>
-  <p><input type="text" name="def" placeholder="def" value="<%= @site.def%>"/></br></p>
-  <p><select name="category_id">
+<h2> Ajouter une estimation</h2>
+  <input type="hidden" name="id" value="<%= @site.id %>"></p>
+  <input type="string" name="title" placeholder="title" value="<%= @site.title%>"/>
+  <input type="string" name="link" placeholder="link" value="<%= @site.link%>"/>
+  <input type="string" name="image" placeholder="image" value="<%= @site.image%>"/>
+  <input type="integer" name="min_price" placeholder="min_price" value="<%= @site.min_price%>"/>
+  <input type="integer" name="max_price" placeholder="max_price" value="<%= @site.max_price%>"/>
+  <input type="string" name="time" placeholder="time" value="<%= @site.time%>"/>
+  <input type="text" name="def" placeholder="def" value="<%= @site.def%>"/>
+  <select name="category_id">
     <% @category.each do |category| %>
       <option value="<%= category.id %>" <% if category.id == @site.category_id%> selected="selected"<%end%>><%= category.name %></option>
     <% end %>
 <input type="submit" value="Edit" id="add_button">
-<% end %></p>
+<% end %>
   </section>
 </section>

@@ -10,5 +10,9 @@ class TableForm < ActiveRecord::Migration
     add_column :infos, :inter_digi, :string
     add_column :infos, :code_promo, :string
     add_column :infos, :promo, :integer
+    add_column :infos, :id_prod, :integer
+    add_column :infos, :state, :string
+    add_column :infos, :total, :integer
+    add_column :infos, :id_pro, :integer
   end
 end

@@ -8,6 +8,15 @@ class AddCateController < ApplicationController
     @site = Site.all
   end
 
+  def show_commande
+    @current_user = session[:user_id]
+    if (@current_user != 4 && @current_user != 3)
+      redirect_to "/admin"
+    end
+    @users = Info.all
+  end
+
+
   def create_sites
     Site.create title: params[:title], link: params[:link] ,image: params[:image], min_price: params[:min_price],
     max_price: params[:max_price], time: params[:time], def: params[:def], category_id: params[:category_id]
@@ -56,5 +65,53 @@ class AddCateController < ApplicationController
   def update_cate
     Category.find(params[:id]).update name: params[:name], sub_id: params[:sub_id]
     redirect_to "/admin/add"
+  end
+
+  def edit_comm
+    @current_user = session[:user_id]
+    if (@current_user != 4 && @current_user != 3)
+      redirect_to "/admin"
+    end
+    @info = Info.find(params[:id])
+  end
+
+  def stp2(id)
+    Step2.step2(id).deliver
+    redirect_to "/admin"
+  end
+
+  def update_comm
+    @current_user = session[:user_id]
+    if (@current_user != 4 && @current_user != 3)
+      redirect_to "/admin"
+    end
+    if (Info.find(params[:id]).state == "Nouveau")
+      Info.find(params[:id]).update id_pro: params[:pro].to_i, state: "En cours"
+      stp2(params[:id])
+    end
+  end
+
+  def delete_com
+    Info.find(params[:id]).destroy
+    redirect_to "/admin"
+  end
+
+  def check_out
+    Info.find(params[:id]).update total: params[:total]
+    @client = Lemonway::Client.new wsdl:  "https://sandbox-api.lemonway.fr/mb/demo/dev/directkitxml/service.asmx?wsdl",
+                              wl_login: "riadh.meghenem@epitech.eu",
+                              wl_pass: "riadh.meghenem@epitech.eu",
+                              language: "fr",
+                              version: "1.1",
+                              wallet_ip: "127.0.0.1"
+    @client.send_payment debit_wallet: Info.find(params[:id]).mail,
+                          credit_wallet: "kenny_s@popopo.fr",
+                          amount: Info.find(params[:id]).total
+    Info.find(params[:id]).update state: "Terminé"
+    redirect_to "/index"
+  end
+
+  def pro
+    @pro = Pro.all
   end
 end

@@ -52,7 +52,7 @@ header
 
 #header img {
 	margin-left: 5%;
-	width: 17em;
+	width: 15em;
 }
 
 h3 a
@@ -91,7 +91,7 @@ h3 a:hover
 
 	#header img
 	{
-		width: 17em;
+		width: 15em;
 	}
 }
 
@@ -195,6 +195,12 @@ h3 a:hover
 		{
 			font-size: 2.8em;
 		}
+
+		#bandeau .search a
+		{
+			font-size: 1.1em;
+		}
+
 	}
 
 @media (max-width: 900px)
@@ -707,7 +713,6 @@ img
     justify-content: center;
 }
 
-
 #estimation .bouton
 {
   max-height: 50px;
@@ -784,15 +789,15 @@ img
 
 #description h4
 {
-	color : #0CC;
-	font-size: 1.2em;
+	color : #585858;
+	font-size: 1em;
 	margin-bottom: 0px;
 }
 
 #description h2
 {
-	color : #ffcc66;
-	font-size: 1.5em;
+	color : #0CC;
+	font-size: 1.2em;
 }
 
 #description p, ul

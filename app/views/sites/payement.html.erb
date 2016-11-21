@@ -1,0 +1,31 @@
+  <section id="payement">
+    <h2> Produit : <%=@products.title %></h2><br/>
+    <h2> Prix :<%=@products.max_price%>€</h2><br/>
+    <div id="card_info">
+    <%= form_tag "/commande/payement/validate", method: "post" do %>
+      <% @card_type= [{name: "CB", ID: 0}, {name: "VISA", ID: 1}, {name: "Mastercard", ID: 2}] %>
+      <select name="card_type">
+        <% @card_type.each do |cb| %>
+          <option value="<%= cb[:ID] %>"><%= cb[:name]%></option>
+        <% end %>
+      </select>
+      <input type="string" name="card_number" placeholder="XXXX-XXXX-XXXX-XXXX"/>
+      <input type="string" name="crypto" placeholder="123">
+      <select name="month">
+        <% i = 1 %>
+        <% 12.times do%>
+          <option value="<%= '%02d' % i %>"><%= i %></option>
+          <% i = i + 1 %>
+        <% end %>
+      </select>
+      <select name="year">
+        <% i = 16 %>
+        <% 26.times do%>
+          <option value="<%=i + 2000%>"><%= i + 2000 %></option>
+          <% i = i + 1 %>
+        <% end %>
+        </select>
+        <input type="submit" value="Payer" id="add_button">
+    <% end %>
+    </div>
+  </section>

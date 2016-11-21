@@ -20,6 +20,12 @@ class UserController < ApplicationController
     redirect_to "/admin"
   end
 
+  def create
+        # Sends email to user when user is created.
+        ExampleMailer.sample_email(session[:id_client]).deliver
+        redirect_to "/index"
+  end
+
   def check
     @current_user = User.where(name: params[:name]).first
     if(@current_user)

@@ -602,6 +602,7 @@ img
 
 {
 	min-width: auto;
+	max-width: 1000px;
 	margin: 2em 2em 2em 2em;
 	background-color: #fff;
 	display: -webkit-flex;
@@ -625,8 +626,10 @@ img
 
 #estimation .resume img
 {
-	height: 350px;
-	width: 350px;
+	width : auto;
+	max-width: 350px;
+	height: auto;
+	max-height: 350px;
 }
 
 #estimation .info
@@ -785,6 +788,7 @@ img
 	margin: 5% 5% 5% 5%;
 	text-align: justify;
 	margin-bottom: 70px;
+	max-width: 1000px;
 }
 
 #description h4

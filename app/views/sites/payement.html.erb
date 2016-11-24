@@ -1,31 +1,73 @@
-  <section id="payement">
-    <h2> Produit : <%=@products.title %></h2><br/>
-    <h2> Prix :<%=@products.max_price%>€</h2><br/>
-    <div id="card_info">
-    <%= form_tag "/commande/payement/validate", method: "post" do %>
-      <% @card_type= [{name: "CB", ID: 0}, {name: "VISA", ID: 1}, {name: "Mastercard", ID: 2}] %>
-      <select name="card_type">
-        <% @card_type.each do |cb| %>
-          <option value="<%= cb[:ID] %>"><%= cb[:name]%></option>
-        <% end %>
-      </select>
-      <input type="string" name="card_number" placeholder="XXXX-XXXX-XXXX-XXXX"/>
-      <input type="string" name="crypto" placeholder="123">
-      <select name="month">
-        <% i = 1 %>
-        <% 12.times do%>
-          <option value="<%= '%02d' % i %>"><%= i %></option>
-          <% i = i + 1 %>
-        <% end %>
-      </select>
-      <select name="year">
-        <% i = 16 %>
-        <% 26.times do%>
-          <option value="<%=i + 2000%>"><%= i + 2000 %></option>
-          <% i = i + 1 %>
-        <% end %>
-        </select>
-        <input type="submit" value="Payer" id="add_button">
-    <% end %>
+
+<section id="pay">
+<div class='container'>
+  <div class='infopay'>
+    <h1><%=@products.title%></h1>
+    <span></span>
+  </div>
+  <%= form_tag "/commande/payement/validate", :class => 'modal', method: "post" do%>
+  <input type="hidden" name="card_type" value="0" id="card_type">
+  <input type="hidden" name="month" value="" id="month">
+  <input type="hidden" name="year" value="" id="year">
+    <div class='header_pay'>
+      <h1>Prix : <%=@products.max_price%>€</h1>
+      <div class='card-type'>
+        <a class='card_p active' href='#' onclick="cardtype('0')">
+          <img src='http://www.xn--chambrehtenormandie-s5b.com/wp-content/uploads/2012/05/Logo-Carte-Bleue-CB.png' height="38px">
+        </a>
+        <a class='card_p' href='#' onclick="cardtype('1')">
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/Visa.png'>
+        </a>
+        <a class='card_p' href='#' onclick="cardtype('2')">
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/MC.png'>
+        </a>
+      </div>
     </div>
-  </section>
+    <div class='content'>
+      <div class='form'>
+        <div class='form-row'>
+          <div class='input-group'>
+            <label for=''>Card Number</label>
+            <input maxlength='16' placeholder='' type='string' name="card_number">
+          </div>
+        </div>
+        <div class='form-row'>
+          <div class='input-group'>
+            <label for=''>Expiry Date</label>
+            <input placeholder='' type='month' name="dead" id="dead">
+          </div>
+          <div class='input-group'>
+            <label for=''>CVS</label>
+            <input maxlenght='4' placeholder='' type='string' name="crypto">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='footer'>
+      <input type="submit" class='button' value="Payer" onclick="create_date()"></input>
+    </div>
+  <%end%>
+</div>  
+</section>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script>
+    $('.card_p').click(function() {
+  $('.card_p').removeClass('active');
+  $(this).addClass('active');
+  $('.form').stop().slideUp();
+  $('.form').delay(300).slideDown();
+})
+
+function cardtype(type) {
+  var input = document.getElementById('card_type');
+  input.value = type;
+}
+
+function create_date() {
+  var full_date = document.getElementById('dead');
+  var table = full_date.value.split("-");
+  document.getElementById("month").value = table[1];  
+  document.getElementById("year").value = table[0];  
+}
+</script>

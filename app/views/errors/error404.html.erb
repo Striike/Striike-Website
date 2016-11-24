@@ -1,0 +1,60 @@
+<style>
+
+#le404
+{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  top: 20%;
+  margin: auto;
+  text-align: center;
+}
+
+.logo_404
+ {
+    display: inline-block;
+    height: 100%;
+    margin: auto;
+}
+
+#error
+{
+  font-family: lato, arial, "arial black";
+  font-size: 120px;
+  color: #0CC;
+  width: 100%;
+  margin-top: 30%;
+  text-align: center;
+  height: 20%;
+  display: inline-block;
+}
+
+h1
+{
+  font-size: 100px;
+  font-family: lato, arial, "arial black";
+  color: #0CC;
+}
+
+#gear
+{
+    animation: move infinite linear 3s;  
+}
+
+@keyframes move
+{
+  100% { transform: rotate(360deg); }
+  50% { transform: rotate(180deg); }
+  0% { transform: rotate(0deg); }
+}
+
+</style>
+
+
+<div id="le404">
+  <h1> ERROR</h1>
+  <%= image_tag "4.png",  :class => "logo_404", :id => "first"%>
+  <%= image_tag "Fixrunners-logo.png",  :class => "logo_404", :id => "gear"%>
+  <%= image_tag "4.png",  :class => "logo_404"%>
+  <h1>Page not found.</h1>
+</div>

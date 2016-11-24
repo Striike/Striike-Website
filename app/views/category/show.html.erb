@@ -5,12 +5,12 @@
 				<nav id="three">
 
           <% @category.each do |cat| %>
-            <% if cat.sub_id == @find && cat.sub_id != nil%>
+            <% if ((cat.sub_id == @find || check_shared_cat(Category.find(@find).name, cat.sub_id)) && cat.sub_id != nil)%>
 					     <div class="search"><a href="/<%= cat.name%>"><%= cat.name %></a> </div>
               <% end %>
             <% end %>
           <% @site.each do |site| %>
-            <% if site.category_id == @find %>
+            <% if (site.category_id == @find || check_shared(Category.find(@find).name, site.category_id))%>
 					     <div class="search"><a href="/Pages/<%= site.id%>"><%= site.link %></a> </div>
               <% end %>
             <% end %>

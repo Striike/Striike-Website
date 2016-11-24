@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr" >
-	<head>
-		<meta charset="utf-8">
-		<title>LEBOB - Trouver un dépanneur fiable</title>
+  <head>
+    <meta charset="utf-8">
+    <title>LEBOB - Trouver un dépanneur fiable</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-</head>
-<body>
+  </head>
+  <body>
+	
+	<!--Header-->
+	
+	<header class="header">
+	  
+	  <div class="logo">
+	    <%= link_to image_tag("Fixrunners.png", class: "fix_run"), "/index" %>
+	  </div>
+	  <div class="head">
+	    <%= link_to image_tag("yellow-burger.png", class: "header_menu", id:"header_menu"), "#" %>
+	    <a href="#" class="header_menu" id="header_menu"></a>
+	  </div>
+	  <nav class="menu">
+	    <div class="exit">
+	      <a id="exit"> X Fermer</a>
+	    </div>
+	    <div class="co">
+	      <%= link_to "CONNEXION", '#' %>
+	    </div>
 
-	<div id="block_page">
+	    <div class="depann">
+	      <%= link_to "TROUVER UN DÉPANNEUR", '/portail' %>
+	    </div>
+	    
+	    <div class="onglet">
+	      <%= link_to "PLOMBERIE", '/PLOMBERIE' %>
+	      <%= link_to "SERRURERIE", '/SERRURERIE' %>
+	      <%= link_to "ÉLECTRICITÉ", '/ÉLECTRICITÉ' %>
+	      <%= link_to "CHAUFFAGE", '/CHAUFFAGE' %>
+	      <%= link_to "VITRERIE", '/VITRERIE' %>
+	    </div>
+	    
+	    <div class="foot">
+	      <%= link_to "MENTIONS LÉGALES", '#' %>
+	      <%= link_to "CONTACTS", '#' %>
+	      <%= link_to "À PROPOS", '#' %>
+	      <%= link_to "F.A.Q", '#' %>
+	    </div>
+	    
+	  </nav>
+	</header>
+	
+	<div class="cache" id="cache"></div>
+	
+	<%= yield %>
+	
+	
+	<footer>
+	  <nav>
+	    <ul id= "footer">
+	      <li><%= link_to "MENTIONS LÉGALES", '#' %></li>
+	      <li><%= link_to "CONTACTS", '#' %></li>
+	      <li><%= link_to "À PROPOS", '#' %></li>
+	      <li><%= link_to "F.A.Q", '#' %></li>
+	      <li><%= link_to "BLOG", '#' %></li>
+	      
+	    </ul>
+	  </nav>
+	</footer>
+	
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">script></script>
+      
+      <script>
+       (function($){
+	 $('#header_menu').click(function(e){
+	   e.preventDefault();
+	   $('body').toggleClass('sidebar');
+	 });
+	 
+	 $('#cache').click(function(e){
+	   $('body').removeClass('sidebar');
+	 });
 
-
-<!--Header-->
-
-
-		<header>
-
-			<nav>
-				<div id= header>
-					<div class="logo">
-							<%= link_to image_tag("Fixrunners.png"), "/index" %>
-					</div>
-
-					<h3><%= link_to "PLOMBERIE", '/PLOMBERIE' %></h3>
-					<h3><%= link_to "SERRURERIE", '/SERRURERIE' %></h3>
-					<h3><%= link_to "ÉLECTRICITÉ", '/ÉLECTRICITÉ' %></h3>
-					<h3><%= link_to "CHAUFFAGE", '/CHAUFFAGE' %></h3>
-					<h3><%= link_to "VITRERIE", '/VITRERIE' %></h3>
-				</div>
-			</nav>
-		</header>
-
-
-<%= yield %>
-
-
-		<footer>
-			<nav>
-				<ul id= footer>
-					<li><%= link_to "MENTIONS LÉGALES", '#' %></li>
-					<li><%= link_to "CONTACTS", '#' %></li>
-					<li><%= link_to "À PROPOS", '#' %></li>
-					<li><%= link_to "F.A.Q", '#' %></li>
-					<li><%= link_to "BLOG", '#' %></li>
-
-				</ul>
-			</nav>
-		</footer>
-
-</body>
+	 $('#exit').click(function(e){
+	   $('body').removeClass('sidebar');
+	 });
+       })(jQuery);
+       
+      </script>
+  </body>
 </html>

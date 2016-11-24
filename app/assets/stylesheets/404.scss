@@ -1,0 +1,15 @@
+#logo_404
+{
+	position: absolute;
+	display: block;
+	width: 50%;
+	margin: auto;
+	animation: move infinite linear 3s;
+}
+
+@keyframes move
+{
+	100% { transform: rotate(360deg); }
+	50% { transform: rotate(180deg); }
+	0% { transform: rotate(0deg); }
+}

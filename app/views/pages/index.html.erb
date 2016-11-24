@@ -1,74 +1,61 @@
 
 <!--Le Bandeau-->
-
-
-			<section id="bandeau">
-
-				<h1>TROUVER UN DEPANNEUR FIABLE <br/> EST ENFIN DEVENU SIMPLE</h1>
-				<div class="bandeau"><%= image_tag "Homepage.jpg", alt: "Homepage", title: "homepage" %> </div>
-				<div class="search"><%= link_to "TROUVER UN DÉPANNEUR", 'portail' %></div>
-
-			</section>
+            <section id="bandeau">
+                <h1>TROUVER UN DEPANNEUR FIABLE <br/> EST ENFIN DEVENU SIMPLE</h1>
+                <div class="bandeau"><%= image_tag "Homepage.jpg", alt: "Homepage", title: "homepage" %> </div>
+                <div class="bandeau-light"><%= image_tag "Homepage-light.jpg", alt: "Homepage-light", title: "Homepage-light" %> </div>
+                <div class="search"><%= link_to "TROUVER UN DÉPANNEUR", 'portail' %></div>
+            </section>
 
 
 
 
 
 <!--Les Etapes-->
-
-
-			<section id="etape123">
-				<ol>
-					<li class="etape">
-						<p class="img"> <%= image_tag "check.png", alt: "Etape 1", title: "Etape 1" %></p>
-						<h4>Étape 1</h4>Décrivez votre problème</li>
-
-					<li class="etape">
-						<p class="img"> <%= image_tag "euro.png", alt:"Etapes 2", title:"Etape 2" %></p>
-						<h4>Étape 2</h4>Obtenez une estimation du prix</li>
-
-					<li class="etape">
-						<p class="img"> <%= image_tag "casque.png", alt: "Etape 3", title: "Etape 3" %></p>
-						<h4>Étape 3</h4>Un dépanneur vous rappelle dans les 20 minutes</li>
-				</ol>
-			</section>
+            <section id="etape123">
+                <h2>Comment ça marche</h2>
+                <ol>
+                    <li class="etape">
+                        <p> <%= image_tag "etape-1.png", alt: "Etape 1", title: "Etape 1" %></p>
+                        <h4>Décris ton problème</h4>
+                        <p>Répond à notre questionnaire et cible ton problème en moins d'une minute</p>
+                    </li>
+                    <li class="etape">
+                        <p> <%= image_tag "etape-2.png", alt:"Etapes 2", title:"Etape 2" %></p>
+                        <h4>Obtiens une estimation</h4>
+                        <p>Elle comprend le prix, le temps et les détails de ton intervention</p>
+                    </li>
+                    <li class="etape">
+                        <p> <%= image_tag "etape-3.png", alt: "Etape 3", title: "Etape 3" %></p>
+                        <h4>Fais-toi dépanner</h4>
+                        <p>Un de nos dépanneurs viens à ton secours dans les plus brefs délais</p>
+                    </li>
+                </ol>
+            </section>
 
 
 
 
 
 <!--Les dirigeants-->
+			<script>
+			function resize()
+			{
+				var img = document.getElementsByClassName("img2")
+				var i = 0
+				var ratio;
 
+				while (i < img.length)
+				{
+					ratio = 190 * window.innerWidth / 1920;
+					if (ratio > 120)
+					{
+						img[i].style.height = ratio + "px";
+						img[i].style.width = ratio + "px";
+					}
+					i = i + 1;
+				}
 
-			<section id="dirigeants">
-				<h2>Les dirigeants</h2>
-
-				<div class="dirigeants">
-					<div>
-						<p class="img2"><%= image_tag "Armand.jpg", alt: "Armand Obadia" %></p>
-						<p class="dessous" >Armand l'artiste numérique</p>
-					</div>
-
-					<div>
-						<p class="img2"><%= image_tag "Michk.jpg", alt: "Michel Estaben" %></p>
-						<p class="dessous" >Michel le bricoleur numérique</p>
-					</div>
-				</div>
-
-			</section>
-
-
-
-
-<!--Notre Histoire-->
-
-
-			<section id="Histoire">
-				<div class="Histoire" >
-					<h2>Notre Histoire</h2>
-				</div>
-
-				<div class="dessin" >
-					<%= image_tag "Histoire-v3.jpg" %>
-				</div>
-			</section>
+			}
+				window.onresize = resize
+			</script>

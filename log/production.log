@@ -14121,3 +14121,405 @@ I, [2016-11-24T13:46:15.380524 #25474]  INFO -- :   Rendered pages/index.html.er
 I, [2016-11-24T13:46:15.381991 #25474]  INFO -- : Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 0.0ms)
 I, [2016-11-24T13:46:15.395239 #25474]  INFO -- : Started GET "/assets/Homepage-11e8bcb357a041838880ed0903dbffb60742fa88c1c033d5bcb0c21ae1e01691.jpg" for 127.0.0.1 at 2016-11-24 13:46:15 +0100
 I, [2016-11-24T13:46:15.607361 #25474]  INFO -- : Started GET "/assets/Homepage-light-311c71ca0f8148e75a40491633d56807398b388842a9d279fd55f46dcb17424e.jpg" for 127.0.0.1 at 2016-11-24 13:46:15 +0100
+I, [2016-11-25T09:56:35.051925 #32588]  INFO -- : Started GET "/" for 127.0.0.1 at 2016-11-25 09:56:35 +0100
+I, [2016-11-25T09:56:35.060987 #32588]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-11-25T09:56:35.067936 #32588]  INFO -- :   Rendered pages/index.html.erb within layouts/application (0.8ms)
+I, [2016-11-25T09:56:35.069405 #32588]  INFO -- : Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+I, [2016-11-25T09:56:35.326592 #32588]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2016-11-25 09:56:35 +0100
+I, [2016-11-25T09:56:35.328643 #32588]  INFO -- : Processing by CategoryController#show as 
+I, [2016-11-25T09:56:35.328734 #32588]  INFO -- :   Parameters: {"name"=>"favicon"}
+D, [2016-11-25T09:56:35.331991 #32588] DEBUG -- :   [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+D, [2016-11-25T09:56:35.348829 #32588] DEBUG -- :   [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", nil]]
+I, [2016-11-25T09:56:35.350574 #32588]  INFO -- :   Rendered category/show.html.erb within layouts/application (7.6ms)
+I, [2016-11-25T09:56:35.350707 #32588]  INFO -- : Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.6ms)
+F, [2016-11-25T09:56:35.351390 #32588] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=):
+  app/views/category/show.html.erb:8:in `block in _app_views_category_show_html_erb__1874352249692202154_26549700'
+  app/views/category/show.html.erb:7:in `_app_views_category_show_html_erb__1874352249692202154_26549700'
+
+
+I, [2016-11-25T09:56:35.352335 #32588]  INFO -- : Processing by ErrorsController#error404 as 
+I, [2016-11-25T09:56:35.352373 #32588]  INFO -- :   Parameters: {"name"=>"favicon"}
+I, [2016-11-25T09:56:35.354946 #32588]  INFO -- :   Rendered errors/error404.html.erb (0.5ms)
+I, [2016-11-25T09:56:35.355101 #32588]  INFO -- : Completed 404 Not Found in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+I, [2016-11-25T09:56:36.067614 #32588]  INFO -- : Started GET "/" for 127.0.0.1 at 2016-11-25 09:56:36 +0100
+I, [2016-11-25T09:56:36.068211 #32588]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-11-25T09:56:36.069021 #32588]  INFO -- :   Rendered pages/index.html.erb within layouts/application (0.3ms)
+I, [2016-11-25T09:56:36.069703 #32588]  INFO -- : Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+I, [2016-11-25T09:56:37.738510 #32588]  INFO -- : Started GET "/portail" for 127.0.0.1 at 2016-11-25 09:56:37 +0100
+I, [2016-11-25T09:56:37.739045 #32588]  INFO -- : Processing by PagesController#portail as HTML
+I, [2016-11-25T09:56:37.740485 #32588]  INFO -- :   Rendered pages/portail.html.erb within layouts/application (0.7ms)
+I, [2016-11-25T09:56:37.741468 #32588]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2016-11-25T09:56:38.725207 #32588]  INFO -- : Started GET "/%C3%89LECTRICIT%C3%89" for 127.0.0.1 at 2016-11-25 09:56:38 +0100
+I, [2016-11-25T09:56:38.725933 #32588]  INFO -- : Processing by CategoryController#show as HTML
+I, [2016-11-25T09:56:38.725999 #32588]  INFO -- :   Parameters: {"name"=>"ÉLECTRICITÉ"}
+D, [2016-11-25T09:56:38.726792 #32588] DEBUG -- :   [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+D, [2016-11-25T09:56:38.729510 #32588] DEBUG -- :   [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.729720 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.729923 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-11-25T09:56:38.730074 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.730203 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-11-25T09:56:38.730334 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.730474 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-11-25T09:56:38.730612 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.730748 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-11-25T09:56:38.730892 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.731064 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 2]]
+D, [2016-11-25T09:56:38.731219 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.731351 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-11-25T09:56:38.731476 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.731639 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 8]]
+D, [2016-11-25T09:56:38.731776 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.731959 #32588] DEBUG -- :   [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 50]]
+D, [2016-11-25T09:56:38.732086 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.732212 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 8]]
+D, [2016-11-25T09:56:38.732346 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.732467 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 8]]
+D, [2016-11-25T09:56:38.732594 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.732719 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 8]]
+D, [2016-11-25T09:56:38.732843 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.733026 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 14]]
+D, [2016-11-25T09:56:38.733157 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.733288 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 14]]
+D, [2016-11-25T09:56:38.733413 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.733575 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 21]]
+D, [2016-11-25T09:56:38.733701 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.733865 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 23]]
+D, [2016-11-25T09:56:38.733992 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.734119 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 14]]
+D, [2016-11-25T09:56:38.734244 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.734404 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 26]]
+D, [2016-11-25T09:56:38.734546 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.734669 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 26]]
+D, [2016-11-25T09:56:38.734798 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.734960 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 15]]
+D, [2016-11-25T09:56:38.735090 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.735271 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 29]]
+D, [2016-11-25T09:56:38.735401 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.735561 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 30]]
+D, [2016-11-25T09:56:38.735697 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.735819 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 15]]
+D, [2016-11-25T09:56:38.735964 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.736084 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 15]]
+D, [2016-11-25T09:56:38.736209 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.736375 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 16]]
+D, [2016-11-25T09:56:38.736512 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.736676 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 36]]
+D, [2016-11-25T09:56:38.736803 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.736936 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 16]]
+D, [2016-11-25T09:56:38.737066 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.737233 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 19]]
+D, [2016-11-25T09:56:38.737375 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.737502 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 19]]
+D, [2016-11-25T09:56:38.737630 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.737790 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 9]]
+D, [2016-11-25T09:56:38.737952 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.738138 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 43]]
+D, [2016-11-25T09:56:38.738271 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.738399 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 43]]
+D, [2016-11-25T09:56:38.738544 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.738666 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 9]]
+D, [2016-11-25T09:56:38.738834 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.738993 #32588] DEBUG -- :   [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 48]]
+D, [2016-11-25T09:56:38.739129 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.739251 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-11-25T09:56:38.739374 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 11]]
+D, [2016-11-25T09:56:38.739502 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-11-25T09:56:38.740149 #32588] DEBUG -- :   [1m[36mSite Load (0.5ms)[0m  [1mSELECT "sites".* FROM "sites"[0m
+D, [2016-11-25T09:56:38.748567 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.748875 #32588] DEBUG -- :   [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2016-11-25T09:56:38.749031 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.749170 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2016-11-25T09:56:38.749307 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.749440 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2016-11-25T09:56:38.749576 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.749707 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2016-11-25T09:56:38.749840 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.749964 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 8]]
+D, [2016-11-25T09:56:38.750093 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.750220 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 8]]
+D, [2016-11-25T09:56:38.750367 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.750503 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 8]]
+D, [2016-11-25T09:56:38.750627 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.750749 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 14]]
+D, [2016-11-25T09:56:38.750879 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.751047 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 20]]
+D, [2016-11-25T09:56:38.751190 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.751324 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 20]]
+D, [2016-11-25T09:56:38.751462 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.751593 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 21]]
+D, [2016-11-25T09:56:38.751719 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.751854 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 23]]
+D, [2016-11-25T09:56:38.751983 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.752114 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 23]]
+D, [2016-11-25T09:56:38.752237 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.752406 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 24]]
+D, [2016-11-25T09:56:38.752567 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.752697 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 24]]
+D, [2016-11-25T09:56:38.752851 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.753099 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 23]]
+D, [2016-11-25T09:56:38.753295 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.753439 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 23]]
+D, [2016-11-25T09:56:38.753579 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.754317 #32588] DEBUG -- :   [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 27]]
+D, [2016-11-25T09:56:38.754982 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.755136 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 27]]
+D, [2016-11-25T09:56:38.755272 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.755400 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 27]]
+D, [2016-11-25T09:56:38.755537 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.755736 #32588] DEBUG -- :   [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 28]]
+D, [2016-11-25T09:56:38.755871 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.756000 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 28]]
+D, [2016-11-25T09:56:38.756141 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.756281 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 29]]
+D, [2016-11-25T09:56:38.756425 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.756558 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 30]]
+D, [2016-11-25T09:56:38.756701 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.756880 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 31]]
+D, [2016-11-25T09:56:38.757022 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.757152 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 31]]
+D, [2016-11-25T09:56:38.757309 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.758427 #32588] DEBUG -- :   [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 33]]
+D, [2016-11-25T09:56:38.758614 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.758764 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 33]]
+D, [2016-11-25T09:56:38.758900 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.759088 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 34]]
+D, [2016-11-25T09:56:38.759229 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.759369 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 34]]
+D, [2016-11-25T09:56:38.759508 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.759645 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 15]]
+D, [2016-11-25T09:56:38.765429 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.765609 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 36]]
+D, [2016-11-25T09:56:38.765767 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.765968 #32588] DEBUG -- :   [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 39]]
+D, [2016-11-25T09:56:38.766095 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.766250 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 39]]
+D, [2016-11-25T09:56:38.766395 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.766521 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 36]]
+D, [2016-11-25T09:56:38.766669 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.766782 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 16]]
+D, [2016-11-25T09:56:38.766900 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.767079 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 40]]
+D, [2016-11-25T09:56:38.767201 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.767341 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 40]]
+D, [2016-11-25T09:56:38.767466 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.767632 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 17]]
+D, [2016-11-25T09:56:38.767786 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.767915 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 17]]
+D, [2016-11-25T09:56:38.768050 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.768209 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 17]]
+D, [2016-11-25T09:56:38.768341 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.768470 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 17]]
+D, [2016-11-25T09:56:38.768636 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.768747 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 19]]
+D, [2016-11-25T09:56:38.768861 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.768993 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 19]]
+D, [2016-11-25T09:56:38.769108 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.769297 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 41]]
+D, [2016-11-25T09:56:38.769426 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.769572 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 41]]
+D, [2016-11-25T09:56:38.769683 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.769870 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 42]]
+D, [2016-11-25T09:56:38.770011 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.770141 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 42]]
+D, [2016-11-25T09:56:38.770301 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.770429 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 42]]
+D, [2016-11-25T09:56:38.770586 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.770750 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 44]]
+D, [2016-11-25T09:56:38.770880 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.771034 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 44]]
+D, [2016-11-25T09:56:38.771179 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.771357 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 45]]
+D, [2016-11-25T09:56:38.771485 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.771639 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 45]]
+D, [2016-11-25T09:56:38.771767 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.771887 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 9]]
+D, [2016-11-25T09:56:38.772041 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.772201 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 46]]
+D, [2016-11-25T09:56:38.772355 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.772481 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 46]]
+D, [2016-11-25T09:56:38.772633 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.772756 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 46]]
+D, [2016-11-25T09:56:38.772876 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.773048 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 47]]
+D, [2016-11-25T09:56:38.773219 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.773343 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 47]]
+D, [2016-11-25T09:56:38.773480 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.774701 #32588] DEBUG -- :   [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 49]]
+D, [2016-11-25T09:56:38.774915 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.775063 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 49]]
+D, [2016-11-25T09:56:38.775227 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.775417 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 48]]
+D, [2016-11-25T09:56:38.775570 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.775754 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 48]]
+D, [2016-11-25T09:56:38.775907 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.776053 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 48]]
+D, [2016-11-25T09:56:38.776288 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 11]]
+D, [2016-11-25T09:56:38.776454 #32588] DEBUG -- :   [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 51]]
+I, [2016-11-25T09:56:38.776677 #32588]  INFO -- :   Rendered category/show.html.erb within layouts/application (47.8ms)
+I, [2016-11-25T09:56:38.777573 #32588]  INFO -- : Completed 200 OK in 52ms (Views: 44.5ms | ActiveRecord: 4.9ms)
+I, [2016-11-25T09:56:39.579520 #32588]  INFO -- : Started GET "/Pages/90" for 127.0.0.1 at 2016-11-25 09:56:39 +0100
+I, [2016-11-25T09:56:39.581750 #32588]  INFO -- : Processing by SitesController#estimations as HTML
+I, [2016-11-25T09:56:39.581813 #32588]  INFO -- :   Parameters: {"id"=>"90"}
+D, [2016-11-25T09:56:39.582708 #32588] DEBUG -- :   [1m[35mSite Load (0.1ms)[0m  SELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1  [["id", 90]]
+I, [2016-11-25T09:56:39.587204 #32588]  INFO -- :   Rendered sites/estimations.html.erb within layouts/application (2.5ms)
+I, [2016-11-25T09:56:39.588932 #32588]  INFO -- : Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+I, [2016-11-25T09:56:40.480830 #32588]  INFO -- : Started GET "/formulaire/90" for 127.0.0.1 at 2016-11-25 09:56:40 +0100
+I, [2016-11-25T09:56:40.481481 #32588]  INFO -- : Processing by SitesController#commande as HTML
+I, [2016-11-25T09:56:40.481532 #32588]  INFO -- :   Parameters: {"id"=>"90"}
+D, [2016-11-25T09:56:40.482066 #32588] DEBUG -- :   [1m[36mSite Load (0.1ms)[0m  [1mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1[0m  [["id", 90]]
+I, [2016-11-25T09:56:40.484163 #32588]  INFO -- :   Rendered sites/commande.html.erb within layouts/application (1.5ms)
+I, [2016-11-25T09:56:40.484945 #32588]  INFO -- : Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+I, [2016-11-25T09:57:06.047590 #32588]  INFO -- : Started POST "/commande/add" for 127.0.0.1 at 2016-11-25 09:57:06 +0100
+I, [2016-11-25T09:57:06.048266 #32588]  INFO -- : Processing by SitesController#create as HTML
+I, [2016-11-25T09:57:06.048317 #32588]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"ljaGJxpGDMKum2xvTZPYBt97RpdV6qSZkiClmnIEXkGZnlZhG7HRkDh56h1qdyyOXp8yKnnOoLHePKbWlrbaMQ==", "id_prod"=>"90", "adresse"=>"bonjour", "postal"=>"12345", "etage"=>"12", "prenom"=>"lepetit", "nom"=>"toto", "mail"=>"lepetiti@toto.fr", "tel"=>"1234567890", "date"=>"Demain", "promo"=>"", "Conditions"=>"on", "droits"=>"on"}
+D, [2016-11-25T09:57:06.057913 #32588] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2016-11-25T09:57:06.058780 #32588] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "infos" ("addresse", "code_p", "inter_digi", "prenom", "nom", "mail", "tel", "id_prod", "state") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["addresse", "bonjour"], ["code_p", "12345"], ["inter_digi", "12"], ["prenom", "lepetit"], ["nom", "toto"], ["mail", "lepetiti@toto.fr"], ["tel", "1234567890"], ["id_prod", 90], ["state", "Nouveau"]]
+D, [2016-11-25T09:57:06.263808 #32588] DEBUG -- :   [1m[35m (204.7ms)[0m  commit transaction
+D, [2016-11-25T09:57:06.768466 #32588] DEBUG -- :   [1m[36mInfo Load (0.2ms)[0m  [1mSELECT  "infos".* FROM "infos"  ORDER BY "infos"."id" DESC LIMIT 1[0m
+I, [2016-11-25T09:57:06.768932 #32588]  INFO -- : Redirected to http://127.0.0.1:3000/commande/payement
+I, [2016-11-25T09:57:06.769056 #32588]  INFO -- : Completed 302 Found in 721ms (ActiveRecord: 205.5ms)
+I, [2016-11-25T09:57:06.774533 #32588]  INFO -- : Started GET "/commande/payement" for 127.0.0.1 at 2016-11-25 09:57:06 +0100
+I, [2016-11-25T09:57:06.775237 #32588]  INFO -- : Processing by SitesController#payement as HTML
+D, [2016-11-25T09:57:06.775782 #32588] DEBUG -- :   [1m[35mSite Load (0.1ms)[0m  SELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1  [["id", 90]]
+I, [2016-11-25T09:57:06.777124 #32588]  INFO -- :   Rendered sites/payement.html.erb within layouts/application (0.7ms)
+I, [2016-11-25T09:57:06.777993 #32588]  INFO -- : Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+I, [2016-11-25T09:57:55.929246 #32588]  INFO -- : Started POST "/commande/payement/validate" for 127.0.0.1 at 2016-11-25 09:57:55 +0100
+I, [2016-11-25T09:57:55.929887 #32588]  INFO -- : Processing by SitesController#validate as HTML
+I, [2016-11-25T09:57:55.929939 #32588]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"hckwSH9T42LbEPj8yFrTyVmjp8fpgdbrUDq6FwukKDyKYeAOfqQ+ME3yfo7vvidB2EfTesWl0sMcJrlb7xasTA==", "card_type"=>"0", "month"=>"11", "year"=>"2026", "card_number"=>"5017670000006700", "dead"=>"2026-11", "crypto"=>"123"}
+D, [2016-11-25T09:57:55.930511 #32588] DEBUG -- :   [1m[36mSite Load (0.1ms)[0m  [1mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1[0m  [["id", 90]]
+I, [2016-11-25T09:57:58.077863 #32588]  INFO -- : Redirected to http://127.0.0.1:3000/send/mail/33
+I, [2016-11-25T09:57:58.078006 #32588]  INFO -- : Completed 302 Found in 2148ms (ActiveRecord: 0.1ms)
+I, [2016-11-25T09:57:58.082398 #32588]  INFO -- : Started GET "/send/mail/33" for 127.0.0.1 at 2016-11-25 09:57:58 +0100
+I, [2016-11-25T09:57:58.084646 #32588]  INFO -- : Processing by UserController#create as HTML
+I, [2016-11-25T09:57:58.084717 #32588]  INFO -- :   Parameters: {"id_client"=>"33"}
+D, [2016-11-25T09:57:58.091044 #32588] DEBUG -- :   [1m[35mInfo Load (0.2ms)[0m  SELECT  "infos".* FROM "infos" WHERE "infos"."id" = ? LIMIT 1  [["id", 33]]
+D, [2016-11-25T09:57:58.091646 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "infos".* FROM "infos" WHERE "infos"."id" = ? LIMIT 1[0m  [["id", 33]]
+D, [2016-11-25T09:57:58.092034 #32588] DEBUG -- :   [1m[35mSite Load (0.1ms)[0m  SELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1  [["id", 90]]
+D, [2016-11-25T09:57:58.092293 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "infos".* FROM "infos" WHERE "infos"."id" = ? LIMIT 1[0m  [["id", 33]]
+D, [2016-11-25T09:57:58.092890 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1  [["id", 90]]
+D, [2016-11-25T09:57:58.093428 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "infos".* FROM "infos" WHERE "infos"."id" = ? LIMIT 1[0m  [["id", 33]]
+D, [2016-11-25T09:57:58.093736 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1  [["id", 90]]
+D, [2016-11-25T09:57:58.093915 #32588] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "infos".* FROM "infos" WHERE "infos"."id" = ? LIMIT 1[0m  [["id", 33]]
+D, [2016-11-25T09:57:58.094085 #32588] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "sites".* FROM "sites" WHERE "sites"."id" = ? LIMIT 1  [["id", 90]]
+I, [2016-11-25T09:57:58.094223 #32588]  INFO -- :   Rendered example_mailer/sample_email.html.erb within layouts/mailer (4.2ms)
+I, [2016-11-25T09:57:58.095245 #32588]  INFO -- :   Rendered example_mailer/sample_email.text.erb within layouts/mailer (0.2ms)
+D, [2016-11-25T09:57:58.198082 #32588] DEBUG -- : 
+ExampleMailer#sample_email: processed outbound mail in 111.6ms
+I, [2016-11-25T09:57:59.621682 #32588]  INFO -- : 
+Sent mail to riadmegh@gmail.com (1423.4ms)
+D, [2016-11-25T09:57:59.621762 #32588] DEBUG -- : Date: Fri, 25 Nov 2016 09:57:58 +0100
+From: lapoubellede42@gmail.com
+To: riadmegh@gmail.com
+Message-ID: <5837fd1630fa5_7f4c1124c001694b@arc.mail>
+Subject: Sample Email
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5837fd16302b2_7f4c1124c00168d5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5837fd16302b2_7f4c1124c00168d5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+COUCOU
+
+Sample mail sent using smtp.
+
+
+----==_mimepart_5837fd16302b2_7f4c1124c00168d5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <style type=3D"text/css" media=3D"screen">
+    #header_mail
+    {
+      width: 70%;
+      background-color: #167ca5;
+      margin: auto;
+    }
+
+    #body_mail
+    {
+      width: 100%;
+      background-color: #FFFFFF;
+      padding: 1%;
+    }
+
+    #title_mail
+    {
+      text-align: center;
+      color: #0CC;
+      font-size: 170%;
+    }
+
+    #info
+    {
+      text-align: left;
+      width: 50%;
+      margin: auto;
+      border: 1px solid black;
+      padding: 2%;
+    }
+
+    h1, h2, h3
+    {
+      text-align: center;
+      color: black;
+      font-size: 150%;
+    }
+
+    img
+    {
+      margin: auto;
+    }
+
+    </style>
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />
+  </head>
+  <body>
+    <section id=3D'header_mail'>
+    <img src=3D"http://i.imgur.com/pGchaCW.png" width=3D"25%" height=3D"2=
+5%"/>
+    <section id=3D'body_mail'>
+    <h3>Bonjour lepetit</h3>
+    <h1 id=3D'title_mail'>Merci, votre commande =C3=A0 bien =C3=A9t=C3=A9=
+ prise en compte</h1>
+    <h2>Nous cherchons un artisant pour vous</h2>
+    <h2>Votre num=C3=A9ro de commande :  33</h1><br/><br/><br/>
+
+    <section id=3D'info'>
+    <p>Intervention : MON TABLEAU =C3=89LECTRIQUE EST EN PANNE</p>
+    <p>Estimation du prix: entre 100=E2=82=AC et 300=E2=82=AC</p>
+    <p>Temps d'intervention : ENTRE 1 &amp; 3 HEURES</p>
+    <br/>
+    <p>Somme totale bloqu=C3=A9e sur votre compte : 300=E2=82=AC</p>
+    <p>Prix du d=C3=A9placement: 0=E2=82=AC</p>
+    <p>Somme actuellement pr=C3=A9lev=C3=A9e: 0=E2=82=AC</p>
+    </section>
+    </section>
+  </section>
+  </body>
+</html>
+
+  </body>
+</html>
+
+----==_mimepart_5837fd16302b2_7f4c1124c00168d5--
+
+I, [2016-11-25T09:57:59.621979 #32588]  INFO -- : Redirected to http://127.0.0.1:3000/index
+I, [2016-11-25T09:57:59.622120 #32588]  INFO -- : Completed 302 Found in 1537ms (ActiveRecord: 0.4ms)
+I, [2016-11-25T09:57:59.627456 #32588]  INFO -- : Started GET "/index" for 127.0.0.1 at 2016-11-25 09:57:59 +0100
+I, [2016-11-25T09:57:59.628118 #32588]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-11-25T09:57:59.628973 #32588]  INFO -- :   Rendered pages/index.html.erb within layouts/application (0.3ms)
+I, [2016-11-25T09:57:59.629638 #32588]  INFO -- : Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)

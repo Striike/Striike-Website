@@ -8,53 +8,47 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-	
-	<!--Header-->
-	
-	<header class="header">
-	  
-	  <div class="logo">
-	    <%= link_to image_tag("Fixrunners.png", class: "fix_run"), "/index" %>
-	  </div>
-	  <div class="head">
-	    <%= link_to image_tag("yellow-burger.png", class: "header_menu", id:"header_menu"), "#" %>
-	    <a href="#" class="header_menu" id="header_menu"></a>
-	  </div>
-	  <nav class="menu">
-	    <div class="exit">
-	      <a id="exit"> X Fermer</a>
-	    </div>
-	    <div class="co">
-	      <%= link_to "CONNEXION", '#' %>
-	    </div>
 
-	    <div class="depann">
-	      <%= link_to "TROUVER UN DÉPANNEUR", '/portail' %>
-	    </div>
-	    
-	    <div class="onglet">
-	      <%= link_to "PLOMBERIE", '/PLOMBERIE' %>
-	      <%= link_to "SERRURERIE", '/SERRURERIE' %>
-	      <%= link_to "ÉLECTRICITÉ", '/ÉLECTRICITÉ' %>
-	      <%= link_to "CHAUFFAGE", '/CHAUFFAGE' %>
-	      <%= link_to "VITRERIE", '/VITRERIE' %>
-	    </div>
-	    
-	    <div class="foot">
-	      <%= link_to "MENTIONS LÉGALES", '#' %>
-	      <%= link_to "CONTACTS", '#' %>
-	      <%= link_to "À PROPOS", '#' %>
-	      <%= link_to "F.A.Q", '#' %>
-	    </div>
-	    
-	  </nav>
-	</header>
-	
+    <!--Header-->
+      <header class="header">
+        <div class="logo">
+          <%= link_to image_tag("Fixrunners.png", class: "fix_run"), "/index" %>
+        </div>
+        <div class="head">
+          <%= link_to image_tag("yellow-burger.png", class: "header_menu", id:"header_menu"), "#" %>
+          <a href="#" class="header_menu" id="header_menu"></a>
+        </div>
+        <nav class="menu">
+        <div class="contain_menu">
+          <div class="co">
+            <%= link_to "CONNEXION", '#' %>
+          </div>
+          <div class="depann">
+            <%= link_to "TROUVER UN DÉPANNEUR", '/portail' %>
+          </div>
+          <div class="onglet">
+            <%= link_to "PLOMBERIE", '/PLOMBERIE' %>
+            <%= link_to "SERRURERIE", '/SERRURERIE' %>
+            <%= link_to "ÉLECTRICITÉ", '/ÉLECTRICITÉ' %>
+            <%= link_to "CHAUFFAGE", '/CHAUFFAGE' %>
+            <%= link_to "VITRERIE", '/VITRERIE' %>
+          </div>
+          <div class="foot">
+            <%= link_to "MENTIONS LÉGALES", '#' %>
+            <%= link_to "CONTACTS", '#' %>
+            <%= link_to "À PROPOS", '#' %>
+            <%= link_to "F.A.Q", '#' %>
+          </div>
+        </div>
+
+        </nav>
+      </header>
+
 	<div class="cache" id="cache"></div>
-	
+
 	<%= yield %>
-	
-	
+
+
 	<footer>
 	  <nav>
 	    <ul id= "footer">
@@ -63,20 +57,19 @@
 	      <li><%= link_to "À PROPOS", '#' %></li>
 	      <li><%= link_to "F.A.Q", '#' %></li>
 	      <li><%= link_to "BLOG", '#' %></li>
-	      
+
 	    </ul>
 	  </nav>
 	</footer>
-	
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">script></script>
-      
+
+
       <script>
        (function($){
 	 $('#header_menu').click(function(e){
 	   e.preventDefault();
 	   $('body').toggleClass('sidebar');
 	 });
-	 
+
 	 $('#cache').click(function(e){
 	   $('body').removeClass('sidebar');
 	 });
@@ -85,7 +78,7 @@
 	   $('body').removeClass('sidebar');
 	 });
        })(jQuery);
-       
+
       </script>
   </body>
 </html>

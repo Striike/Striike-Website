@@ -2,275 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* Formulaire */
-
-/* All */
-
-#formulaire
-
-{
-
-    min-height: calc(100vh - 100px);
-
-    min-width: 100%;
-
-    margin-bottom: 0px;
-
-    height: auto;
-
-    display: flex;
-
-    align-items: baseline;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    padding: 2em;
-
-    padding-bottom: 8%;
-
-    color: #424242;
-
-    background-color: #F8F8F8;
-
-}
-
-#formulaire h2
-
-{
-
-    font-size: 1.3em
-
-}
-
-/* Gauche */
-
-#gauche
-
-{
-
-    height: auto;
-
-    width: auto;
-
-    display: flex;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    padding: 1em;
-
-    border-right: 1px solid #E8E8E8;
-
-    max-width: 90%;
-
-}
-
-@media (max-width: 791px)
-
-{
-
-    #gauche
-
-    {
-
-        border-right: 0px none #E8E8E8;
-
-        border-bottom: 1px solid #E8E8E8;
-
-    }
-
-}
-
-#formulaire #gauche input
-
-{
-
-    width: 85%;
-
-    height: 30px;
-
-    font-size: 0.8em;
-
-}
-
-#formulaire #gauche .asterix
-
-{
-
-    font-size: 0.8em;
-
-    color: #585858;
-
-}
-
-/* Droite */
-
-#droite
-
-{
-
-    height: auto;
-
-    width: auto;
-
-    display: flex;
-
-    align-items: baseline;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    padding: 2em;
-
-    max-width: 90%;
-
-}
-
-#right_div h1
-
-{
-
-    width: 400px;
-
-    color: #0CC;
-
-}
-
-#formulaire h1
-
-{
-
-    color: #0cc;
-
-    font-size: 1.45em;
-
-    max-width: 350px;
-
-}
-
-#formulaire #droite .promo input
-
-{
-
-    width: 50%;
-
-    height: 30px;
-
-    font-size: 0.8em;
-
-}
-
-#formulaire .date
-
-{
-
-    height: 2em;
-
-    width: 20em;
-
-    margin-left: 0%;
-
-    border-color: #909090;
-
-}
-
-#formulaire .check input
-
-{
-
-    font-size: 5em;
-
-}
-
-#formulaire .check a
-
-{
-
-    text-decoration: none;
-
-    color: #0cc;
-
-    font-size: 1em;
-
-}
-
-#formulaire .check a:hover
-
-{
-
-    text-decoration: underline;
-
-}
-
-#commander a
-
-{
-
-    text-decoration: none;
-
-    font-family: 'lato', arial;
-
-    font-size: 1em;
-
-    color: white;
-
-    background-color: #ff9900;
-
-    border: 3px solid #ff9900;
-
-    text-align: center;
-
-    border-radius: 0.2em 0.2em 0.2em 0.2em;
-
-    margin-top: 3em;
-
-        padding: 9px 9px 9px 9px;
-
-        width: 200px;
-
-        height: 25px;
-
-        display: -webkit-flex;
-
-        display:        flex;
-
-        -webkit-align-items: center;
-
-        align-items: center;
-
-        -webkit-justify-content: center;
-
-        justify-content: center;
-
-}
-
-#commander a:hover
-
-{
-
-    background-color: #e68a00;
-
-    border-color: #e68a00;
-
-}
 
 /* Toute la page */
 
 body
 {
+  position: fixed;
 	font-family: lato, arial, "arial black";
 	background: #fff;
-	width: auto;
+	width: 100%;
 	margin: 0 0 0 0;
-	overflow-x: hidden;
-	overflow-y: auto;
+  overflow: hidden;
+	overflow-y: scroll;
 	height: 100%;
+}
+
+html
+{
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Le Header */
@@ -309,35 +59,35 @@ body
 	  			width: 30px;
 	    			height: 20px;
 	      			cursor: pointer;
-        		}	
+        		}
 	}
-	
+
 	.McButton b
 	{
 		position: absolute;
 		left: 0;
 		width: 30px;
-		height: 3px;
+		height: 0.2em;
 		background-color: #fdcb67;
 	}
-	
-	McButton b:nth-child(1)
+
+	.McButton b:nth-child(1)
 	{
 		top: 0;
 	}
-	
+
 	.McButton b:nth-child(2)
 	{
 		top: 50%;
 	}
-	
+
 	.McButton b:nth-child(3)
 	{
 		top: 100%;
 	}
-	
+
 	/* McButton */
-				      
+
     /*.head
     {
 	z-index: 4;
@@ -1148,6 +898,266 @@ ol
 	}
 }
 
+
+
+/* Formulaire */
+
+/* All */
+
+
+#formulaire
+
+{
+
+    min-height: calc(100vh - 80px);
+
+    min-width: 100%;
+
+    margin-bottom: 0px;
+
+    height: auto;
+
+    display: flex;
+
+    align-items: baseline;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    padding: 2em;
+
+    padding-bottom: 8%;
+
+    color: #424242;
+
+    background-color: #F8F8F8;
+
+}
+
+#formulaire h2
+
+{
+
+    font-size: 1.3em
+
+}
+
+/* Gauche */
+
+#gauche
+
+{
+
+    height: auto;
+
+    width: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    padding: 1em;
+
+    border-right: 1px solid #E8E8E8;
+
+    max-width: 90%;
+
+}
+
+@media (max-width: 791px)
+
+{
+
+    #gauche
+
+    {
+
+        border-right: 0px none #E8E8E8;
+
+        border-bottom: 1px solid #E8E8E8;
+
+    }
+
+}
+
+#formulaire #gauche input
+
+{
+
+    width: 85%;
+
+    height: 30px;
+
+    font-size: 0.8em;
+
+}
+
+#formulaire #gauche .asterix
+
+{
+
+    font-size: 0.8em;
+
+    color: #585858;
+
+}
+
+/* Droite */
+
+#droite
+
+{
+
+    height: auto;
+
+    width: auto;
+
+    display: flex;
+
+    align-items: baseline;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    padding: 2em;
+
+    max-width: 90%;
+
+}
+
+#right_div h1
+
+{
+
+    width: 400px;
+
+    color: #0CC;
+
+}
+
+#formulaire h1
+
+{
+
+    color: #0cc;
+
+    font-size: 1.45em;
+
+    max-width: 350px;
+
+}
+
+#formulaire #droite .promo input
+
+{
+
+    width: 50%;
+
+    height: 30px;
+
+    font-size: 0.8em;
+
+}
+
+#formulaire .date
+
+{
+
+    height: 2em;
+
+    width: 20em;
+
+    margin-left: 0%;
+
+    border-color: #909090;
+
+}
+
+#formulaire .check input
+
+{
+
+    font-size: 5em;
+
+}
+
+#formulaire .check a
+
+{
+
+    text-decoration: none;
+
+    color: #0cc;
+
+    font-size: 1em;
+
+}
+
+#formulaire .check a:hover
+
+{
+
+    text-decoration: underline;
+
+}
+
+#commander a
+
+{
+
+    text-decoration: none;
+
+    font-family: 'lato', arial;
+
+    font-size: 1em;
+
+    color: white;
+
+    background-color: #ff9900;
+
+    border: 3px solid #ff9900;
+
+    text-align: center;
+
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+
+    margin-top: 3em;
+
+        padding: 9px 9px 9px 9px;
+
+        width: 200px;
+
+        height: 25px;
+
+        display: -webkit-flex;
+
+        display:        flex;
+
+        -webkit-align-items: center;
+
+        align-items: center;
+
+        -webkit-justify-content: center;
+
+        justify-content: center;
+
+}
+
+#commander a:hover
+
+{
+
+    background-color: #e68a00;
+
+    border-color: #e68a00;
+
+}
 
 
 

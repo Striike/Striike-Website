@@ -15,8 +15,11 @@
           <%= link_to image_tag("Fixrunners.png", class: "fix_run"), "/index" %>
         </div>
         <div class="head">
-          <%= link_to image_tag("yellow-burger.png", class: "header_menu", id:"header_menu"), "#" %>
-          <a href="#" class="header_menu" id="header_menu"></a>
+          <a id="header_menu" class="McButton" data="hamburger-menu">
+	    <b></b>
+	    <b></b>
+	    <b></b>
+	  </a>
         </div>
         <nav class="menu">
         <div class="contain_menu">
@@ -62,23 +65,46 @@
 	  </nav>
 	</footer>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
 
-      <script>
-       (function($){
-	 $('#header_menu').click(function(e){
-	   e.preventDefault();
-	   $('body').toggleClass('sidebar');
+	<script>
+	 var McButton = $("[data=hamburger-menu]");
+	 var McBar1 = McButton.find("b:nth-child(1)");
+	 var McBar2 = McButton.find("b:nth-child(2)");
+	 var McBar3 = McButton.find("b:nth-child(3)");
+	 
+	 McButton.click( function() {
+	   $(this).toggleClass("active");
+	   
+	   if (McButton.hasClass("active")) {
+	     McBar1.velocity({ top: "50%" }, {duration: 200, easing: "swing"});
+	     McBar3.velocity({ top: "50%" }, {duration: 200, easing: "swing"}).velocity({rotateZ:"90deg"}, {duration: 800, delay: 200, easing: [500,20] });
+	     McButton.velocity({rotateZ:"135deg"}, {duration: 800, delay: 200, easing: [500,20] });
+	   } else {
+	     McButton.velocity("reverse");
+	     McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] }).velocity({ top: "100%" }, {duration: 200, easing: "swing"});
+	     McBar1.velocity("reverse", {delay: 800});
+	   }
 	 });
-
-	 $('#cache').click(function(e){
-	   $('body').removeClass('sidebar');
-	 });
-
-	 $('#exit').click(function(e){
-	   $('body').removeClass('sidebar');
-	 });
-       })(jQuery);
-
-      </script>
+	 
+	(function($){
+	$('#header_menu').click(function(e){
+	e.preventDefault();
+	$('body').toggleClass('sidebar');
+	});
+	
+	   $('#cache').click(function(e){
+	     $('body').removeClass('sidebar');
+	     $('.McButton').toggleClass("active");
+	     McButton.velocity("reverse");
+	     McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] }).velocity({ top: "100%" }, {duration: 200, easing: "swing"});
+	     McBar1.velocity("reverse", {delay: 800});
+	   });
+	
+	
+	})(jQuery);
+	
+	</script>
+	
   </body>
 </html>

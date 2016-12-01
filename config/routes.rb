@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get '/admin/show_commande' => 'add_cate#show_commande'
   post '/admin/check' => 'user#check'
   get '/admin/delog' => 'user#delog'
-  post '/commande/add' => 'sites#create'
+  post '/commande/add' => 'sites#create_wallt'
   post '/commande/payement/validate' => 'sites#validate'
   get '/commande/payement' => 'sites#payement'
   get '/send/mail/:id_client' => 'user#create'
@@ -59,9 +59,6 @@ Rails.application.routes.draw do
   get 'books/:id' => 'books#show'
 
   get 'Pages/:id' => 'sites#estimations'
-
-  post 'books' => 'books#create'
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

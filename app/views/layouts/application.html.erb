@@ -2,13 +2,13 @@
 <html lang="fr" >
   <head>
     <meta charset="utf-8">
-    <title>LEBOB - Trouver un dépanneur fiable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Fixrunners - Trouve un dépanneur fiable</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-
     <!--Header-->
       <header class="header">
         <div class="logo">
@@ -16,10 +16,10 @@
         </div>
         <div class="head">
           <a id="header_menu" class="McButton" data="hamburger-menu">
-	    <b></b>
-	    <b></b>
-	    <b></b>
-	  </a>
+        <b></b>
+        <b></b>
+        <b></b>
+      </a>
         </div>
         <nav class="menu">
         <div class="contain_menu">
@@ -43,68 +43,52 @@
             <%= link_to "F.A.Q", '#' %>
           </div>
         </div>
-
         </nav>
       </header>
-
-	<div class="cache" id="cache"></div>
-
-	<%= yield %>
-
-
-	<footer>
-	  <nav>
-	    <ul id= "footer">
-	      <li><%= link_to "MENTIONS LÉGALES", '#' %></li>
-	      <li><%= link_to "CONTACTS", '#' %></li>
-	      <li><%= link_to "À PROPOS", '#' %></li>
-	      <li><%= link_to "F.A.Q", '#' %></li>
-	      <li><%= link_to "BLOG", '#' %></li>
-
-	    </ul>
-	  </nav>
-	</footer>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
-
-	<script>
-	 var McButton = $("[data=hamburger-menu]");
-	 var McBar1 = McButton.find("b:nth-child(1)");
-	 var McBar2 = McButton.find("b:nth-child(2)");
-	 var McBar3 = McButton.find("b:nth-child(3)");
-	 
-	 McButton.click( function() {
-	   $(this).toggleClass("active");
-	   
-	   if (McButton.hasClass("active")) {
-	     McBar1.velocity({ top: "50%" }, {duration: 200, easing: "swing"});
-	     McBar3.velocity({ top: "50%" }, {duration: 200, easing: "swing"}).velocity({rotateZ:"90deg"}, {duration: 800, delay: 200, easing: [500,20] });
-	     McButton.velocity({rotateZ:"135deg"}, {duration: 800, delay: 200, easing: [500,20] });
-	   } else {
-	     McButton.velocity("reverse");
-	     McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] }).velocity({ top: "100%" }, {duration: 200, easing: "swing"});
-	     McBar1.velocity("reverse", {delay: 800});
-	   }
-	 });
-	 
-	(function($){
-	$('#header_menu').click(function(e){
-	e.preventDefault();
-	$('body').toggleClass('sidebar');
-	});
-	
-	   $('#cache').click(function(e){
-	     $('body').removeClass('sidebar');
-	     $('.McButton').toggleClass("active");
-	     McButton.velocity("reverse");
-	     McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] }).velocity({ top: "100%" }, {duration: 200, easing: "swing"});
-	     McBar1.velocity("reverse", {delay: 800});
-	   });
-	
-	
-	})(jQuery);
-	
-	</script>
-	
+    <div class="cache" id="cache"></div>
+    <%= yield %>
+    <footer>
+      <nav>
+        <ul id= "footer">
+          <li><%= link_to "MENTIONS LÉGALES", '#' %></li>
+          <li><%= link_to "CONTACTS", '#' %></li>
+          <li><%= link_to "À PROPOS", '#' %></li>
+          <li><%= link_to "F.A.Q", '#' %></li>
+          <li><%= link_to "BLOG", '#' %></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <script>
+     var McButton = $("[data=hamburger-menu]");
+     var McBar1 = McButton.find("b:nth-child(1)");
+     var McBar2 = McButton.find("b:nth-child(2)");
+     var McBar3 = McButton.find("b:nth-child(3)");
+     McButton.click( function() {
+       $(this).toggleClass("active");
+       if (McButton.hasClass("active")) {
+         McBar1.velocity({ top: "50%" }, {duration: 200, easing: "swing"});
+         McBar3.velocity({ top: "50%" }, {duration: 200, easing: "swing"}).velocity({rotateZ:"90deg"}, {duration: 800, delay: 200, easing: [500,20] });
+         McButton.velocity({rotateZ:"135deg"}, {duration: 800, delay: 200, easing: [500,20] });
+       } else {
+         McButton.velocity("reverse");
+         McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] }).velocity({ top: "100%" }, {duration: 200, easing: "swing"});
+         McBar1.velocity("reverse", {delay: 800});
+       }
+     });
+    (function($){
+    $('#header_menu').click(function(e){
+    e.preventDefault();
+    $('body').toggleClass('sidebar');
+    });
+       $('#cache').click(function(e){
+         $('body').removeClass('sidebar');
+         $('.McButton').toggleClass("active");
+         McButton.velocity("reverse");
+         McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] }).velocity({ top: "100%" }, {duration: 200, easing: "swing"});
+         McBar1.velocity("reverse", {delay: 800});
+       });
+    })(jQuery);
+    </script>
   </body>
 </html>

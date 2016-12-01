@@ -1,8 +1,16 @@
-
 <section id="pay">
+  <div type="hidden" id="error_msg" style="display:none"><%= flash[:test]%></div>
+
+  <script type="text/javascript">
+    var err = document.getElementById("error_msg");
+
+  if (err.textContent.length > 0)
+    alert(err.textContent);
+
+  </script>
 <div class='container'>
   <div class='infopay'>
-    <h1><%=@products.title%></h1>
+    <h1 id="title_pay_com"><%=@products.title%></h1>
     <span></span>
   </div>
   <%= form_tag "/commande/payement/validate", :class => 'modal', method: "post" do%>
@@ -47,7 +55,7 @@
       <input type="submit" class='button' value="Payer" onclick="create_date()"></input>
     </div>
   <%end%>
-</div>  
+</div>
 </section>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
@@ -67,7 +75,7 @@ function cardtype(type) {
 function create_date() {
   var full_date = document.getElementById('dead');
   var table = full_date.value.split("-");
-  document.getElementById("month").value = table[1];  
-  document.getElementById("year").value = table[0];  
+  document.getElementById("month").value = table[1];
+  document.getElementById("year").value = table[0];
 }
 </script>

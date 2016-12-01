@@ -1,5 +1,20 @@
 module SampleEmailHelper
 
+  def get_code(id)
+    @user = Info.all
+    return (@user.find(id).code_p)
+  end
+
+  def get_addr(id)
+    @user = Info.all
+    return (@user.find(id).addresse)
+  end
+
+  def get_full_name(id)
+    @user = Info.all
+    return (@user.find(id).prenom + " " + @user.find(id).nom)
+  end
+
   def get_name(id)
     @user = Info.all
     return (@user.find(id).prenom)

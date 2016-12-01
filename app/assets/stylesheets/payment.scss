@@ -88,6 +88,20 @@
   padding: 30px;
   text-align: center;
 }
+@font-face {
+  font-family: 'CircularStd-Bold.otf';
+  src: font-url('CircularStd-Bold.otf')
+
+}
+#title_pay_com
+{
+  font-size: 1.8em;
+  font-family: 'CircularStd-Bold.otf', arial;
+  color: #606060;
+  letter-spacing: - 1px;
+  font-weight: 600;
+}
+
 .modal .header_pay h1 {
   margin: 0 0 15px;
   color: #ffffff;
@@ -165,7 +179,7 @@
 .modal .footer .button {
   outline: none;
   display: block;
-  background: #ffcc66;
+  background: #ff9900;
   width: 100%;
   border: 0;
   padding: 20px 30px;
@@ -199,7 +213,7 @@
   color: #00a6ea;
 }
 lesshat-selector {
-  -lh-property: 0; } 
+  -lh-property: 0; }
 @-webkit-keyframes active{ 0%{ bottom: -60px; opacity: 0; } 100%{ bottom: -30px; opacity: 1 }}
 @-moz-keyframes active{ 0%{ bottom: -60px; opacity: 0; } 100%{ bottom: -30px; opacity: 1 }}
 @-o-keyframes active{ 0%{ bottom: -60px; opacity: 0; } 100%{ bottom: -30px; opacity: 1 }}

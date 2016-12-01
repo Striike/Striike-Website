@@ -35,9 +35,22 @@ ActiveRecord::Schema.define(version: 20161116121212) do
   end
 
   create_table "pros", force: :cascade do |t|
+    t.string  "nom"
+    t.string  "prenom"
+    t.string  "entreprise"
+    t.string  "addresse"
+    t.string  "cate"
+    t.string  "telephone"
+    t.text    "entre_addr"
+    t.integer "CIRET"
+    t.string  "mail"
+    t.string  "photo"
   end
 
+  add_index "pros", ["id"], name: "sqlite_autoindex_pros_1", unique: true
+
   create_table "sites", force: :cascade do |t|
+    t.string   "link"
     t.string   "title"
     t.string   "image"
     t.integer  "min_price"

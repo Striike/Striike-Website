@@ -1,16 +1,11 @@
-
 <!--Le Bandeau-->
             <section id="bandeau">
-                <h1>TROUVER UN DEPANNEUR FIABLE <br/> EST ENFIN DEVENU SIMPLE</h1>
+                <h1>Trouve rapidement un dépanneur fiable. </h1>
                 <div class="bandeau"><%= image_tag "Homepage.jpg", alt: "Homepage", title: "homepage" %> </div>
                 <div class="bandeau-light"><%= image_tag "Homepage-light.jpg", alt: "Homepage-light", title: "Homepage-light" %> </div>
+                <div class="bandeau-mobile"><%= image_tag "Homepage-mobile.jpg", alt: "Homepage-mobile", title: "Homepage-mobile" %> </div>
                 <div class="search"><%= link_to "TROUVER UN DÉPANNEUR", 'portail' %></div>
             </section>
-
-
-
-
-
 <!--Les Etapes-->
             <section id="etape123">
                 <h2>Comment ça marche</h2>
@@ -32,30 +27,23 @@
                     </li>
                 </ol>
             </section>
-
-
-
-
-
 <!--Les dirigeants-->
-			<script>
-			function resize()
-			{
-				var img = document.getElementsByClassName("img2")
-				var i = 0
-				var ratio;
-
-				while (i < img.length)
-				{
-					ratio = 190 * window.innerWidth / 1920;
-					if (ratio > 120)
-					{
-						img[i].style.height = ratio + "px";
-						img[i].style.width = ratio + "px";
-					}
-					i = i + 1;
-				}
-
-			}
-				window.onresize = resize
-			</script>
+            <script>
+            function resize()
+            {
+                var img = document.getElementsByClassName("img2")
+                var i = 0
+                var ratio;
+                while (i < img.length)
+                {
+                    ratio = 190 * window.innerWidth / 1920;
+                    if (ratio > 120)
+                    {
+                        img[i].style.height = ratio + "px";
+                        img[i].style.width = ratio + "px";
+                    }
+                    i = i + 1;
+                }
+            }
+                window.onresize = resize
+            </script>

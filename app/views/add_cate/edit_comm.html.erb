@@ -1,4 +1,13 @@
 <section id="login">
+  <div type="hidden" id="error_msg" style="display:none"><%= flash[:test]%></div>
+
+  <script type="text/javascript">
+    var err = document.getElementById("error_msg");
+
+  if (err.textContent.length > 0)
+    alert(err.textContent);
+
+  </script>
 <h2> Modifier la commande</h2>
 <% if Info.find(params[:id]).state == "Nouveau"%>
   <%= form_tag "/admin/commande/update/#{params[:id]}", method: "patch" do %>

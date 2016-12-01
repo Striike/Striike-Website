@@ -1,0 +1,2238 @@
+
+---
+categories:
+  columns:
+  - id
+  - name
+  - sub_id
+  records: 
+  - - 1
+    - 
+    - 
+  - - 2
+    - VITRERIE
+    - 1
+  - - 5
+    - CHAUFFAGE
+    - 1
+  - - 8
+    - PLOMBERIE
+    - 1
+  - - 9
+    - SERRURERIE
+    - 1
+  - - 10
+    - Vitre cassée
+    - 2
+  - - 11
+    - ÉLECTRICITÉ
+    - 1
+  - - 14
+    - Toilettes
+    - 8
+  - - 15
+    - Chaudière ou Chauffe-eau
+    - 50
+  - - 16
+    - Lavabo ou Evier
+    - 8
+  - - 17
+    - Canalisation (autre que WC, douche, évier)
+    - 8
+  - - 19
+    - Douche ou Baignoire
+    - 8
+  - - 20
+    - Toilettes bouchées
+    - 14
+  - - 21
+    - Problème de fuite
+    - 14
+  - - 23
+    - Fuite WC simples
+    - 21
+  - - 24
+    - Près du tuyau de sortie
+    - 23
+  - - 26
+    - Dysfonctionnement au niveau de la chasse d'eau
+    - 14
+  - - 27
+    - WC simples
+    - 26
+  - - 28
+    - WC suspendus
+    - 26
+  - - 29
+    - Du ballon d'eau chaude
+    - 15
+  - - 30
+    - Mon ballon d'eau chaude ne fonctionne plus
+    - 29
+  - - 31
+    - Le disjoncteur ne saute pas
+    - 30
+  - - 33
+    - De la chaudière
+    - 15
+  - - 34
+    - D'un radiateur
+    - 15
+  - - 36
+    - Mon évier fuit
+    - 16
+  - - 39
+    - Du siphon
+    - 36
+  - - 40
+    - Autre
+    - 16
+  - - 41
+    - Ma douche fuit
+    - 19
+  - - 42
+    - Ma baignoire fuit
+    - 19
+  - - 43
+    - J'ai besoin d'ouvrir ma porte
+    - 9
+  - - 44
+    - Porte simple
+    - 43
+  - - 45
+    - Porte blindée
+    - 43
+  - - 46
+    - Je veux changer de serrure
+    - 9
+  - - 47
+    - Lumière
+    - 11
+  - - 48
+    - Prises
+    - 11
+  - - 49
+    - Prises électriques
+    - 48
+  - - 50
+    - CHAUFFAGE/PLOMBERIE
+    - 1
+  - - 51
+    - CHAUFFAGE/ÉLECTRICITÉ
+    - 1
+
+---
+infos:
+  columns:
+  - id
+  - prenom
+  - nom
+  - mail
+  - tel
+  - addresse
+  - code_p
+  - inter_digi
+  - code_promo
+  - promo
+  - id_prod
+  - state
+  - total
+  - id_pro
+  records: 
+  - - 2
+    - Jerome
+    - LeMongolo
+    - lemongolo@jerome.com
+    - '0123456789'
+    - 8 rue de la vie
+    - '12000'
+    - ''
+    - 
+    - 
+    - 23
+    - Nouveau
+    - 13
+    - 0
+  - - 3
+    - Kenny
+    - S
+    - kenny_s@popopo.fr
+    - '0123456789'
+    - wololo
+    - '78452'
+    - ''
+    - 
+    - 
+    - 77
+    - En cours
+    - 24
+    - 2
+  - - 5
+    - haha
+    - hoho
+    - pere@zera.fr
+    - '1234567890'
+    - letoto
+    - '12345'
+    - '23'
+    - 
+    - 
+    - 80
+    - Terminé
+    - 300
+    - 2
+  - - 20
+    - Ugo
+    - Dupont
+    - ugo@hml.com
+    - '1234567890'
+    - 2 boulevard Orloff
+    - '77300'
+    - ''
+    - 
+    - 
+    - 23
+    - Nouveau
+    - 
+    - 
+  - - 21
+    - Ugo
+    - pereira
+    - ugo@hml.com
+    - '0987654321'
+    - 2 boulevard Orloff
+    - '77300'
+    - ''
+    - 
+    - 
+    - 23
+    - Nouveau
+    - 
+    - 
+  - - 22
+    - Ugo
+    - pereira
+    - ugo@hml.com
+    - '0987654321'
+    - 2 boulevard Orloff
+    - '77300'
+    - ''
+    - 
+    - 
+    - 23
+    - En cours
+    - 
+    - 1
+  - - 23
+    - Ugro
+    - pereirat
+    - ugo@hml.com
+    - '0987654321'
+    - 2 boulevard Orloff
+    - '77300'
+    - ''
+    - 
+    - 
+    - 23
+    - En cours
+    - 
+    - 2
+  - - 24
+    - Ugro
+    - Lepasbeau
+    - ugro@hml.com
+    - '0666666666'
+    - 2 bd ta mere la pas belle
+    - '77300'
+    - ''
+    - 
+    - 
+    - 23
+    - En cours
+    - 
+    - 1
+  - - 25
+    - Toto
+    - Dupont
+    - dupont@toto.fr
+    - '1234567890'
+    - azeroth
+    - '12345'
+    - '12'
+    - 
+    - 
+    - 23
+    - En cours
+    - 
+    - 1
+  - - 26
+    - Plop
+    - Nuit
+    - plopnight@lanuit.com
+    - '0123456789'
+    - 5 rue Mongolo
+    - '75014'
+    - ''
+    - 
+    - 
+    - 89
+    - Nouveau
+    - 
+    - 
+  - - 27
+    - uefzhsd
+    - fsejidclc
+    - uiefhsdjui@free.fr
+    - '1234567890'
+    - 5 rue Mongolo
+    - '23456'
+    - ''
+    - 
+    - 
+    - 89
+    - Nouveau
+    - 
+    - 
+
+---
+pros:
+  columns:
+  - id
+  - nom
+  - prenom
+  - entreprise
+  - addresse
+  - cate
+  - telephone
+  - entre_addr
+  - CIRET
+  - mail
+  - photo
+  records: 
+  - - 1
+    - Jean
+    - dupont
+    - ZERA
+    - 'Azeroth
+
+'
+    - chauffage
+    - '0667894532'
+    - 64, rue Lenotre 35200 RENNES
+    - 3456
+    - 
+    - art4.jpg
+  - - 2
+    - Todd
+    - 'Miller
+
+'
+    - 'Turtle''s Records & Tapes
+
+'
+    - '3 Cunningham Court
+
+'
+    - SERRURERIE
+    - '0765431234'
+    - 75, rue Charles Corbeau 09000 FOIX
+    - 5689
+    - 
+    - art1.jpg
+  - - 3
+    - Leroy
+    - Cline
+    - 'Future Bright
+
+'
+    - '43, rue de la République
+
+'
+    - ÉLECTRICITÉ
+    - '0654367123'
+    - 53, Rue Hubert de Lisle 34400 LUNEL
+    - 5682
+    - 
+    - art3.jpg
+  - - 4
+    - Thomas
+    - Cromer
+    - 'Custom Lawn Service
+
+'
+    - '79, rue des Dunes
+
+'
+    - VITRERIE
+    - '0198832488
+
+'
+    - 65, rue Michel Ange 76620 LE HAVRE
+    - 7098
+    - 
+    - art2.jpg
+
+---
+sites:
+  columns:
+  - id
+  - link
+  - title
+  - image
+  - min_price
+  - max_price
+  - time
+  - def
+  - created_at
+  - updated_at
+  - category_id
+  records: 
+  - - 23
+    - Simple vitrage
+    - MON SIMPLE VITRAGE EST CASSÉ
+    - simplevitrage.jpg
+    - 150
+    - 300
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Chose à savoir sur les simples vitrages cassés</h4>
+
+      <p>Il est important de ne pas sous-estimer le tranchant d’une vitre brisée. Evites donc de toucher les bris de verre avec tes doigts. Il est recommandé de ramasser les bouts de verres qui sont tombés par terre avec une pelle et une balayette, et de les placer dans un sac poubelle résistant.
+
+      Penses aussi à appeler ton assurance, il y’a de fortes chances pour qu’elle rembourse une partie des réparations.
+
+      &nbsp;
+
+      Comment va se passer l’intervention ?
+
+      Le vitrier va prendre des mesures précises de ton vitrage : hauteur, largeur et épaisseur.
+
+      Il faut que la vitre soit aux dimensions exactes de ta fenêtre, pour qu’elle s’encastre parfaitement dans son support. Le vitrier va aussi identifier le type de verre utilisé, il pourra alors commander le même.
+
+      La commande sera prête dans les 24h, et le vitrier reviendra pour l’installer le plus vite possible.
+
+      Le prix indiqué à droite comprend la nouvelle vitre standard et la pose de cette dernière.</p>
+    - '2016-11-08 14:11:41.423090'
+    - '2016-11-08 14:49:58.642819'
+    - 10
+  - - 24
+    - Double vitrage
+    - MON DOUBLE VITRAGE EST CASSÉ
+    - double-vitre-cassee.jpg
+    - 250
+    - 500
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Que faire quand mon double vitrage est cassé ?</h4>
+
+      <p>Il est important de ne pas sous-estimer le tranchant d’une vitre brisée. Evites donc de toucher les bris de verre avec tes doigts. Il est recommandé de ramasser les bouts de verres qui sont tombés par terre avec une pelle et une balayette, et de les placer dans un sac poubelle résistant.
+
+      Penses aussi à appeler ton assurance, il y a de fortes chances pour qu’elle rembourse une partie des réparations.
+
+      &nbsp;
+
+      Comment va se passer l’intervention ?
+
+      Le vitrier va prendre des mesures précises de ton double vitrage : hauteur, largeur et épaisseur.
+
+      Il faut que la vitre soit aux dimensions exactes de ta fenêtre pour qu’elle s’encastre parfaitement dans son support. Le vitrier va aussi identifier le type de verre utilisé, il pourra alors commander le même.
+
+      La commande sera prête dans les 48h, et le vitrier reviendra pour l’installer le plus vite possible.
+
+      Le prix indiqué à droite comprend la vitre double vitrage standard et la pose de cette dernière.</p>
+    - '2016-11-08 16:10:18.830107'
+    - '2016-11-08 16:10:18.830107'
+    - 10
+  - - 25
+    - Problème avec le velux
+    - PROBLÈME AVEC UN VELUX
+    - velux.jpg
+    - 200
+    - 500
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <h4>Que faire quand on a un problème avec un velux ?</h4>
+
+      <p>Il est important de ne pas sous-estimer le tranchant d’une vitre brisée. Evites donc de toucher les bris de verre avec tes doigts. Il est recommandé de ramasser les bouts de verres qui sont tombés par terre avec une pelle et une balayette, et de les placer dans un sac poubelle résistant.
+
+      Si le velux est fêlé, il est conseillé de ne pas y toucher ! Il risquerait de te tomber sur la tête.
+
+      Penses aussi à appeler ton assurance, il y a de fortes chances pour qu’elle rembourse une partie des réparations.
+
+      Notre vitrier va vérifier le type de ton velux ainsi que le vitrage qu’il faut remplacer. Après avoir commandé et reçu ton nouveau vitrage, il viendra l’installer le plus rapidement possible.
+
+      Si ton velux est placé très en hauteur, cela risque de compliquer la tache du professionnel. Malheureusement nos vitriers ne sont pas encore de très bons acrobates (on y travaille).</p>
+    - '2016-11-08 16:16:59.617233'
+    - '2016-11-08 16:16:59.617233'
+    - 2
+  - - 26
+    - Poignée de fenêtre cassée
+    - MA POIGNÉE DE FENETRE EST CASSÉE
+    - poignee.jpg
+    - 150
+    - 250
+    - ENTRE 1 & 2 HEURES
+    - |+
+      <h4>Que faire quand ta poignée de fenêtre est cassée ?</h4>
+
+      <p>C’est une intervention qui est simple, surtout si tu as une poignée standard. Mais si ta poignée est ancienne, voir très ancienne, le vitrier devra surement trouver un substitut.
+
+      Notre vitrier, va démonter ta poignée et la remplacer par une nouvelle. Tout cela est compris dans le prix affiché à droite.</p>
+
+    - '2016-11-08 16:26:08.293430'
+    - '2016-11-08 16:26:08.293430'
+    - 2
+  - - 27
+    - Tuyaux de machine à laver ou de lave-vaisselle
+    - LE TUYAU DE VOTRE LAVE-LINGE/LAVE-VAISSELLE FUIT
+    - fuite-machine.jpg
+    - 120
+    - 150
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque son électroménager fuit</h4>
+
+      <p>Attention ! Si le problème vient directement de la machine, nous ne pourrons rien y faire. Il faudra te tourner vers un vendeur d’électroménager (si tu es encore assuré, n’hésites pas à te faire rembourser ou échanger ta machine)
+
+      Si le problème vient de la tuyauterie derrière, alors cela rentre dans notre domaine d’activité. C’est un problème classique en plomberie et nos professionnels te répareront cela en moins de 2 heures.
+
+      Le problème peut venir de différents endroits :
+      - Du raccord
+      - De l’écrou
+      - Du tuyau de vidange
+      - De l’embout d’alimentation
+      - Du joint
+      - Ou du tuyau d’alimentation (qu’il faudrait alors remplacer)
+
+      Notre plombier identifiera le problème et te fera un devis plus précis sur place.</p>
+    - '2016-11-08 16:43:06.065354'
+    - '2016-11-08 16:43:06.065354'
+    - 8
+  - - 28
+    - Colonne générale d'immeuble (tout est bouché)
+    - LA COLONNE GÉNÉRALE DE L'IMMEUBLE EST BOUCHÉE
+    - colonne-gen.jpg
+    - 700
+    - 900
+    - ENTRE 3 & 5 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque la colonne générale de l'immeuble est bouchée</h4>
+
+      <p>Il se peut qu’un appareil sanitaire soit bouché chez toi et que malgré l’utilisation d'une ventouse ou d’un furet, le problème persiste. Il y a alors de fortes chances pour que ce soit la colonne générale qui soit bouchée.
+
+      Il faudra alors faire appel à un camion hydrocureur qui va tout déboucher avec un jet à très haute pression.
+
+      Notre plombier te fera un devis sur place concernant le débouchage exact à effectuer.</p>
+    - '2016-11-08 16:47:23.790278'
+    - '2016-11-08 16:47:23.790278'
+    - 8
+  - - 29
+    - Autre
+    - PROBLEME DE PLOMBERIE INCONNU
+    - pb-plomb.jpg
+    - 200
+    - 500
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque l'on ne sait pas d'où vient son problème</h4>
+
+      <p>Rassures-toi, nous avons à notre disposition une armée de plombiers qui ont l’habitude de trouver les fuites.
+
+      Voici ce qui te reste à faire :
+      1 - Essayes de mettre un maximum d’informations dans le champ ci-dessous.
+      2 – Commandes un plombier
+
+      Il viendra te faire un devis gratuitement.
+
+      N’hésites pas à nous appeler si tu as besoin de renseignements.</p>
+    - '2016-11-08 16:53:46.399932'
+    - '2016-11-08 16:53:46.399932'
+    - 8
+  - - 30
+    - Changement de toilettes
+    - JE VEUX CHANGER DE WC
+    - change-wc.jpg
+    - 350
+    - 600
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur le changement de WC</h4>
+
+      <p>Quand tu changes de WC, il y a plusieurs de critères à prendre en compte :
+
+      - Quelle marque choisir ?
+
+      - WC simples ou encastrés ?
+
+      - Avec ou sans sanibroyeur ?
+
+      Nous t’offrons une pré-visite gratuite pour te conseiller sur ton choix.
+
+      Une fois que tu auras fait ton choix et que l’artisan aura commandé et reçu le matériel, il viendra t’installer ton tout nouvel équipement.
+
+      Son intervention comprend :
+
+      - L’enlèvement et l’évacuation de tes anciens WC
+
+      - La pose complète des nouveaux WC
+
+      Il est conseillé de prendre des WC simples, ils sont plus faciles à réparer en cas de problèmes.
+
+      Dernier point, si tu prends des WC dont le type est différent de ce que tu avais, le devis sera plus cher, car il faudra installer une nouvelle tuyauterie derrière.
+
+      Mais nos plombiers sont aussi là pour te conseiller dans ton choix, alors n’hésites pas à leur poser des questions.
+      </p>
+    - '2016-11-08 17:54:30.544141'
+    - '2016-11-08 17:54:30.544141'
+    - 14
+  - - 31
+    - WC broyeurs
+    - MES WC BROYEURS SONT BOUCHÉS
+    - wc-sani-bouchee.jpg
+    - 150
+    - 250
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur le débouchage de WC broyeurs</h4>
+
+      <p>L’engorgement des WC de type broyeur est classique en plomberie. Il est déconseillé d’utiliser des produits chimiques pour déboucher tes toilettes. Cela ne fonctionne pas, tu pourrais même avoir des surprises.
+
+      Il peut y avoir plusieurs raisons à l’origine de ce problème :
+
+      - L’accumulation de papier au fond du trou
+
+      - L’accumulation de déchets biologiques
+
+      - La chute du bloc antitartre au fond de la cuvette
+
+      Conséquence, ta "grosse commission" risque de flotter dans la cuvette tant que le problème ne sera pas réglé. Le broyeur peut aussi être bruyant, dans ce cas, débranches la prise en attendant le plombier.
+
+      A moins d’avoir des connaissances en plomberie, nous te déconseillons de te lancer seul dans les réparations.
+
+      Il y a deux cas de figures possibles :
+
+      - Les WC sont simplement bouchés, une simple opération de dégorgement suffira. Le plombier mettra 1 à 2 heures pour s’en occuper.
+
+      - Le moteur du broyeur est en panne, il faudra dans ce cas remplacer la pièce. Le temps et le prix de l’intervention seront à voir directement avec le professionnel.
+
+      Notre professionnel te fera de toute façon un devis plus précis sur place.</p>
+    - '2016-11-08 18:00:10.598689'
+    - '2016-11-08 18:01:50.988508'
+    - 20
+  - - 32
+    - WC simples
+    - DEBOUCHAGE DE WC SIMPLES
+    - wc-bouchee.jpg
+    - 100
+    - 180
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur le débouchage de WC</h4>
+
+      <p>L’engorgement des WC est classique en plomberie. Il est déconseillé d’utiliser des produits chimiques pour déboucher tes toilettes. Cela ne fonctionne pas, tu pourrais même avoir des surprises.</p>
+
+      <p>Il peut y avoir plusieurs raisons à l’origine de ce problème :</p>
+
+      <p>- L’accumulation de papier au fond du trou</p>
+
+      <p>- L’accumulation de déchets biologiques</p>
+
+      <p>- La chute du bloc antitartre au fond de la cuvette</p>
+
+      <p>Conséquence, ton "étron" risque de flotter au fond de la cuvette tant que tu n'auras pas réglé le problème. A moins d’avoir des connaissances en plomberie, nous te déconseillons de te lancer seul dans les réparations.</p>
+
+      <p>Tes WC sont simplement bouchés, une simple opération de dégorgement suffira. Le plombier mettra 1 à 2 heures pour s’en occuper.</p>
+
+      &nbsp;
+
+      *Citation : "Il reparut ensuite, suivi lentement et majestueusement par le reste du saucisson qui constituait un des plus beaux étrons qu’un gros intestin eût jamais produit."— (Guillaume Apollinaire, Les Onze Mille Verges)
+    - '2016-11-08 18:03:17.483572'
+    - '2016-11-08 18:47:52.632287'
+    - 20
+  - - 33
+    - Fuite WC suspendus
+    - MES WC SUSPENDUS FUIENT MYSTÈRIEUSEMENT
+    - fuite-wc-susp.jpg
+    - 150
+    - 250
+    - ENTRE 2 & 4 HEURES
+    - "<h4>Ce qu'il y a à savoir sur les WC suspendus qui fuient</h4><p>Tu sais que
+      tes WC fuient mais tu ne trouves pas l’origine de la fuite. D’ailleurs c’est
+      sûrement ton voisin qui est venu se plaindre qu’il pleuvait dans son appartement
+      et que tu en étais le responsable.</p><p>La fuite peut avoir différentes origines
+      :</p><p>- La chasse d’eau</p><p>- La cuvette</p><p>- Le réservoir</p><p>- Un
+      joint quelconque</p><p>Et comme tes WC suspendus sont encastrés dans le mur,
+      il est difficile pour toi de trouver d’où vient la fuite.</p><p>Dans ce cas,
+      il est plus sage de faire appel à un plombier.</p><p>Si tes WC ont une trappe
+      d’accès, cela peut aider.</p><p>Si ce n’est pas le cas, il faudra malheureusement
+      faire un trou dans le mur. Ce sera plus long, plus cher et demandera des compétences
+      de maçon pour refaire le mur ou une trappe d’accès (ce qui serait plus judicieux).</p><p>S’il
+      n’y a pas de trappe d’accès, le plombier devra refaire un devis en fonction
+      de la situation. Puisqu’il faut qu’il soit sur place pour mesurer l’étendue
+      des travaux à réaliser.</p>"
+    - '2016-11-08 18:08:04.659010'
+    - '2016-11-10 10:45:33.308246'
+    - 21
+  - - 34
+    - Près du robinet d'arrêt
+    - LE ROBINET D'ARRET DE MES WC FUIT
+    - fuite-wc.jpg
+    - 90
+    - 150
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque le robinet d'arrêt fuit</h4>
+
+      <p>La fuite du robinet d’arrêt est un cas classique en plomberie.
+      Il y a deux cas de figure :
+      - Le joint est fatigué, il faut le changer
+      - Le robinet est usé, il faut le remplacer
+
+      Il existe plusieurs types de robinets, avec des diamètres différents.
+
+      Rassures-toi, nos plombiers ont l’habitude et régleront l’affaire en moins d’une heure.Il est préférable de rapidement prendre en charge ce type de fuite, car elles ont une fâcheuse tendance à augmenter ta consommation d’eau. Et qui sait, peut-être de transformer ton appartement en piscine.</p>
+    - '2016-11-08 18:37:37.062504'
+    - '2016-11-10 10:43:28.402692'
+    - 23
+  - - 35
+    - Entre la cuvette et le réservoir
+    - FUITE ENTRE LA CUVETTE ET LE RÉSERVOIR DES WC
+    - fuite-wc.jpg
+    - 100
+    - 200
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur la fixation d'une fuite entre la cuvette et le réservoir des WC</h4>
+
+      <p>La fuite entre le réservoir et la cuvette peut se produire quand tu tires la chasse d’eau.
+
+      Il peut y avoir plusieurs raisons à cette fuite :
+
+      - Le joint d’étanchéité usé
+
+      - L’eau dans ta cuvette se condense
+
+      Dans les deux cas, notre plombier va démonter le réservoir. Pour cela il va le vider, retirer la cuve, et retirer le joint en mousse.</p>
+    - '2016-11-08 18:40:08.478533'
+    - '2016-11-10 10:46:02.081774'
+    - 23
+  - - 36
+    - WC broyeurs
+    - LA PIPE DE SORTIE DE MES WC BROYEURS FUIT
+    - fuite-wc-sani.jpg
+    - 130
+    - 200
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur la réparation de la pipe de sortie</h4>
+
+      <p>Réparer une fuite pour un WC broyeur est une opération qui est souvent délicate.
+
+      La fuite peut provenir du tuyau qui est replié sur lui même. Mais ce n’est pas toujours le cas et c’est une des raisons pour laquelle l’opération requiert l’avis d’un professionnel.
+
+      Ou ton broyeur t’a peut-être lâché. Et il faudra alors le remplacer. Mais si c’est le cas nous te rappellerons pour t’aider à prendre la meilleure décision. Le remplacement d’un broyeur coûte cher, ce n’est donc pas une situation à prendre à la légère.</p>
+    - '2016-11-08 18:45:11.888531'
+    - '2016-11-10 10:36:50.087577'
+    - 24
+  - - 37
+    - WC simples
+    - LA PIPE DE SORTIE DE MES WC SIMPLES FUIT
+    - fuite-wc.jpg
+    - 100
+    - 200
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur ce type de fuite</h4>
+
+      <p>Réparer une fuite pour des WC simples est une opération qui est souvent facile.
+
+      La fuite peut provenir du tuyau qui est replié sur lui-même. Mais ce n’est pas toujours le cas et c’est une des raisons pour laquelle l’opération requiert l’avis d’un professionnel.
+
+      Dans tous les cas, n'aie pas d'inquiétude, nos plombiers sauront remédier à ton problème !</p>
+    - '2016-11-08 18:47:21.389853'
+    - '2016-11-08 18:47:21.389853'
+    - 24
+  - - 38
+    - Au niveau du socle
+    - MES WC SONT MAL FIXÉS
+    - fuite-wc.jpg
+    - 150
+    - 200
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Choses à savoir sur les WC mal fixés</h4>
+
+      <p>Il suffit que tes WC ne soient pas bien fixés au sol pour que tu ais l’impression de t’assoir sur une chaise bancale. En plus cela peut provoquer des fuites d’eau, notamment au niveau de l'évacuation.
+
+      La solution consiste à enlever les WC pour lisser le sol et ensuite les reposer avec soin. C’est à dire qu’ils seront solidement fixés au sol et étanches.
+
+      Notre plombier te fera un devis plus précis une fois sur place.
+
+      Vérifies bien, des clientes ont déjà fait appel à nous pour une fuite. Alors que le problème venait d'un manque de précision de la part de leur conjoint.</p>
+    - '2016-11-08 18:51:02.050167'
+    - '2016-11-10 10:46:24.702226'
+    - 23
+  - - 39
+    - Je ne vois pas
+    - 'WC SIMPLES : FUITE D''ORIGINE INCONNUE'
+    - fuite-wc.jpg
+    - 100
+    - 200
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir pour recherche et réparation d'une fuite pour un WC simple</h4>
+
+      <p> Tes toilettes fuient mais tu n’arrives pas à localiser l’origine du problème ? C’est ton voisin du dessous qui est venu se plaindre d’une fuite ?
+
+      C’est un cas très classique en plomberie.
+
+      N’hésites pas à appeler ton assurance pour leur signaler le problème. Ils te demanderont alors d’appeler un plombier.
+
+      Des plombiers nous en avons à foison, ils ont l’habitude de réparer les fuites. En règle générale, l’intervention se fait rapidement et sans casse.
+
+      &nbsp;
+
+      La fuite peut provenir de plusieurs endroits :
+
+      - Chasse d’eau
+
+      - Réservoir
+
+      - Cuvette
+
+      - Robinet
+
+      - Joints d’étanchéité
+
+      Conclusion, nos plombiers ont l’habitude de trouver les fuites et de les réparer.
+
+      Cela prendra entre 1 heure et 3 heures pour localiser la fuite et la colmater. </p>
+    - '2016-11-08 18:53:16.191637'
+    - '2016-11-10 10:46:40.665648'
+    - 23
+  - - 40
+    - La chasse d'eau est en panne
+    - MA CHASSE D'EAU EST EN PANNE  (WC SIMPLES)
+    - chasse-eau-cassee.jpg
+    - 90
+    - 150
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur la réparation de chasse d'eau</h4>
+
+      <p>Ta chasse d’eau a un dysfonctionnement :
+
+      - L’eau s’écoule en permanence dans la cuvette
+
+      - Le réservoir ne parvient plus à se remplir
+
+      - La chasse d’eau fuit
+
+      La panne peut être due au mécanisme de la chasse, au robinet, aux joints ou aux flexibles. Si le mécanisme n’est pas défectueux, c’est probablement dû à un dépôt de calcaire.
+
+      Une réparation est toujours faisable. Il est cependant possible que l’intervenant te demande de changer l’ensemble du mécanisme de la chasse d’eau.</p>
+    - '2016-11-08 18:58:02.149976'
+    - '2016-11-09 08:56:26.063516'
+    - 27
+  - - 41
+    - L'eau coule dans la cuvette sans arrêt
+    - 'WC SIMPLES: L''EAU COULE SANS ARRET DANS LA CUVETTE'
+    - probleme-reservoir.jpg
+    - 90
+    - 150
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque sa chasse d'eau dysfonctionne</h4>
+
+      <p>Ta chasse d’eau a un dysfonctionnement :
+      - L’eau s’écoule en permanence dans la cuvette
+      - Le réservoir ne parvient plus à se remplir
+      - La chasse d’eau fuit
+
+      La panne peut être due au mécanisme de la chasse, au robinet flotteur, aux joints ou aux flexibles. Si le mécanisme n’est pas défectueux, c’est probablement dû à un dépôt de calcaire. L’origine de la panne est systématiquement plus complexe a établir que pour des WC classiques.
+
+      Une réparation est toujours faisable. Il est cependant possible que l’intervenant te demande de changer l’ensemble du mécanisme de la chasse d’eau.
+
+      Le type de réparation ainsi que la durée d’intervention seront confirmées par le professionnel après analyse de la panne.</p>
+    - '2016-11-09 08:59:43.696493'
+    - '2016-11-09 08:59:43.696493'
+    - 27
+  - - 42
+    - Problème avec le réservoir d'eau
+    - 'WC SIMPLES: PROBLEME AVEC LE RESERVOIR D''EAU'
+    - probleme-reservoir.jpg
+    - 90
+    - 150
+    - ENTRE 1 & 2 HEURES
+    - |+
+      <h4>Ce qu'il y a à savoir lorsque son réservoir d'eau dysfonctionne</h4>
+
+      <p>Si tu rencontres un problème avec ton réservoir d'eau, alors il se peut que cela soit dû au mécanisme de la chasse d'eau qui sert à le remplir jusqu'à un certain seuil. En cas de mauvaise fixation, l'eau peut ne jamais s'arrêter d'entrer et ainsi faire couler l'eau dans la cuvette continuellement.
+
+      Comment notre professionnel effectuera la réparation ?
+
+      En intervenant, notre professionnel vérifiera l'état du réservoir pour voir si le problème vient bien de celui-ci. Le cas échéant, il effectuera les travaux prévus dans le devis initial. Dans le cas contraire, il te le signalera et te demandera ton accord pour un nouveau devis qu'il réalisera.</p>
+
+    - '2016-11-09 09:02:38.286342'
+    - '2016-11-09 09:02:38.286342'
+    - 27
+  - - 43
+    - La chasse d'eau est en panne
+    - MA CHASSE D'EAU EST EN PANNE  (WC SUSPENDUS)
+    - suspendus-coule.jpg
+    - 120
+    - 200
+    - ENTRE 2 & 3 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur la réparation de chasse d'eau d'un WC suspendu</h4>
+
+      <p>Ta chasse d’eau a un dysfonctionnement :
+
+      - L’eau s’écoule en permanence dans la cuvette
+
+      - Le réservoir ne parvient plus à se remplir
+
+      - La chasse d’eau fuit
+
+      &nbsp;
+
+      La panne peut être due au mécanisme de la chasse, au robinet flotteur, aux joints ou aux flexibles. Si le mécanisme n’est pas défectueux, c’est probablement dû à un dépôt de calcaire. L’origine de la panne est systématiquement plus complexe a établir que pour des WC classiques.
+
+      Une réparation est toujours faisable. Il est cependant possible que l’intervenant te demande de changer l’ensemble du mécanisme de la chasse d’eau.
+
+      Le type de réparation ainsi que la durée d’intervention seront confirmées par le professionnel après analyse de la panne. </p>
+    - '2016-11-09 09:06:45.172698'
+    - '2016-11-09 09:06:45.172698'
+    - 28
+  - - 44
+    - L'eau coule dans la cuvette sans arrêt
+    - 'WC SUSPENDUS: L''EAU COULE SANS ARRET'
+    - suspendus-coule.jpg
+    - 110
+    - 200
+    - ENTRE 2 & 3 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque sa chasse d'eau dysfonctionne</h4>
+
+      <p>Ta chasse d’eau a un dysfonctionnement :
+      - L’eau s’écoule en permanence dans la cuvette
+      - Le réservoir ne parvient plus à se remplir
+      - La chasse d’eau fuit
+
+      La panne peut être due au mécanisme de la chasse, au robinet flotteur, aux joints ou aux flexibles. Si le mécanisme n’est pas défectueux, c’est probablement dû à un dépôt de calcaire. L’origine de la panne est systématiquement plus complexe a établir que pour des WC classiques.
+
+      Une réparation est toujours faisable. Il est cependant possible que l’intervenant te demande de changer l’ensemble du mécanisme de la chasse d’eau.
+
+      Le type de réparation ainsi que la durée d’intervention seront confirmées par le professionnel après analyse de la panne.</p>
+    - '2016-11-09 09:08:36.493569'
+    - '2016-11-09 09:08:49.772949'
+    - 28
+  - - 45
+    - Mon ballon d'eau chaude fuit
+    - MON BALLON D'EAU CHAUDE FUIT
+    - ballon-eau-fuite.jpg
+    - 150
+    - 300
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque l'on veut réparer son ballon d'eau chaude</h4>
+
+      <p> Votre ballon d’eau chaude est en panne ou fuit?
+
+      Sachez que cela peut être dû à plusieurs raisons :
+      -Résistances endommagées
+      -Thermostat endommagé
+      -Groupe de sécurité endommagé
+      -Joints endommagés
+
+      Comment se déroulera l’intervention ?
+
+      En arrivant sur place, notre dépanneur fera un diagnostic précis de votre ballon d’eau chaude afin de déterminer le lieu de la fuite. A partir de son constat, il pourra alors établir un devis plus précis pour lequel vous donnerez votre accord. Une fois le devis accepté, notre chauffagiste prendra le soin de réparer ou remplacer les pièces endommagées.
+
+      Remarque :
+
+      L’estimation faite sur le site ne prend pas en compte l’éventuel remplacement de votre ballon d’eau chaude. Cette situation a par exemple lieu lorsqu’une fuite est due à un trou dans la cuve. Dans ce cas, notre dépanneur vous le fera savoir et vous prendrez la décision d’effectuer ou non l’intervention. </p>
+    - '2016-11-10 11:52:10.494106'
+    - '2016-11-10 12:00:08.547180'
+    - 29
+  - - 46
+    - Le disjoncteur saute
+    - MON DISJONCTEUR DE BALLON D’EAU CHAUDE SAUTE
+    - ballon-eau-casse.jpg
+    - 200
+    - 300
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <h4>Ton disjoncteur de ballon d'eau chaude saute ?</h4>
+
+      Sois rassuré, c’est un problème auquel nos chauffagistes sont régulièrement confrontés.
+
+      Comment fonctionne un chauffe-eau ?
+
+      Le chauffe-eau est un réservoir doté d’un système de chauffage électrique, il fonctionne sur un principe d’accumulation de l’eau chaude. Il est composé :
+
+      -           D’une cuve (émaillée et isolée)
+
+      -           D’un thermostat de régulation
+
+      -           D’une résistance
+
+      -           D’un système de protection contre la corrosion
+
+      &nbsp;
+
+      L’eau chaude qui est plus légère que l’eau froide, se trouve naturellement dans la partie haute du chauffe-eau, le réservoir est donc maintenu sous pression constante. Lorsque cette eau chaude est utilisée, de l’eau froide arrive dans la partie basse du chauffe-eau.
+
+      Le thermostat va alors détecter que l’eau stockée n’est plus à la bonne température et déclencher la résistance pour chauffer l’eau. On ajoute souvent un contacteur jour / nuit entre le chauffe-eau et le disjoncteur pour déclencher la chauffe pendant la nuit et donc payer l’électricité moins chère.
+
+      &nbsp;
+
+      Il y a deux types de résistance : stéatite ou immergée.
+
+      Résistance stéatite : Elle est est protégée par un tube pour éviter tout contact avec l’eau. Ce dispositif permet de tenir le calcaire à distance. L’avantage, c’est qu’on peut la changer sans vider le chauffe eau.
+
+      Résistance immergée : Comme tu l’auras deviné, celle ci est en contact direct avec l’eau. Et il faudra faire la vidange de ton chauffe-eau pour la remplacer.
+    - '2016-11-10 12:09:23.579887'
+    - '2016-11-10 12:09:23.579887'
+    - 30
+  - - 47
+    - Je n'ai plus beaucoup d'eau chaude
+    - PROBLÈME AVEC LE BALLON D'EAU CHAUDE
+    - ballon-eau-casse.jpg
+    - 200
+    - 300
+    - ENTRE 2 & 3 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque l'on veut réparer son ballon d'eau chaude</h4>
+
+      <p> Votre ballon d’eau chaude est en panne ? Sachez que cela peut être dû à plusieurs raisons :
+      -Résistances endommagées
+      -Thermostat endommagé
+      -Groupe de sécurité endommagé
+
+      Comment se déroulera l’intervention ?
+
+      En arrivant sur place, notre dépanneur fera un diagnostic précis de votre ballon d’eau chaude afin de déterminer le lieu de la fuite. A partir de son constat, il pourra alors établir un devis plus précis pour lequel vous donnerez votre accord. Une fois le devis accepté, notre chauffagiste prendra le soin de réparer ou remplacer les pièces endommagées.
+
+      Remarque :
+
+      L’estimation faite sur le site ne prend pas en compte l’éventuel remplacement de votre ballon d’eau chaude. Cette situation a par exemple lieu lorsqu’une fuite est due à un trou dans la cuve. Dans ce cas, notre dépanneur vous le fera savoir et vous prendrez la décision d’effectuer ou non l’intervention.</p>
+    - '2016-11-10 12:14:40.527563'
+    - '2016-11-10 12:14:40.527563'
+    - 31
+  - - 48
+    - Je n'ai plus d'eau chaude
+    - REPARATION DU BALLON D'EAU CHAUDE
+    - ballon-eau-casse.jpg
+    - 350
+    - 600
+    - ENTRE 2 & 4 HEURES
+    - |+
+      <h4>Ce qu'il y a à savoir lorsque l'on veut réparer son ballon d'eau chaude</h4>
+
+      <p>Votre ballon d’eau chaude est en panne ? Sachez que cela peut être dû à plusieurs raisons :
+      -Résistances endommagées
+      -Thermostat endommagé
+      -Groupe de sécurité endommagé
+
+      Comment se déroulera l’intervention ?
+
+      En arrivant sur place, notre dépanneur fera un diagnostic précis de votre ballon d’eau chaude afin de déterminer le lieu de la fuite. A partir de son constat, il pourra alors établir un devis plus précis pour lequel vous donnerez votre accord. Une fois le devis accepté, notre chauffagiste prendra le soin de réparer ou remplacer les pièces endommagées.
+
+      Remarque :
+
+      L’estimation faite sur le site ne prend pas en compte l’éventuel remplacement de votre ballon d’eau chaude. Cette situation a par exemple lieu lorsqu’une fuite est due à un trou dans la cuve. Dans ce cas, notre dépanneur vous le fera savoir et vous prendrez la décision d’effectuer ou non l’intervention. </p>
+
+    - '2016-11-10 12:17:10.648135'
+    - '2016-11-10 12:17:10.648135'
+    - 31
+  - - 49
+    - Ma chaudière fuit
+    - MA CHAUDIÈRE FUIT
+    - chaudiere-gaz-fuite.jpg
+    - 100
+    - 300
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque sa chaudière est en panne ou fuit</h4>
+
+      <p>Vous n’avez plus d’eau chaude parce que votre chaudière est en panne ou fuit ? Sachez que la panne d’une chaudière peut être l’objet de plusieurs causes, notament:
+      -l’endommagement d’une pièce
+      -le bouchage de conduits
+
+      Dans tous les cas, nos dépanneurs sauront régler votre problème alors ne paniquez pas ! De plus, il suffit parfois d’un simple réglage pour réparer la panne.
+
+      Comment se déroulera l’intervention ?
+
+      En arrivant sur place, notre dépanneur fera un diagnostic précis de votre chaudière afin de déterminer la cause du problème. A partir de son constat, il pourra alors établir un devis plus précis pour lequel vous donnerez votre accord. Une fois le devis accepté, notre chauffagiste prendra le soin de réparer ou remplacer les pièces endommagées.
+
+      Remarque :
+
+      L’estimation faite sur le site ne prend pas en compte l’éventuel remplacement de votre chauffe-eau. Dans le cas où il ne pourrait pas être réparé, notre dépanneur vous le fera savoir et vous prendrez la décision d’effectuer ou non l’intervention.</p>
+    - '2016-11-10 12:28:21.116770'
+    - '2016-11-10 12:28:21.116770'
+    - 33
+  - - 50
+    - Ma chaudière ne fonctionne plus
+    - MA CHAUDIÈRE NE FONCTIONNE PLUS
+    - chaudiere-elec.jpg
+    - 100
+    - 300
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque sa chaudière est en panne ou fuit</h4>
+
+      <p>Vous n’avez plus d’eau chaude parce que votre chaudière est en panne ou fuit ? Sachez que la panne d’une chaudière peut être l’objet de plusieurs causes, notament:
+      -l’endommagement d’une pièce
+      -le bouchage de conduits
+
+      Dans tous les cas, nos dépanneurs sauront régler votre problème alors ne paniquez pas ! De plus, il suffit parfois d’un simple réglage pour réparer la panne.
+
+      Comment se déroulera l’intervention ?
+
+      En arrivant sur place, notre dépanneur fera un diagnostic précis de votre chaudière afin de déterminer la cause du problème. A partir de son constat, il pourra alors établir un devis plus précis pour lequel vous donnerez votre accord. Une fois le devis accepté, notre chauffagiste prendra le soin de réparer ou remplacer les pièces endommagées.
+
+      Remarque :
+
+      L’estimation faite sur le site ne prend pas en compte l’éventuel remplacement de votre chauffe-eau. Dans le cas où il ne pourrait pas être réparé, notre dépanneur vous le fera savoir et vous prendrez la décision d’effectuer ou non l’intervention.</p>
+    - '2016-11-10 12:31:28.015664'
+    - '2016-11-10 12:31:28.015664'
+    - 33
+  - - 51
+    - Mon radiateur fuit
+    - MON RADIATEUR FUIT
+    - Fuite-radiateur.jpg
+    - 100
+    - 200
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque son radiateur est en panne ou fuit</h4>
+
+      <p>Vous constatez une fuite au niveau de votre radiateur ? Sache que cela peut provenir notament de:
+      -l’endommagement d’une pièce
+      -le bouchage du conduit
+
+      Dans tous les cas, nos dépanneurs sauront régler ton problème alors ne panique pas ! De plus, il suffit parfois d’un simple réglage pour réparer la panne.
+
+      Comment se déroulera l’intervention ?
+
+      En arrivant sur place, notre dépanneur fera un diagnostic précis de ton radiateur afin de déterminer la cause du problème. A partir de son constat, il pourra alors établir un devis plus précis pour lequel tu donneras ton accord. Une fois le devis accepté, notre chauffagiste prendra le soin de réparer ou remplacer les pièces endommagées.
+
+      Remarque :
+
+      L’estimation faite sur le site ne prend pas en compte l’éventuel remplacement de ton radiateur. Dans le cas où il ne pourrait pas être réparé, notre dépanneur te le fera savoir et tu prendras la décision d’effectuer ou non l’intervention.</p>
+    - '2016-11-10 12:38:48.394512'
+    - '2016-11-10 12:38:48.394512'
+    - 34
+  - - 52
+    - Mon radiateur ne fonctionne plus
+    - MON RADIATEUR NE FONCTIONNE PLUS
+    - Panne-radiateur-fuel.jpg
+    - 350
+    - 450
+    - ENTRE 1 & 2 HEURES
+    - |+
+      <h4>Ce qu'il y a à savoir lorsque son radiateur est en panne ou fuit</h4>
+
+      <p>Vous constatez une fuite au niveau de votre radiateur ?
+
+      Sache que cela peut provenir notament de:
+      -l’endommagement d’une pièce
+      -le bouchage du conduit
+
+      Dans tous les cas, nos dépanneurs sauront régler ton problème alors ne panique pas ! De plus, il suffit parfois d’un simple réglage pour réparer la panne.
+
+      Comment se déroulera l’intervention ?
+
+      En arrivant sur place, notre dépanneur fera un diagnostic précis de ton radiateur afin de déterminer la cause du problème. A partir de son constat, il pourra alors établir un devis plus précis pour lequel tu donneras ton accord. Une fois le devis accepté, notre chauffagiste prendra le soin de réparer ou remplacer les pièces endommagées.
+
+      Remarque :
+
+      L’estimation faite sur le site ne prend pas en compte l’éventuel remplacement de ton radiateur. Dans le cas où il ne pourrait pas être réparé, notre dépanneur te le fera savoir et tu prendras la décision d’effectuer ou non l’intervention.</p>
+
+    - '2016-11-10 12:42:10.725160'
+    - '2016-11-10 12:42:10.725160'
+    - 34
+  - - 53
+    - Autre
+    - PROBLEME DE CHAUFFAGE INCONNU
+    - pb-chauffage.jpg
+    - 200
+    - 400
+    - ENTRE 2 & 5 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsqu'on rencontre un problème de chauffage inconnu</h4>
+
+      <p>Tu as un problème sur un radiateur ou tout autre appareil de chauffage mais tu ne connais pas sa provenance exacte? Sache qu'il n'y a aucun problème. Nos chauffagistes ont l'habitude de traiter des cas d'urgences et savent chercher d'où provient une panne.
+
+      Avant d'intervenir, notre partenaire t'appelleras afin d'évaluer le problème que pourrais rencontrer. Il se pourrait tout à fait que tu n'aies pas réalisé l'entretien annuel de ta chaudière et dans ce cas, il te faudra contacter l'entreprise avec laquelle tu as passé le contrat. Dans le cas contraire, il se rendra chez toi après avoir convenu d'un rendez-vous et testera tes installations afin de déterminer la source de ton dommage.</p>
+    - '2016-11-10 12:47:03.385684'
+    - '2016-11-10 12:47:03.385684'
+    - 15
+  - - 54
+    - Du robinet
+    - MON ROBINET FUIT
+    - fuite-lavabo.jpg
+    - 140
+    - 200
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Tu veux installer un robinet ou réparer une fuite ?</h4>
+
+      <p>Soit la réparation est possible, soit il faudra changer ton robinet.
+
+      Il y’a trois types de robinets différents :
+
+      - Robinet mitigeur
+
+      - Robinet mélangeur
+
+      - Robinet thermostatique
+
+      &nbsp;
+
+      Le type de robinet n’influe pas sur la réparation.
+
+      Pour ce qui est du remplacement, notre plombier te conseillera au moment de l’intervention afin de choisir celui qui te conviendra le mieux.
+
+      Nos services diagnostiqueront avec exactitude ton besoin. Notre intervenant te rédigera un devis détaillé pour son intervention.</p>
+    - '2016-11-12 11:42:12.881386'
+    - '2016-11-12 11:42:12.881386'
+    - 36
+  - - 55
+    - Siphon en plastique
+    - MON EVIER FUIT AU NIVEAU DU SIPHON (PVC)
+    - Fuite-bas-lavabo.jpg
+    - 80
+    - 150
+    - ENTRE 30MIN ET 1H
+    - |-
+      <h4>Tu dois changer ton siphon en PVC ?</h4>
+
+      <p>Le changement du siphon en PVC est un cas classique en plomberie.
+
+      Notre plombier viendra avec plusieurs modèles de siphons pour pouvoir te dépanner directement.</p>
+    - '2016-11-12 11:53:41.470671'
+    - '2016-11-12 12:12:24.421328'
+    - 39
+  - - 56
+    - Siphon en métal
+    - MON ÉVIER FUIT AU NIVEAU DU SIPHON (LAITON)
+    - Fuite-bas-lavabo.jpg
+    - 100
+    - 150
+    - ENTRE 30MIN ET 1H
+    - |-
+      <h4>Changement du siphon en laiton pour lavabo / évier</h4>
+
+      <p>Ton siphon est défectueux, rassures-toi, c’est un cas classique en plomberie.
+
+      Ton siphon est là pour retenir les odeurs. Il arrive fréquemment qu’il soit bouché par des cheveux ou des résidus alimentaires. Il est situé sous ton appareil et est normalement accessible.
+
+      Notre plombier viendra avec plusieurs modèles de siphons pour te dépanner rapidement.
+
+      Notre service de plomberie est là pour t’assister et procéder au remplacement de ton siphon.</p>
+    - '2016-11-12 12:06:35.875703'
+    - '2016-11-12 12:12:42.890313'
+    - 39
+  - - 58
+    - Des flexibles (tuyaux d'arrivée d'eau)
+    - MON EVIER FUIT AU NIVEAU DES FLEXIBLES
+    - Fuite-bas-lavabo.jpg
+    - 100
+    - 150
+    - ENTRE 30MIN ET 1H
+    - |-
+      <p>Ce genre d’intervention est très classique en plomberie, nos professionnels ont l’habitude de changer des flexibles.
+
+      La plupart du temps, il est possible de les changer sans toucher à ton robinet. L'opération est alors très rapide.
+
+      &nbsp;
+
+      Mais le plombier est parfois obligé de changer le robinet en entier.
+
+      Nos services diagnostiqueront précisément la panne devant le lavabo / évier.
+
+      Nous te fournirons à ce moment-là un devis plus détaillé.</p>
+    - '2016-11-12 12:21:10.115020'
+    - '2016-11-12 12:21:10.115020'
+    - 36
+  - - 59
+    - Mon évier est bouché
+    - MON ÉVIER EST BOUCHÉ
+    - lavabo-bouche.jpg
+    - 150
+    - 250
+    - ENTRE 30MIN ET 2H
+    - |-
+      <p>L’engorgement d’un évier est un cas classique en plomberie.
+
+      Nous te déconseillons de mettre des produits déboucheurs dans tes canalisations. Leur efficacité est douteuse et il y’a de fortes chances pour qu’ils se bloquent à leur tour dans ta canalisation et empire le problème.
+
+      Souvent nos clients viennent nous voir justement parce que cette solution n’a pas fonctionné.
+
+      Les causes du bouchage peuvent provenir :
+
+      - D’une accumulation de déchets
+
+      - Du siphon
+
+      - De canalisations à curer
+
+      - De la colonne générale de ton immeuble
+
+      &nbsp;
+
+      La réparation peut se faire de différentes manières :
+
+      - Avec le dépôt d’acide adapté (Ils sont en vente dans les magasins professionnels)
+
+      - Avec un système de pompe
+
+      - Avec un furet électrique
+
+      Si le problème vient de la colonne générale d’immeuble, il faudra alors faire venir un camion hydrocureur.
+
+      Notre plombier te fera un devis plus précis sur place.</p>
+    - '2016-11-12 12:37:39.992843'
+    - '2016-11-12 12:37:39.992843'
+    - 16
+  - - 60
+    - Je souhaite changer de lavabo / évier
+    - JE SOUHAITES CHANGER DE LAVABO / ÉVIER
+    - change-evier.jpg
+    - 200
+    - 400
+    - ENTRE 1 & 3 HEURES
+    - "<h4>Tu souhaites changer de lavabo ?</h4><p>Quand tu changes de lavabo / évier,
+      il y a plein de critères à prendre en compte :- Quelle marque choisir ?- Quelle
+      taille prendre ?- Quel type de robinet ?&nbsp;Nous t’offrons une pré-visite
+      gratuite pour te conseiller sur ton choixUne fois que tu auras fait ton choix
+      et que l’artisan aura reçu le matériel, il viendra t’installer ton tout nouvel
+      équipement.Son intervention comprend :- L’enlèvement et l’évacuation de ton
+      ancien lavabo / évier- La pose complète du nouveau lavabo / évierIl est conseillé
+      de choisir le même type de lavabo / évier que le précédent. Si le type est différent,
+      notre plombier risque de devoir rajouter de nouvelles canalisations et cela
+      va te coûter plus cher.Nos plombiers sont aussi là pour te conseiller dans ton
+      choix, alors n’hésites pas à leur poser des questions.</p>"
+    - '2016-11-12 12:44:52.085922'
+    - '2016-11-12 12:47:08.874431'
+    - 40
+  - - 61
+    - Je souhaite installer un nouveau robinet
+    - JE SOUHAITE CHANGER DE ROBINET
+    - change-robinet.jpg
+    - 140
+    - 200
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Tu veux installer un robinet ?</h4>
+
+
+      <p>Il y’a trois types de robinets différents :
+
+      - Robinet mitigeur
+
+      - Robinet mélangeur
+
+      - Robinet thermostatique
+
+      &nbsp;
+
+      Notre plombier te conseillera au moment de l’intervention afin de choisir celui qui te conviendra le mieux.
+
+      Nos services diagnostiqueront avec exactitude ton besoin. Notre intervenant te rédigera un devis détaillé pour son intervention.</p>
+    - '2016-11-12 12:49:50.961302'
+    - '2016-11-12 12:49:50.961302'
+    - 40
+  - - 62
+    - D'un tuyau d'évacuation en plastique (PVC)
+    - MON TUYAU D'ÉVACUATION EN PVC FUIT
+    - tuyau-fuite.jpg
+    - 100
+    - 150
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur les tuyaux d'évacuation qui fuient</h4>
+
+      <p>Tu constates une fuite, mais tu ne peux pas voir la provenance de l’eau. C’est sûrement ton tuyau d’évacuation qui est endommagé. Rassures-toi, c’est un cas classique en plomberie.
+
+      L’intervention du plombier sera adaptée à ton type d’installation.
+
+      Si ton tuyau est encastré, il va falloir casser une partie de ton mur ou du coffrage pour accéder à la canalisation. Nous te conseillons de prendre contact avec ton assureur.
+
+      Le plombier effectuera les réparations une fois la fuite correctement localisée.</p>
+    - '2016-11-12 12:55:21.479950'
+    - '2016-11-12 12:55:21.479950'
+    - 17
+  - - 63
+    - De la vanne d'entrée (elle sert à couper l'eau dans tout l'appartement)
+    - LA VANNE PRINCIPALE DE MON APPARTEMENT FUIT
+    - valve-fuite.jpg
+    - 150
+    - 300
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>L’eau coule de ton robinet d’arrêt sans que tu puisses y faire quoique ce soit ?</h4>
+
+      <p>C’est un problème classique en plomberie et nos plombiers savent s’en occuper rapidement.
+
+      Ton problème peut venir de différents éléments
+
+      - Du joint
+
+      - De l’écrou
+
+      - De la filasse
+
+      - Du robinet d’arrêt
+
+      &nbsp;
+
+      Notre plombier te fera un diagnostic plus précis une fois sur place.
+
+      &nbsp;
+
+      Courage !</p>
+    - '2016-11-12 12:58:53.403857'
+    - '2016-11-12 12:58:53.403857'
+    - 17
+  - - 64
+    - D'un autre tuyau
+    - UN TUYAU FUIT APRÈS LA VANNE PRINCIPALE DE MON APPARTEMENT
+    - tuyau-fuite.jpg
+    - 120
+    - 230
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <h4>Votre tuyaux fuit après la vanne principale de votre appartement ?</h4>
+
+      <p>Ce genre de fuite peut faire de gros dégâts.
+
+      Il est donc urgent de :
+
+      1 - Fermer le robinet d’eau
+
+      2 - Appeler un plombier
+
+      3 - Prévenir ton assureur
+
+      &nbsp;
+
+      L’origine de la fuite peut avoir plusieurs sources :
+
+      - Un des joints
+
+      - Une des soudures
+
+      - Une partie du tuyau qui est endommagée
+
+      Evidemment la fuite sera plus facile à réparer si elle provient d’un tuyau apparent, que s’il est encastré. Dans le deuxième cas il faudra casser une partie de l’endroit où la fuite est suspectée.
+
+      Notre plombier te fera un devis plus précis une fois sur place. Sachant qu’en cas de tuyau encastré l’intervention sera plus longue et plus coûteuse.</p>
+    - '2016-11-12 13:02:33.332507'
+    - '2016-11-12 13:02:33.332507'
+    - 17
+  - - 65
+    - Je ne sais pas d'où la fuite provient
+    - IL Y A BIEN UNE FUITE MAIS JE NE SAIS PAS OÙ
+    - pb-plomb.jpg
+    - 100
+    - 200
+    - ENTRE 1 & 4 HEURES
+    - |-
+      <p>Une fuite d’origine inconnue peut faire de gros dégâts dans un immeuble si on la néglige. Elle a aussi le mystérieux pouvoir de faire augmenter ta consommation d’eau.
+
+      Il est donc urgent d’appeler un plombier et de prévenir ton assureur.
+
+      L’origine de la fuite peut avoir plusieurs sources :
+
+      - Toilettes
+
+      - Salle de bain
+
+      - Cuisine
+
+      - Tuyauterie
+
+      &nbsp;
+
+      Evidement la fuite sera plus facile localiser si elle provient d’un tuyau apparent, que s’il est encastré. Dans le deuxième cas il faudra casser une partie de l’endroit où la fuite est suspectée.
+
+      Le prix affiché à droite inclut la recherche de la fuite et l’établissement d’un devis précis sur les réparations à effectuer. Notre plombier pourra aussi t’aider à remplir ta déclaration d’assurance. Mais la réparation de la fuite dépendra de l’origine du problème et n’est pas comprise dans ce prix.</p>
+    - '2016-11-12 13:06:50.685574'
+    - '2016-11-12 13:06:50.685574'
+    - 17
+  - - 66
+    - Ma douche est bouchée
+    - MA DOUCHE EST BOUCHÉE
+    - douche-bouchee.jpg
+    - 100
+    - 200
+    - ENTRE 30MIN ET 2H
+    - |-
+      <h4>L’évacuation de ta douche est bouchée, tu barbotes dans une petite marre d’eau ?</h4>
+
+      <p>Rassures-toi, c’est un cas classique en plomberie.
+
+      Nous te déconseillons d’utiliser des produits débouchants du commerce, ils risquent juste de compliquer la tâche de notre intervenant.
+
+      <br/>
+
+      L’engorgement de ta douche peut venir de :
+
+      - L'accumulation de cheveux
+
+      - La colonne générale d’immeuble
+
+      <br/>
+
+      L’intervention du plombier peut se faire selon différents protocoles :
+
+      - À la pompe
+
+      - Avec de l’acide très puissant
+
+      - Avec l’aide d’un camion hydrocureur (Si c’est la colonne générale d’immeuble)
+
+      &nbsp;
+
+      Le prix et le temps de l’intervention vont varier en fonction de la nature exacte du problème.
+
+      Notre plombier te fera un devis plus précis sur place.</p>
+    - '2016-11-12 13:14:00.751920'
+    - '2016-11-12 13:14:00.751920'
+    - 19
+  - - 67
+    - Ma baignoire est bouchée
+    - MA BAIGNOIRE EST BOUCHÉE
+    - baignoire-bouchee.jpg
+    - 100
+    - 200
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>L’évacuation de ta baignoire est bouchée, tu barbotes dans une petite marre d’eau ?</h4>
+
+      <p>Rassures-toi, c’est un cas classique en plomberie.
+
+      Nous te déconseillons d’utiliser des produits débouchants du commerce, ils risquent juste de compliquer la tâche de notre intervenant.
+
+      L’engorgement de ta baignoire peut venir de :
+      - L'accumulation de cheveux
+      - La colonne générale d’immeuble
+
+      L’intervention du plombier peut se faire selon différents protocoles :
+      - À la pompe
+      - Avec de l’acide très puissant
+      - Avec l’aide d’un camion hydrocureur (Si c’est la colonne générale d’immeuble)
+
+      Le prix et le temps de l’intervention vont varier en fonction de la nature exacte du problème.
+
+      Notre plombier te fera un devis plus précis sur place.</p>
+    - '2016-11-12 13:20:24.632726'
+    - '2016-11-12 13:20:24.632726'
+    - 19
+  - - 68
+    - Le robinet de ma douche fuit
+    - LE ROBINET DE MA DOUCHE FUIT
+    - robinet-douche.jpg
+    - 140
+    - 200
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Tu veux installer un robinet ou réparer une fuite ?</h4>
+
+      <p>Soit la réparation est possible, soit il faudra changer ton robinet.
+
+      Il y’a trois types de robinets différents :
+
+      - Robinet mitigeur
+
+      - Robinet mélangeur
+
+      - Robinet thermostatique
+
+      &nbsp;
+
+      Le type de robinet n’influe pas sur la réparation.
+
+      Pour ce qui est du remplacement, notre plombier te conseillera au moment de l’intervention afin de choisir celui qui te conviendra le mieux.
+
+      Nos services diagnostiqueront avec exactitude ton besoin. Notre intervenant te rédigera un devis détaillé pour son intervention.</p>
+    - '2016-11-12 13:24:00.850664'
+    - '2016-11-12 13:24:00.850664'
+    - 41
+  - - 69
+    - Le tuyau d'évacuation de ma douche fuit
+    - LE TUYAU D'ÉVACUATION DE MA DOUCHE FUIT
+    - fuite-douche.jpg
+    - 150
+    - 250
+    - ENTRE 1 & 4 HEURES
+    - |-
+      <h4>Le tuyaux d'évacuation de ta douche fuit</h4>
+
+      <p>Ta douche fuit, mais tu ne peux pas voir la provenance de l’eau, c’est sûrement ton tuyau d’évacuation qui est endommagé. Rassures-toi, c’est un cas classique en plomberie.
+
+      L’intervention du plombier sera adaptée à ton type d’installation.
+
+      Si ton tuyau est encastré, il va falloir casser une partie de ton mur ou du coffrage pour accéder à la canalisation. Nous te conseillons de prendre contact avec ton assureur.
+
+      &nbsp;
+
+      Le plombier effectuera les réparations une fois la fuite correctement localisée.</p>
+    - '2016-11-12 13:30:30.949775'
+    - '2016-11-12 13:30:30.949775'
+    - 41
+  - - 70
+    - Le robinet de ma baignoire fuit
+    - LE ROBINET DE MA BAIGNOIRE FUIT
+    - robinet-baignoire.jpg
+    - 140
+    - 200
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Tu veux installer un robinet ou réparer une fuite ?</h4>
+
+      <p>Soit la réparation est possible, soit il faudra changer ton robinet.
+
+      Il y’a trois types de robinets différents :
+
+      - Robinet mitigeur
+
+      - Robinet mélangeur
+
+      - Robinet thermostatique
+
+      &nbsp;
+
+      Le type de robinet n’influe pas sur la réparation.
+
+      Pour ce qui est du remplacement, notre plombier te conseillera au moment de l’intervention afin de choisir celui qui te conviendra le mieux.
+
+      Nos services diagnostiqueront avec exactitude ton besoin. Notre intervenant te rédigera un devis détaillé pour son intervention.</p>
+    - '2016-11-12 13:37:28.757698'
+    - '2016-11-12 13:37:28.757698'
+    - 42
+  - - 71
+    - Du tuyau qui évacue l'eau (non-encastré)
+    - MA BAIGNOIRE NON ENCASTRÉE FUIT
+    - fuite-baignoire.jpg
+    - 110
+    - 200
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ta baignoire non encastrée fuit ?</h4>
+
+
+      <p>Nos plombiers sont régulièrement confrontés à des fuites de baignoires.
+
+      Le problème peut venir de plusieurs endroits :
+
+      - D’une soudure
+
+      - D’un coude du tuyau
+
+      - D’un raccord
+
+      &nbsp;
+
+      C’est une intervention qui se fait rapidement puisque les tuyaux sont apparents et que nos plombiers viennent directement avec le matériel nécessaire.</p>
+    - '2016-11-12 13:42:20.815425'
+    - '2016-11-12 13:42:20.815425'
+    - 42
+  - - 72
+    - Du tuyau qui évacue l'eau (encastré)
+    - LE TUYAU D'ÉVACUATION DE MA BAIGNOIRE ENCASTRÉE FUIT
+    - fuite-baignoire-e.jpg
+    - 110
+    - 250
+    - ENTRE 1 & 4 HEURES
+    - |-
+      <h4>Le tuyau de ta baignoire encastrée fuit ?</h4>
+
+      <p>Durée d’intervention – 1 heure à 4 heures (précision par le plombier devant la baignoire)
+
+      Ta baignoire fuit, mais tu ne peux pas voir la provenance de l’eau, c’est sûrement ton tuyau d’évacuation qui est endommagé. Rassures-toi, c’est un cas classique en plomberie.
+
+      L’intervention du plombier sera adaptée à ton type d’installation.
+
+      Ton tuyau est encastré, il va sûrement falloir casser une partie de ton mur ou du coffrage pour accéder à la canalisation. Nous te conseillons de prendre contact avec ton assureur.
+
+      Le plombier effectuera les réparations une fois la fuite correctement localisée.</p>
+    - '2016-11-12 13:44:36.871942'
+    - '2016-11-12 13:44:36.871942'
+    - 42
+  - - 73
+    - Ma porte simple est claquée
+    - MA PORTE SIMPLE À ÉTÉ CLAQUÉE
+    - ouvre-porte.jpg
+    - 70
+    - 130
+    - ENTRE 30MIN ET 1H
+    - |-
+      <h4>Chose à savoir sur les portes simples claquées</h4>
+
+      <p>Avant d’appeler un serrurier, poses-toi les bonnes questions :
+
+      - Un voisin a peut-être un double de tes clefs
+
+      - Quelqu’un de ta famille peut aussi avoir un double
+
+      - Tes clés ne sont peut-être pas dans la bonne poche
+
+      - Est-ce que tu as bu ?
+
+      &nbsp;
+
+      Si vraiment tu ne vois pas d’autres solutions, faite appel à un serrurier.
+
+      Nos serruriers ont l’habitude des portes blindées qui ont été claquées. Ils viendront avec tout le matériel nécessaire.
+
+      L’opération va dépendre de ta serrure. Cela peut se faire avec simplicité, sans endommager quoique ce soit. Mais parfois le serrurier est obligé de forcer la serrure.
+
+      En cas de remplacement de la serrure, le devis peut aller de 250 à 1400 €, ce qui risque de faire chère la porte claquée.
+
+      Notre professionnel te demandera une carte d’identité et un justificatif de domicile, pour s’assurer qu’il n’est pas complice d’effraction.
+
+      Dernière chose : méfies-toi des sociétés dont tu ne peux pas vérifier la fiabilité. Elles risquent soit de te surfacturer l’intervention, soit de proposer des prix très bas pour changer ta serrure et revenir plus tard avec des copains.
+
+      Ce site à justement été créé parce que ses fondateurs se sont fait avoir par un serrurier véreux. Alors on sait de quoi ont parle !
+
+      Prend soin de toi.</p>
+    - '2016-11-12 18:07:57.752313'
+    - '2016-11-12 18:07:57.752313'
+    - 44
+  - - 74
+    - Ma porte simple est fermée à clé
+    - MA PORTE SIMPLE EST FERMÉE À CLÉ
+    - ouvre-porte.jpg
+    - 110
+    - 170
+    - ENTRE 30MIN ET 1H
+    - |-
+      <h4>Choses à savoir sur les portes simples fermées à clé</h4>
+
+      <p>Avant d’appeler un serrurier, poses-toi les bonnes questions :
+
+      - Un voisin a peut-être un double de tes clefs
+
+      - Quelqu’un de ta famille peut aussi avoir un double
+
+      - Tes clés ne sont peut-être pas dans la bonne poche
+
+      &nbsp;
+
+      Si vraiment tu ne vois pas d’autres solutions, fais appel à un serrurier.
+
+      Nos serruriers ont l’habitude de ce genre de situations et viendront avec tout le matériel nécessaire.
+
+      La complexité de l’opération dépend de ta serrure. Cela peut se faire sans rien casser mais parfois le serrurier est obligé de la forcer et donc de la remplacer. Il serait préférable pour toi que ce ne soit pas le cas, car c’est plus long et plus cher.
+
+      Notre professionnel te demandera une carte d’identité et un justificatif de domicile, pour s’assurer qu’il n’est pas complice d’effraction.
+
+      Dernière chose : méfies-toi des sociétés dont tu ne peux pas vérifier la fiabilité. Elles risquent soit de te surfacturer l’intervention, soit de proposer des prix très bas pour changer ta serrure et revenir plus tard avec des copains.
+
+      Ce site à justement été créé parce que ses fondateurs se sont fait avoir par un serrurier véreux. Alors on sait de quoi on parle.
+
+      Prend soin de toi !</p>
+    - '2016-11-12 18:10:42.367811'
+    - '2016-11-12 18:10:42.367811'
+    - 44
+  - - 75
+    - Ma porte blindée est claquée
+    - MA PORTE BLINDÉE À ÉTÉ CLAQUÉE
+    - ouvre-porte.jpg
+    - 110
+    - 170
+    - ENTRE 30MIN ET 1H
+    - |-
+      <h4>Chose à savoir sur les portes simples claquées</h4>
+
+      <p>Avant d’appeler un serrurier, poses-toi les bonnes questions :
+
+      - Un voisin a peut-être un double de tes clefs
+
+      - Quelqu’un de ta famille peut aussi avoir un double
+
+      - Tes clés ne sont peut-être pas dans la bonne poche
+
+      - Est-ce que tu as bu ?
+
+      &nbsp;
+
+      Si vraiment tu ne vois pas d’autres solutions, faite appel à un serrurier.
+
+      Nos serruriers ont l’habitude des portes blindées qui ont été claquées. Ils viendront avec tout le matériel nécessaire.
+
+      L’opération va dépendre de ta serrure. Cela peut se faire avec simplicité, sans endommager quoique ce soit. Mais parfois le serrurier est obligé de forcer la serrure.
+
+      En cas de remplacement de la serrure, le devis peut aller de 250 à 1400 €, ce qui risque de faire chère la porte claquée.
+
+      Notre professionnel te demandera une carte d’identité et un justificatif de domicile, pour s’assurer qu’il n’est pas complice d’effraction.
+
+      Dernière chose : méfies-toi des sociétés dont tu ne peux pas vérifier la fiabilité. Elles risquent soit de te surfacturer l’intervention, soit de proposer des prix très bas pour changer ta serrure et revenir plus tard avec des copains.
+
+      Ce site à justement été créé parce que ses fondateurs se sont fait avoir par un serrurier véreux. Alors on sait de quoi ont parle !
+
+      Prend soin de toi.</p>
+    - '2016-11-12 18:15:43.193966'
+    - '2016-11-12 18:15:43.193966'
+    - 45
+  - - 76
+    - Ma porte blindée est fermée à clé
+    - MA PORTE BLINDÉE EST FERMÉE À CLÉ
+    - ouvre-porte.jpg
+    - 110
+    - 170
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Choses à savoir sur les portes blindées fermées à clé</h4>
+
+      <p>Avant d’appeler un serrurier, poses-toi les bonnes questions :
+
+      - Un voisin a peut-être un double de tes clefs
+
+      - Quelqu’un de ta famille peut aussi avoir un double
+
+      - Tes clés ne sont peut-être pas dans la bonne poche
+
+      &nbsp;
+
+      Si vraiment tu ne vois pas d’autres solutions, fais appel à un serrurier.
+
+      Nos serruriers ont l’habitude de ce genre de situations et viendront avec tout le matériel nécessaire.
+
+      La complexité de l’opération dépend de ta serrure. Mais pour une porte blindée, il y a de fortes chances pour que le serrurier soit obligé de faire un trou dans ta serrure. Il faudra alors la remplacer.
+
+      Le prix du devis pour un changement de serrure varie entre 250 et 1400 €. Tu es libre d'accepter ou de refuser un devis que l'on te propose.
+
+      Notre professionnel te demandera une carte d’identité et un justificatif de domicile, pour s’assurer qu’il n’est pas complice d’effraction.
+
+      Dernière chose : méfies-toi des sociétés dont tu ne peux pas vérifier la fiabilité. Elles risquent soit de te surfacturer l’intervention, soit de proposer des prix très bas pour changer ta serrure et revenir plus tard avec des copains.
+
+      Ce site à justement été créé parce que ses fondateurs se sont fait avoir par un serrurier véreux. Alors on sait de quoi ont parle.
+
+      Prend soin de toi !</p>
+    - '2016-11-12 18:21:31.430903'
+    - '2016-11-12 18:21:31.430903'
+    - 45
+  - - 77
+    - Je veux renforcer ma porte
+    - INSTALLATION DE CORNIÈRES ANTI-PINCES
+    - change-porte.jpg
+    - 200
+    - 500
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <p>Que ce soit pour les portes blindées ou les portes simples, tant qu’il n’y a pas de cornières une porte est vulnérable au pieds de biche. On voit souvent les cambrioleurs avec dans les films. Et pour une fois ce n’est pas que de la fiction. Les pieds de biche fonctionnent très bien sur les portes !
+
+      Le but des cornières est de bloquer l’accès au pied de biche. Elles se placent tout autour de la porte et empêchent les cambrioleurs d’y insérer leur outil pour faire levier.</p>
+    - '2016-11-12 18:26:51.381095'
+    - '2016-11-12 18:26:51.381095'
+    - 9
+  - - 78
+    - Serrure simple
+    - INSTALLATION D'UN VERROU SIMPLE
+    - change-serrure.jpg
+    - 90
+    - 150
+    - ENTRE 30MIN ET 1H
+    - "<p>Notre serrurier a toujours sur lui plusieurs modèles de verrous. Tu n'auras
+      qu'à faire ton choix et il te l'installera en moins d'une heure.</p>"
+    - '2016-11-12 18:29:49.795622'
+    - '2016-11-12 18:29:49.795622'
+    - 46
+  - - 79
+    - Serrure à 1 point de fermeture
+    - INSTALLATION D'UNE SERRURE A 1 POINT DE FERMETURE
+    - change-serrure.jpg
+    - 250
+    - 450
+    - ENTRE 1 & 2H
+    - "<p>Tu souhaites changer de serrure pour une raison quelconque.Voici la liste
+      des différentes marques qui font de bonnes serrures : Fichet, Mottera, JPM,
+      Cisa, Laperche et MuelDans un premier temps notre serrurier va venir voir ta
+      serrure. Il verra tout de suite par quoi il faut la remplacer. Tu peux évidemment
+      lui poser toutes les questions que tu veux concernant le meilleur choix à faire.</p>"
+    - '2016-11-12 18:33:27.984760'
+    - '2016-11-12 18:40:22.704354'
+    - 46
+  - - 80
+    - Serrure à 3 points de fermeture
+    - INSTALLATION D'UNE SERRURE A 3 POINT DE FERMETURE
+    - change-serrure.jpg
+    - 350
+    - 600
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir sur l'installation d'une serrure à 3 points de fermeture</h4>
+
+      <p>Tu souhaites installer une nouvelle serrure à ta porte. Les serrures à 3 points sont très fiables, elles verrouillent la porte en haut, au niveau de la poignée et en bas. Et tout cela se verrouille en un tour de clé dans une serrure quasiment inviolable.
+
+      La majorité des portes récentes sont compatibles avec les serrures à 3 points.
+
+      Il faut cependant se méfier des pieds de biche car ils ont une fâcheuse tendance à se moquer de ta serrure, qu’elle soit simple ou très renforcée. (Le plus prudent est de faire installer des cornières anti-pince pour empêcher les pieds de biche de passer.
+
+      Voici la liste des différentes marques qui font de bonnes serrures : Fichet, Mottera, JPM, Cisa, Laperche, Muel
+
+      Notre serrurier est là pour te conseiller, donc n’hésites pas à lui demander son avis. Il va te proposer soit de t’installer la même, soit d’en prendre une plus solide. Evidement cela dépendra entièrement du prix que tu es prêt à mettre dans ton installation.
+
+      Cela dit, il est fortement conseillé de choisir des serrures qui sont approuvées par la mention A2P. Cette mention est délivrée par le CNPP (Centre national de protection et de prévention), ce sont eux les grands chefs en matière de sécurité et de maitrise de risques. Ils testent les serrures et leurs accordent une note qui varie entre 1 et 3. Tu connais la suite, plus la note est élevée, meilleure est la serrure et plus cher est le prix.
+
+      La pose d’une serrure à 3 points est une intervention compliquée mais qui reste classique pour un serrurier expérimenté. Il devra se rendre sur place pour te faire un devis plus précis. Ce déplacement est offert par la maison, alors profites-en !</p>
+    - '2016-11-12 18:38:42.245305'
+    - '2016-11-12 18:38:42.245305'
+    - 46
+  - - 81
+    - Une seule pièce
+    - MON INTERRUPTEUR NE FONCTIONNE PLUS
+    - int-encastre.jpg
+    - 100
+    - 180
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <p>Il peut s’agir d’un problème au niveau de l’interrupteur lui-même ou alors au niveau du fusible ou du disjoncteur auquel il est rattaché.
+
+      Pas de panique, nos professionnels ont l’habitude de ce genre de problème. Ils pourront le régler rapidement !
+
+      Comment notre professionnel effectuera la réparation ?
+
+      En intervenant, notre électricien testera ta prise ainsi que le disjoncteur et le fusible pour déterminer la cause du problème. Suite à son diagnostic, il pourra réparer rapidement l’interrupteur défaillant.
+
+      &nbsp;
+
+      Information utile :
+
+      Nous tenons à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qui te sera envoyé te le signalera immédiatement. Si tu choisis de procéder à la remise en conformité, alors notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>
+    - '2016-11-14 21:19:47.659122'
+    - '2016-11-14 21:19:47.659122'
+    - 47
+  - - 82
+    - Tout l'appartement
+    - PANNE DE LUMIERE TOTALE
+    - coupure-generale.jpg
+    - 100
+    - 150
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ce qu'il y a à savoir lorsque les lumières ne s'allument plus</h4>
+
+      <p>Il peut s’agir d’un court-circuit, d’un problème sur ton disjoncteur ou encore sur ta ligne électrique. Pas de panique, nos professionnels sauront régler ton problème !
+
+      Comment notre professionnel effectuera la réparation ?
+
+      En intervenant, il testera l’ensemble de ton installation électrique afin de déterminer la cause du problème. Suite à son diagnostic, il pourra régler ton souci.
+
+      Information utile :
+
+      Nous tenons à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qui te sera envoyé te le signalera immédiatement. Si tu choisis de ne pas procéder à la remise en conformité, alors notre responsabilité et celle de notre artisan ne sauraient être engagées.</p>
+    - '2016-11-14 21:24:15.021781'
+    - '2016-11-14 21:24:15.021781'
+    - 47
+  - - 83
+    - Une prise
+    - UNE DE MES PRISES ÉLECTRIQUES NE FONCTIONNE PLUS
+    - prise.jpg
+    - 100
+    - 180
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <p>Tout d’abord, es-tu sûr que ta prise encastrée est en panne ?
+
+      Pour le vérifier, branches l’appareil que tu as testé sur une autre prise. S’il marche, alors ta prise est effectivement en panne ! Dans ce cas, le problème peut venir soit de la prise elle-même, soit du fusible auquel elle est branchée.
+
+      Si ta prise est en panne, pas de panique, nos électriciens ont l’habitude de régler ce genre de problème.
+
+      Comment notre électricien effectuera la réparation ?
+
+      Ce dépannage est rapide, il lui suffira simplement de tester ta ligne électrique et le fusible à l’aide de son testeur. Si le problème vient de ta prise, il lui suffira de la remplacer et le tour sera joué !
+
+      &nbsp;
+
+      Information utile :
+
+      Nous tenons à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qui te sera envoyé te le signalera immédiatement. Si tu refuses de procéder à la remise en conformité, alors notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>
+    - '2016-11-14 21:29:40.798640'
+    - '2016-11-14 21:29:40.798640'
+    - 49
+  - - 84
+    - Plusieurs prises
+    - PLUSIEURS PRISES NE FONCTIONNENT PLUS
+    - prise.jpg
+    - 120
+    - 400
+    - ENTRE 1 & 4 HEURES
+    - |-
+      <h4>Plusieurs prises ne fonctionnent plus chez toi ?</h4>
+
+      <p>Si plusieurs de tes prises ne fonctionnent plus, alors il peut s’agir de trois problèmes différents :
+
+      - ta ligne électrique
+
+      - ton fusible (dans ce cas, seulement 6 prises par fusible peuvent être hors service)
+
+      - une surcharge qui peut être due notamment à l’excès de multiprises branchées.
+
+      Malgré tout, pas de panique, cette intervention est courante et nos professionnels sauront régler ton problème !
+
+      Comment notre professionnel effectuera la réparation ?
+
+      La durée de ce dépannage peut varier en fonction du problème et du nombre de prises concernées. En arrivant chez toi, notre électricien testera ta ligne électrique ainsi que ton tableau électrique et tes fusibles. Après cela, il t’informera du type de problème qu’il aura rencontré.
+
+      &nbsp;
+
+      Information utile :
+
+      Nous tenons à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qui te sera envoyé te le signalera immédiatement. Si tu choisis de ne pas procéder à la remise en conformité, alors notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>
+    - '2016-11-14 21:33:15.209510'
+    - '2016-11-14 21:33:15.209510'
+    - 49
+  - - 85
+    - Prise de télévision
+    - MA PRISE DE TÉLÉVISION (COAXIALE) NE FONCTIONNE PLUS
+    - tv.jpg
+    - 100
+    - 150
+    - ENTRE 1 & 2 HEURES
+    - |
+      <h4>Ta prise de télévision de fonctionne plus ?</h4>
+
+      <p>Si tu ne reçois plus de signal TV, alors il se peut que cela soit dû au câble coaxial, qui sert à la transmission des signaux analogiques ou numériques, ou alors à la prise coaxiale elle-même.
+
+      Comment notre professionnel effectuera la réparation ?
+
+      En intervenant, notre professionnel testera d’abord ton câble ainsi que ta prise pour déterminer la cause du problème. Suite à son diagnostic, il pourra régler ton souci pour que tu puisses à nouveau t’asseoir dans ton canapé !
+
+      &nbsp;
+
+      Information utile :
+
+      Nous tenons à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qui te sera envoyé te le signalera immédiatement. Si tu refuses de procéder à la remise en conformité, alors notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>
+    - '2016-11-14 21:36:40.144318'
+    - '2016-11-14 21:36:40.144318'
+    - 48
+  - - 86
+    - Prise internet
+    - MA PRISE INTERNET NE FONCTIONNE PLUS
+    - wifi.jpg
+    - 100
+    - 150
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Ta prise internet ne fonctionne plus ?</h4>
+
+      <p>Tu as installé une prise de type RJ45 mais elle ne marche plus. Nous tenons d’abord à t’avertir de ne pas tenter de régler le problème seul, la réparation étant complexe.
+
+      Comment notre professionnel effectuera la réparation ?
+
+      En intervenant, notre électricien testera ton câblage ainsi que ta prise pour déterminer la cause du problème. Suite à son diagnostic, il pourra régler ton souci et tu pourras à nouveau surfer sur internet !
+
+      &nbsp;
+
+      Information utile :
+
+      Maneo tient à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qui te sera envoyé te le signalera immédiatement. Si tu choisis de ne pas procéder à la remise en conformité, alors notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>
+    - '2016-11-14 21:40:27.437418'
+    - '2016-11-14 21:40:27.437418'
+    - 48
+  - - 87
+    - Je ne sais pas d'où vient la panne
+    - PROBLEME ELECTRIQUE INCONNU
+    - pb-elec.jpg
+    - 100
+    - 500
+    - ENTRE 1 & 4 HEURES
+    - |-
+      <p>Si la coupure est partielle, alors tu peux demander à ce qu’un de nos professionnels vienne rechercher la cause de ta panne et résoudre ton problème. Pour ce faire, il testera partiellement ou entièrement ton réseau électrique.
+
+      Si la coupure est totale, veilles d’abord à renseigner auprès d’EDF. En effet, il peut s’agir d’une simple panne de secteur ou peut-être que tu n’es pas à jour dans le règlement de ta dernière facture. Si EDF répond négativement à ces questions, alors tu peux faire appel à un de nos professionnels de façon à ce qu’il diagnostique les problèmes de ton réseau et les résolve.
+
+      Information utile :
+
+      Maneo tient à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qu’il t’enverra te le signalera immédiatement. Si tu refuses de procéder à la remise en conformité, alors notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>
+    - '2016-11-14 21:42:47.021160'
+    - '2016-11-14 21:42:47.021160'
+    - 48
+  - - 88
+    - Panne du compteur électrique
+    - PANNE DU COMPTEUR ELECTRIQUE
+    - compteur-elec.jpg
+    - 100
+    - 300
+    - ENTRE 1 & 2 HEURES
+    - |-
+      <h4>Qu'est-ce que le compteur électrique?</h4>
+
+      <p>Le compteur électrique est le boitier où s’enregistre ta consommation d’électricité
+
+      Attention !
+
+      Seuls les électriciens de ton fournisseur sont habilités à intervenir dessus. Si ton problème se situe au niveau de ton compteur électrique, tu devras donc faire directement appel à ton fournisseur.
+
+      En revanche, si ton fournisseur t'invite à faire appel à un électricien privé, tu es au bon endroit.</p>
+    - '2016-11-14 21:45:20.025594'
+    - '2016-11-14 21:45:20.025594'
+    - 11
+  - - 89
+    - Radiateur électrique
+    - MON RADIATEUR EST EN PANNE
+    - Panne-radiateur-électrique.jpg
+    - 120
+    - 180
+    - ENTRE 1 & 2 HEURES
+    - "<p>Un radiateur  est composé d’une alimentation, d’un raccord électrique, d’un
+      interrupteur, d’un thermostat et d’une résistance. Si l’une de ces pièces est
+      défectueuse, alors il s’arrête de fonctionner.Comment notre professionnel effectuera
+      la réparation ?En intervenant, notre électricien testera l’ensemble des composants
+      de ton radiateur / convecteur / sèche-serviette. Suite à son diagnostic, il
+      pourra réparer ta panne de manière adéquate.S’il doit effectuer un remplacement
+      total de ton appareil, il te le signalera afin d’obtenir ton accord.&nbsp;Information
+      utile :Nous tenons à attirer ton attention sur le fait qu’en cas de non conformité
+      de ton installation électrique, le professionnel qu’il t’enverra te le signalera
+      immédiatement. Si tu choisis de ne pas procéder à la remise en conformité, alors
+      notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>"
+    - '2016-11-14 21:48:17.352398'
+    - '2016-11-22 10:21:25.121465'
+    - 51
+  - - 90
+    - 'Tableau électrique '
+    - MON TABLEAU ÉLECTRIQUE EST EN PANNE
+    - compteur-elec.jpg
+    - 100
+    - 300
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <p>Fais intervenir un électricien d’urgence. Un tableau électrique défaillant peut causer de nombreux dégâts tels qu’un incendie, une coupure totale ou partielle de courant, etc.
+
+      Le tableau électrique est le coffret dans lequel tu trouveras les fusibles et les disjoncteurs auxquels est relié l’ensemble de ton installation électrique.
+
+      Il existe plusieurs signes témoignant d’un problème sur ton tableau :
+
+      - tu entends un bruit anormal
+
+      - tu vois des étincelles
+
+      - Tu sens une odeur de brûlé
+
+      - plusieurs prises et/ou luminaires dysfonctionnement
+
+      Comment notre professionnel effectuera la réparation ?
+
+      En intervenant, notre électricien testera l’ensemble des composants de ton tableau électrique. Suite à son diagnostic, il pourra réparer ta panne de manière adéquate.
+
+      Si ton appareil est trop vétuste ou n’est pas aux normes, il t’informera de la suite de son intervention.
+
+      &nbsp;
+
+      Information utile :
+
+      Si tu vois des étincelles ou que tu sens une odeur de brûlé, appelles immédiatement le service de dépannage d’urgence d’EDF avant que ton appartement ne prenne feu.
+
+      Si des flammes ont déjà commencé à apparaître, fais immédiatement appel aux pompiers avant que la situation ne s'aggrave.
+
+      Nous tenons aussi à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qu’il t’enverra te le signalera immédiatement. Si tu refuses de procéder à la remise en conformité, alors notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>
+    - '2016-11-14 21:51:38.201796'
+    - '2016-11-14 21:51:38.201796'
+    - 11
+  - - 91
+    - Vérification de l'installation électrique
+    - CONSTAT DE BON FONCTIONNEMENT DES INSTALLATIONS ÉLECTRIQUES
+    - verif-elec.jpg
+    - 200
+    - 500
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <h4>Tu souhaites faire un constat de bon fonctionnement de tes installations électriques ?</h4>
+
+      <p>Ton courant a surement été coupé par EDF, et ils te demandent de faire un constat de bon fonctionnement avec un électricien privé avant de le réactiver.
+
+      L’électricien va donc tester ton circuit électrique pour s’assurer qu’il est bien isolé et qu’il n’y a pas de risques, il va donc vérifier :
+
+      -           Le tableau électrique
+
+      -           Les disjoncteurs
+
+      -           Les fusibles
+
+      -           Le différentiel
+
+      -           Les lignes électriques
+
+      -           Les câblages
+
+      -           Les prises
+
+      -           Les interrupteurs
+
+      &nbsp;
+
+      Si l’électricien s’aperçoit que ton installation n’est pas aux normes, il ne pourra pas valider ton attestation (même si tu as beaucoup d’argent).
+
+      Le devis actuel ne concerne que la vérification de ton installation, pas sa réparation. Si ton installation est à remettre aux normes, l’électricien te fera alors un nouveau devis que tu seras libre d’accepter ou non.
+
+      Bien évidemment, si ton installation est défectueuse, nous te le dirons. Si tu ne souhaites pas la remettre aux normes, notre électricien et nous, ne sommes pas responsables.</p>
+    - '2016-11-14 21:54:36.324298'
+    - '2016-11-14 21:54:36.324298'
+    - 11
+  - - 92
+    - Coupure de courant dans tout l'appartement
+    - PANNE DE COURANT
+    - coupure-generale.jpg
+    - 100
+    - 300
+    - ENTRE 1 & 3 HEURES
+    - |-
+      <h4>Tu rencontres un problème d’électricité ? Une coupure de courant ?</h4>
+
+      <p>Si la coupure est partielle, alors tu peux demander à ce qu’un de nos professionnels viennent rechercher la cause de ta panne et résolve ton problème. Pour ce faire, il testera partiellement ou entièrement ton réseau électrique.
+
+      Si la coupure est totale, veilles d’abord à te renseigner auprès d’EDF. En effet, il peut s’agir d’une simple panne de secteur ou peut-être que tu n’es pas à jour dans le règlement de ta dernière facture. Si EDF répond négativement à ces questions, alors tu pourras faire appel à un de nos professionnels de façon à ce qu’il diagnostique les problèmes de ton réseau et les résolve.
+
+      &nbsp;
+
+      Information utile :
+
+      Nous tenons à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qu’il t’enverra te le signalera immédiatement. Si tu refuses de procéder à la remise en conformité, alors notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>
+    - '2016-11-14 21:57:26.957157'
+    - '2016-11-14 21:57:26.957157'
+    - 11
+  - - 93
+    - Je ne sais pas d'où vient la panne
+    - PANNE INCONNUE
+    - pb-elec.jpg
+    - 100
+    - 500
+    - ENTRE 1 & 4 HEURES
+    - |-
+      <h4>Tu rencontres un problème d’électricité ? Une coupure de courant ?</h4>
+
+      <p>Si la coupure est partielle, alors tu peux demander à ce qu’un de nos professionnels viennent rechercher la cause de ta panne et résolve ton problème. Pour ce faire, il testera partiellement ou entièrement ton réseau électrique.
+
+      Si la coupure est totale, veilles d’abord à te renseigner auprès d’EDF. En effet, il peut s’agir d’une simple panne de secteur ou peut-être que tu n’es pas à jour dans le règlement de ta dernière facture. Si EDF répond négativement à ces questions, alors tu pourras faire appel à un de nos professionnels de façon à ce qu’il diagnostique les problèmes de ton réseau et les résolve.
+
+      &nbsp;
+
+      Information utile :
+
+      Nous tenons à attirer ton attention sur le fait qu’en cas de non conformité de ton installation électrique, le professionnel qu’il t’enverra te le signalera immédiatement. Si tu refuses de procéder à la remise en conformité, alors notre responsabilité et celle de notre professionnel ne sauraient être engagées.</p>
+    - '2016-11-14 21:59:52.971949'
+    - '2016-11-14 21:59:52.971949'
+    - 11
+
+---
+users:
+  columns:
+  - id
+  - name
+  - password
+  - password_digest
+  records: 
+  - - 3
+    - admin
+    - 
+    - "$2a$10$ms8Ndk/IDwbzOOcbmUzfGO07JkKErTor4E30BffxRtsFVuV7D9uXW"
+  - - 4
+    - dev
+    - 
+    - "$2a$10$MTFC4KYPb5qTJ00fCY0lj.x33aIwmtD7toOxsJ6FWDIPHasT8CEMa"

@@ -1,6 +1,14 @@
 <!-- Formulaire -->
 
-<div><%= flash[:success] %></div>
+<div type="hidden" id="error_msg" style="display:none"><%= flash[:test]%></div>
+
+<script type="text/javascript">
+  var err = document.getElementById("error_msg");
+
+if (err.textContent.length > 0)
+  alert(err.textContent);
+
+</script>
 
 <%= form_tag "/commande/add", method: "post" do %>
 
@@ -138,11 +146,11 @@
 
     <div id="commander">
 
-      <a href="/formulaire/<%= @page.id%>">COMMANDER</a>
+      <input type="submit" value="COMMANDER" id="commander">
 
     </div>
 
-    
+
 
   </section>
 

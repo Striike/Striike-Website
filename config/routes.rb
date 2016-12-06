@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  get 'pros_inscr/inscription'
+
   match "/404" => "errors#error404", via: [ :get, :post, :patch, :delete ]
+
+  get "/inscription/pro" => "pros_inscr#inscription"
+  post "/inscription/pro_validate" => "pros_inscr#validate"
 
   get 'notification/index'
 

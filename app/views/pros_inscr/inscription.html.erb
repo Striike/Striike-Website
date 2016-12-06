@@ -1,0 +1,138 @@
+<!-- Formulaire -->
+
+<div type="hidden" id="error_msg" style="display:none"><%= flash[:test]%></div>
+
+<script type="text/javascript">
+  var err = document.getElementById("error_msg");
+
+if (err.textContent.length > 0)
+  alert(err.textContent);
+
+</script>
+
+<%= form_tag "/inscription/pro_validate", method: "post" do %>
+
+<section id="formulaire">
+
+<!-- Gauche -->
+
+  <section id="gauche">
+
+    <div>
+
+      <h2> Informations personnelles </h2>
+          <p>
+
+          <label for="prenom">Prénom*</label> <br/>
+
+          <input type="text" name="prenom" placeholder="Bob" required>
+
+        </p>
+
+        <p>
+
+          <label for="nom">Nom*</label> <br/>
+
+          <input type="text" name="nom" placeholder="Deschamps" required>
+
+        </p>
+
+          <label for="mail">Adresse mail*</label> <br/>
+
+          <input type="email" name="mail" placeholder="bob.deschamps@gmail.com" required>
+
+        </p>
+
+        <p>
+
+          <label for="postal">Code postal*</label> <br/>
+
+          <input type="text" name="postal" placeholder="75014" required>
+
+        </p>
+
+        <p>
+
+          <label for="tel">Téléphone*</label> <br/>
+
+          <input type="tel" name="tel" placeholder="0612345678" required>
+
+        </p>
+
+
+
+       <h2> Informations professionnelles </h2>
+
+       <p>
+
+         <label for="nom-ent">Nom de l'entreprise*</label> <br/>
+
+         <input type="text" name="nom_ent" placeholder="Batiment & Co" required>
+
+       </p>
+
+      <label for="statut">Statut juridique*</label> <br/>
+
+       <select name="statut" class="statut">
+
+         <option value="Auto-entrepreneur">Auto-entrepreneur</option>
+
+         <option value="Artisan">Artisan</option>
+
+         <option value="Demain">Autre forme (SAS, SARL …)</option>
+
+       </select>
+
+
+
+       <label for="competence">Quel est votre domaine de compétences ? *</label> <br/>
+
+        <select name="competence" class="competence">
+
+          <option value="PLOMBERIE">PLOMBERIE</option>
+
+          <option value="SERRURERIE">SERRURERIE</option>
+
+          <option value="ÉLECTRICITÉ">ÉLECTRICITÉ</option>
+
+          <option value="CHAUFFAGE">CHAUFFAGE</option>
+
+          <option value="VITRERIE">VITRERIE</option>
+
+        </select>
+
+
+        <label for="zone">Sur quel département intervenez-vous ?*</label> <br/>
+
+        <input type="zone" name="postal" placeholder="75014" required>
+
+           <div class="asterix">
+
+              <p>
+
+              * Les champs qui comportent une étoile doivent être remplis
+
+               </p>
+
+               <div class="check">
+
+                     <p>
+
+                       <input type="checkbox" name="Conditions" required> J'accepte les : <br/>
+
+                       <%= link_to "Conditions générales d'utilisationet de confidentialité" %>
+                     </p>
+               </div>
+
+             <div id="commander">
+
+               <input type="submit" value="S'INSCRIRE" id="commander" class="non_webkite">
+
+             </div>
+          </div>
+    </div>
+
+  <% end %>
+
+</section>
+</section>

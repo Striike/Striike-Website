@@ -1,0 +1,2 @@
+module ProsInscrHelper
+end

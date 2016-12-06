@@ -1,95 +1,87 @@
-<!-- Delog ---->
-  <a href="/admin/delog" >Deconnexion</a>
-  <a href="/admin/show_commande">Commande</a>
-  <a href="/admin/pro">Pro</a>
-<script language="JavaScript" type="text/javascript">
-  function sortlist() {
-    var lb = document.getElementById('id');
-    arrTexts = new Array();
-
-    for(i=0; i<lb.length; i++)  {
-      arrTexts[i] = lb.options[i].text;
+<section id="dashboard">
+    <div id="div_dashboard">
+    <nav class="dashboard" tabindex="0">
+        <div class="smartphone-menu-trigger"></div>
+        <ul>
+        <li tabindex="0" class="icon-dashboard" onclick="OpenTabs('table-dashboard')"><span>Dashboard</span></li>
+        <li tabindex="0" class="icon-commande" onclick="OpenTabs('table-commande')"><span>Commande</span></li>
+        <li tabindex="0" class="icon-users" onclick="OpenTabs('table-users')"><span>Utilisateurs</span></li>
+        <li tabindex="0" class="icon-pro" onclick="OpenTabs('table-pro')"><span>Professionnels</span></li>
+        <li tabindex="0" class="icon-edit" onclick="OpenTabs('table-edit')"><span>Edit</span></li>
+      </ul>
+    </nav>
+    </div>
+    <div id="div-table">
+        <table class="tabs" id="table-commande">
+            <tr>
+             <th>Client</th>
+             <th>Commande</th>
+             <th>Wallet</th>
+             <th>Pro</th>
+             <th>Total payé</th>
+             <th>Status</th>
+            </tr>
+                <%@users.each do |user|%>
+            <tr>
+             <td><%= link_to user.mail, "/admin/commande/edit/#{user.id}"%></td>
+             <td><%= get_name_product(user.id_prod)%></td>
+             <td><%= get_wallet_value(user.mail)%></td>
+             <td><%= get_name_pro(user.id_pro)%></td>
+             <td><%= user.total%></td>
+             <td><%= user.state %></td>
+            </tr>
+                <%end%>
+        </table>
+        <table class="tabs" id="table-users">
+        </table>
+        <table class="tabs" id="table-pro">
+            <tr>
+                <th>Nom</th>
+                <th>Mail</th>
+                <th>Entreprise</th>
+                <th>Téléphone</th>
+                <th>Profession</th>
+            </tr>
+            <%@pro.each do |pro|%>
+            <tr>
+                <td><%=pro.nom + " " + pro.prenom%></td>
+                <td><%=pro.mail%></td>
+                <%if pro.nom_entreprise == nil%>
+                <td>Aucune</td>
+                <%else%>
+                <td><%=pro.nom_entreprise%></td>
+                <%end%>
+                <td><%=pro.telephone%></td>
+                <td><%=pro.cate%></td>
+            </tr>
+            <%end%>
+        </table>
+        <table class="tabs" id="table-edit">
+            <tr>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+</section>
+<script>
+function OpenDefault(tab){
+    var def;
+    alert(tab);
+    def = document.getElementById(tab);
+    def.style.display = "block";
+}
+function OpenTabs(tabs) {
+    var i;
+    var tab;
+    var classe;
+    i = 0;
+    tab = document.getElementById(tabs);
+    classe = document.getElementsByClassName('tabs');
+    while (i < classe.length)
+    {
+        classe[i].style.display = "none";
+        i = i + 1;
     }
-
-    arrTexts.sort();
-
-    for(i=0; i<lb.length; i++)  {
-      lb.options[i].text = arrTexts[i];
-      lb.options[i].value = arrTexts[i];
-    }
-  }
+    tab.style.display = "table";
+}
 </script>
-<a href="javascript:sortlist()">sort</a>
-<!--- Add site ---->
-<section id="block">
-  <section id="edit_add">
-    <h1> Ajouter une estimation</h1>
-    <%= form_tag "/admin/add_site", method: "post" do %>
-      <input type="string" name="title" placeholder="title"/>
-      <input type="string" name="link" placeholder="link"/>
-      <input type="string" name="image" placeholder="image"/>
-      <input type="integer" name="min_price" placeholder="min_price"/>
-      <input type="integer" name="max_price" placeholder="max_price"/>
-      <input type="string" name="time" placeholder="time"/>
-      <input type="text" name="def" placeholder="def"/>
-      <select name="category_id">
-        <% @category.each do |category| %>
-          <option value="<%= category.id %>"><%= category.name %></option>
-        <% end %>
-    <input type="submit" value="Ajouter" class="add_button">
-    <% end %>
-
-<!--- Delete site ---->
-<h1> Delete Estimation </h1>
-    <%= form_tag "/admin/delete_site", method: "delete" do %>
-        <select name="sub_id">
-        <% @site.each do |site| %>
-          <option value="<%= site.id %>"><%= site.title %></option>
-        <% end %>
-      <input type="submit" value="Delete" class="add_button">
-    <% end %>
-
-<!--- Edit site ---->
-<h1>Edit Estimation</h1>
-    <%= form_tag "/admin/edit_site", method: "post" do %>
-        <select name="id" id="id">
-        <% @site.each do |site| %>
-          <option value="<%= site.id %>"><%= site.title %></option>
-        <% end %>
-      <input type="submit" value="Edit" class="add_button">
-    <% end %>
-</section>
-
-<section id="edit_add">
-<!--- Add category ---->
-    <h1> Ajouter une Catégorie</h1>
-    <%= form_tag "/admin/add_cate", method: "post" do %>
-      <input type="string" name="name" placeholder="name"/>
-      <select name="sub_id">
-        <% @category.each do |category| %>
-          <option value="<%= category.id %>"><%= category.name %></option>
-        <% end %>
-      <input type="submit" value="Ajouter" class="add_button">
-    <% end %>
-
-<!--- Delete category ---->
-    <h1>Delete Catégorie/Sous-Catégorie </h1>
-    <%= form_tag "/admin/delete_cate", method: "delete" do %>
-        <select name="sub_id">
-        <% @category.each do |category| %>
-          <option value="<%= category.id %>"><%= category.name %></option>
-        <% end %>
-      <input type="submit" value="Delete" class="add_button">
-    <% end %>
-
-<!--- Edit category ---->
-<h1>Edit Catégorie/Sous-Catégorie </h1>
-<%= form_tag "/admin/edit_cate", method: "post" do %>
-    <select name="id">
-    <% @category.each do |category| %>
-      <option value="<%= category.id %>"><%= category.name %></option>
-    <% end %>
-  <input type="submit" value="Edit" class="add_button">
-<% end %>
-</section>
-</section>

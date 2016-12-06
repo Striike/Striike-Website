@@ -47,3 +47,70 @@
             }
                 window.onresize = resize
             </script>
+<!----Avis--->
+<div class='wrap'>
+<div class='controls'>
+  <button class='toggle' id="prev">Prev</button>
+  <button class='toggle' id="next" data-toggle='next'>Next</button>
+</div>
+  <ul class='carousel is-set'>
+    <li class='carousel-seat'>
+      <h2>1</h2>
+    </li>
+    <li class='carousel-seat'>
+      <h2>2</h2>
+    </li>
+    <li class='carousel-seat'>
+      <h2>3</h2>
+    </li>
+    <li class='carousel-seat'>
+      <h2>4</h2>
+    </li>
+    <li class='carousel-seat'>
+      <h2>5</h2>
+    </li>
+    <li class='carousel-seat is-ref'>
+      <h2>6</h2>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript">
+    (function () {
+    var carousel, next, prev, seats;
+    carousel = $('.carousel');
+    seats = $('.carousel-seat');
+    next = function (el) {
+        if (el.next().length > 0) {
+            return el.next();
+        } else {
+            return seats.first();
+        }
+    };
+    prev = function (el) {
+        if (el.prev().length > 0) {
+            return el.prev();
+        } else {
+            return seats.last();
+        }
+    };
+    $('.toggle').on('click', function (e) {
+        var el, i, j, new_seat, ref;
+        el = $('.is-ref').removeClass('is-ref');
+        if ($(e.currentTarget).data('toggle') === 'next') {
+            new_seat = next(el);
+            carousel.removeClass('is-reversing');
+        } else {
+            new_seat = prev(el);
+            carousel.addClass('is-reversing');
+        }
+        new_seat.addClass('is-ref').css('order', 1);
+        for (i = j = 2, ref = seats.length; 2 <= ref ? j <= ref : j >= ref; i = 2 <= ref ? ++j : --j) {
+            new_seat = next(new_seat).css('order', i);
+        }
+        carousel.removeClass('is-set');
+        return setTimeout(function () {
+            return carousel.addClass('is-set');
+        }, 50);
+    });
+}.call(this));
+</script>

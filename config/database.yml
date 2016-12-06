@@ -2,10 +2,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: my_development
+  database: my_production
   pool: 5
   username: root
-  password:
+  password: a
   socket: /run/mysqld/mysqld.sock
 
 
@@ -27,5 +27,5 @@ production:
   database: my_production
   pool: 5
   username: root
-  password:
+  password: a
   socket: /run/mysqld/mysqld.sock

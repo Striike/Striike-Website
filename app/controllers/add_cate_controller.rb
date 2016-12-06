@@ -10,6 +10,8 @@ class AddCateController < ApplicationController
     if (@current_user != 4 && @current_user != 3)
       redirect_to "/admin"
     end
+    @pro = Pro.all
+    @users = Info.all
     @category = Category.all
     @site = Site.all
   end
@@ -19,6 +21,7 @@ class AddCateController < ApplicationController
     if (@current_user != 4 && @current_user != 3)
       redirect_to "/admin"
     end
+    @pro = Pro.all
     @users = Info.all
   end
 

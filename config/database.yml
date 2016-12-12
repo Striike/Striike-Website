@@ -5,7 +5,7 @@ development:
   database: my_production
   pool: 5
   username: root
-  password: lolopoP9
+  password: a
   socket: /run/mysqld/mysqld.sock
 
 
@@ -27,5 +27,5 @@ production:
   database: my_production
   pool: 5
   username: root
-  password: lolopoP9
+  password: a
   socket: /var/run/mysqld/mysqld.sock

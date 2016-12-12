@@ -1,24 +1,24 @@
 <section id="pay">
   <div type="hidden" id="error_msg" style="display:none"><%= flash[:test]%></div>
-
+  
   <script type="text/javascript">
     var err = document.getElementById("error_msg");
-
-  if (err.textContent.length > 0)
+    
+    if (err.textContent.length > 0)
     alert(err.textContent);
-
+    
   </script>
-<div class='container'>
-  <div class='infopay'>
-    <h1 id="title_pay_com"><%=@products.title%></h1>
-    <span></span>
-  </div>
-  <%= form_tag "/commande/payement/validate", :class => 'modal', method: "post" do%>
-  <input type="hidden" name="card_type" value="0" id="card_type">
-  <input type="hidden" name="month" value="" id="month">
-  <input type="hidden" name="year" value="" id="year">
+  <div class='container'>
+    <div class='infopay'>
+      <h1 id="title_pay_com"><%=@products.title%></h1>
+      <span></span>
+    </div>
+    <%= form_tag "/commande/payement/validate", :class => 'modal', method: "post" do%>
+    <input type="hidden" name="card_type" value="0" id="card_type">
+    <input type="hidden" name="month" value="" id="month">
+    <input type="hidden" name="year" value="" id="year">
     <div class='header_pay'>
-      <h1>Prix : <%=@products.max_price%>€</h1>
+      <h1>Prix : <%= get_products_price(@products.id, session[:id_client])%>€</h1>
       <div class='card-type'>
         <a class='card_p active' href='#' onclick="cardtype('0')">
           <img src='http://www.xn--chambrehtenormandie-s5b.com/wp-content/uploads/2012/05/Logo-Carte-Bleue-CB.png' height="38px">
@@ -54,27 +54,27 @@
     <div class='footer'>
       <input type="submit" class='button' value="Payer" onclick="create_date()" id="non_webkite"></input>
     </div>
-  <%end%>
-</div>
+    <%end%>
+  </div>
 </section>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script>
-    $('.card_p').click(function() {
+  $('.card_p').click(function() {
   $('.card_p').removeClass('active');
   $(this).addClass('active');
   $('.form').stop().slideUp();
   $('.form').delay(300).slideDown();
-})
+  })
 
-function cardtype(type) {
+  function cardtype(type) {
   var input = document.getElementById('card_type');
   input.value = type;
-}
-
-function create_date() {
+  }
+  
+  function create_date() {
   var full_date = document.getElementById('dead');
   var table = full_date.value.split("-");
   document.getElementById("month").value = table[1];
   document.getElementById("year").value = table[0];
-}
+  }
 </script>

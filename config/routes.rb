@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   match "/404" => "errors#error404", via: [ :get, :post, :patch, :delete ]
 
+  get 'admin/add' => 'add_cate#index'
   get "/inscription/pro" => "pros_inscr#inscription"
   post "/inscription/pro_validate" => "pros_inscr#validate"
 
@@ -49,8 +50,6 @@ Rails.application.routes.draw do
   get 'p5r' => 'pages#p5r'
 
   root 'pages#index'
-
-  get 'admin/add' => 'add_cate#index'
 
   post 'admin/add_site' => 'add_cate#create_sites'
   post 'admin/add_cate' => 'add_cate#create_cat'

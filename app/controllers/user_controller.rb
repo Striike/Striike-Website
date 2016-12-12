@@ -17,7 +17,7 @@ class UserController < ApplicationController
     if session[:user_id] != nil
       session[:user_id] = nil
     end
-    redirect_to "/admin"
+    redirect_to "/index"
   end
 
   def create

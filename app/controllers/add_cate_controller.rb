@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class AddCateController < ApplicationController
   DIRECKIT_URL  = "https://sandbox-api.lemonway.fr/mb/demo/dev/directkitjson2/Service.asmx"
   LOGIN       = "riadh.meghenem@epitech.eu"
@@ -7,7 +8,8 @@ class AddCateController < ApplicationController
 
   def index
     @current_user = session[:user_id]
-    if (@current_user != 4 && @current_user != 3)
+    @current_user = User.find(@current_user);
+    if (@current_user.cate != 1)
       redirect_to "/admin"
     end
     @pro = Pro.all
@@ -18,7 +20,8 @@ class AddCateController < ApplicationController
 
   def show_commande
     @current_user = session[:user_id]
-    if (@current_user != 4 && @current_user != 3)
+    @current_user = User.find(@current_user);
+    if (@current_user.cate != 1)
       redirect_to "/admin"
     end
     @pro = Pro.all
@@ -49,7 +52,8 @@ class AddCateController < ApplicationController
 
   def edit_site
     @current_user = session[:user_id]
-    if (@current_user != 4 && @current_user != 3)
+    @current_user = User.find(@current_user);
+    if (@current_user.cate != 1)
       redirect_to "/admin"
     end
     @category = Category.all
@@ -58,7 +62,8 @@ class AddCateController < ApplicationController
 
   def edit_cate
     @current_user = session[:user_id]
-    if (@current_user != 4 && @current_user != 3)
+    @current_user = User.find(@current_user);
+    if (@current_user.cate != 1)
       redirect_to "/admin"
     end
     @category = Category.find(params[:id])
@@ -78,7 +83,8 @@ class AddCateController < ApplicationController
 
   def edit_comm
     @current_user = session[:user_id]
-    if (@current_user != 4 && @current_user != 3)
+    @current_user = User.find(@current_user);
+    if (@current_user.cate != 1)
       redirect_to "/admin"
     end
     @info = Info.find(params[:id])
@@ -91,7 +97,8 @@ class AddCateController < ApplicationController
 
   def update_comm
     @current_user = session[:user_id]
-    if (@current_user != 4 && @current_user != 3)
+    @current_user = User.find(@current_user);
+    if (@current_user.cate != 1)
       redirect_to "/admin"
     end
     if (Info.find(params[:id]).state == "Nouveau")
@@ -151,11 +158,23 @@ def check_out
                         :creditWallet => "SC",
                         :amount => (Info.find(params[:id]).total).to_s + ".00"
       }
+  @client = Lemonway::Client.new wsdl:  "https://sandbox-api.lemonway.fr/mb/demo/dev/directkitxml/service.asmx?wsdl",
+                                wl_login: "riadh.meghenem@epitech.eu",
+                                wl_pass: "riadh.meghenem@epitech.eu",
+                                language: "fr",
+                                version: "1.1",
+                                wallet_ip: "127.0.0.1"
+  @toto = @client.get_wallet_details email: Info.find(params[:id]).mail
+  @requireRefundMoney = {
+                      :transactionId => Info.find(params[:id]).mail,
+                      :amountToRefund => @toto[:bal].to_s + ".00"
+  }
   @rawSendPayment = SendPayment(@reqSendPayment)
   @resultSendPayment = handleResponse(@rawSendPayment, "TRANS_SENDPAYMENT")
   flash[:test] = @resultSendPayment
   if (@resultSendPayment == nil)
     Info.find(params[:id]).update state: "Terminé"
+    @rawSendRefund = SendRefund(@requireRefundMoney)
     redirect_to "/index"
   else
     redirect_to :back

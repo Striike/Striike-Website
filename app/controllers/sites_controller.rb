@@ -7,13 +7,41 @@ class SitesController < ApplicationController
     IS_SANDBOX    = true
   def index
   end
+
   def estimations
     @page = Site.find(params[:id])
     session[:id_proud] = params[:id]
   end
+
   def commande
     @page = Site.find(params[:id])
   end
+
+def check_precode(code)
+  allCommande = Info.all
+
+  if code.length == 0
+    return true
+  end
+  allCommande.each do |comm|
+    if comm.code_promo == code
+      Info.find(comm.id).update code_promo: nil
+      return true
+    end
+  end
+  flash[:test] = "Bad promo code!"
+  return false
+end
+
+  def check_promo_code(code)
+    allCommande = Info.all
+
+    if code.length == 0
+      return false
+    end
+    return true
+  end
+
   def create_wallt
     @reqRegisterPayerWallet = {
       :wallet       => params[:mail],
@@ -25,7 +53,7 @@ class SitesController < ApplicationController
     @rawRegisterPayerWallet = registerWallet(@reqRegisterPayerWallet)
     @resultRegisterPayerWallet  = handleResponse(@rawRegisterPayerWallet, "WALLET")
     flash[:test] = @resultRegisterPayerWallet
-    if (@resultRegisterPayerWallet == nil && params[:adresse].length > 5 && params[:postal].length == 5 && only_letters(params[:prenom]) == 0 && params[:prenom].length > 2 && only_letters(params[:nom]) == 0 && params[:nom].length > 2 && only_numbers(params[:tel]) == 0 && params[:tel].length == 10 && params[:mail].length > 8)
+    if (@resultRegisterPayerWallet == nil && params[:adresse].length > 5 && params[:postal].length == 5 && only_letters(params[:prenom]) == 0 && params[:prenom].length > 2 && only_letters(params[:nom]) == 0 && params[:nom].length > 2 && only_numbers(params[:tel]) == 0 && params[:tel].length == 10 && params[:mail].length > 8 && check_precode(params[:promo]))
       create()
       session[:id_client] = Info.last.id
       redirect_to "/commande/payement"
@@ -34,18 +62,31 @@ class SitesController < ApplicationController
       redirect_to :back
     end
   end
+
   def payement
     @products = Site.find(session[:id_proud])
   end
+
+  def get_products_price(id_prod, id_comm)
+    @commande = Info.find(id_comm)
+    @prod = Site.find(id_prod)
+
+    if (@commande.promo == 0)
+      return @prod.max_price
+    else
+      @new_price = @prod.max_price - ((5 * @prod.max_price) / 100)
+    end
+  end
+
   def validate
     @products = Site.find(session[:id_proud])
     @date = params[:month] + "/" + params[:year]
     @reqMoney_in =
-    {
+      {
       :wallet => session[:mail],
       :cardType => params[:card_type],
       :cardNumber => params[:card_number],
-      :amountTot => (@products.max_price).to_s + ".00",
+      :amountTot => (get_products_price(@products.id, session[:id_client])).to_s + ".00",
       :cardCrypto => params[:crypto],
       :cardDate => @date
     }
@@ -81,7 +122,13 @@ def only_numbers(string)
     return (0)
 end
 
-  def create
+def create
+    if check_promo_code(params[:promo])
+      value = 1
+    else
+      value = 0
+    end
+
     Info.create addresse: params[:adresse],
                   code_p: params[:postal],
                   inter_digi: params[:etage],
@@ -90,9 +137,11 @@ end
                   mail: params[:mail],
                   tel: params[:tel],
                   id_prod: params[:id_prod],
-                  state: "Nouveau"
+                  state: "Nouveau",
+                  code_promo: SecureRandom.hex(3),
+                  promo: value
       session[:mail] = params[:mail]
-  end
+end
 
 def unwrap(response)
   response["d"]

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" >
   <head>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Fixrunners - Trouve un dépanneur fiable</title>
@@ -29,7 +30,12 @@
         <nav class="menu">
         <div class="contain_menu">
           <div class="co">
-            <%= link_to "CONNEXION", '#' %>
+            <% if session[:user_id] == nil %>
+              <%= link_to "CONNEXION", '#' %>
+              <%= link_to "INSCRIPTION", '#' %>
+            <% else %>
+              <%= link_to "DECONNEXION", '/admin/delog' %>
+            <% end %>
           </div>
           <div class="depann">
             <%= link_to "TROUVER UN DÉPANNEUR", '/portail' %>
@@ -54,14 +60,20 @@
     <div class="cache" id="cache"></div>
     <%= yield %>
     <footer>
-      <nav>
-        <ul id= "footer">
-          <li><%= link_to "MENTIONS LÉGALES", '#' %></li>
-          <li><%= link_to "CONTACTS", '#' %></li>
-          <li><%= link_to "À PROPOS", '#' %></li>
-          <li><%= link_to "F.A.Q", '#' %></li>
-          <li><%= link_to "BLOG", '#' %></li>
-        </ul>
+      <nav class="footer">
+        <section class="logo">
+          <div id="logo">
+            <%= image_tag("gear.png") %>
+          </div>
+          <p>© Maneo SAS</p>
+        </section>
+        <div id= "footer-end">
+          <p><%= link_to "Conditions générales et confidentialité", '#' %></p>
+          <p><%= link_to "Plan du site", '#' %></p>
+          <p><%= link_to image_tag("fb-bleu.png", class: "fb"), "/index" %></p>
+          <p><%= link_to image_tag("tweeter-bleu.png", class: "tw"), "/index" %></p>
+          <p><%= link_to image_tag("pinterest-bleu.png", class: "pi"), "/index" %></p>
+        </div>
       </nav>
     </footer>
     <script>

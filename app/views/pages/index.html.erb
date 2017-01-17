@@ -1,33 +1,40 @@
 <!--Le Bandeau-->
             <section id="bandeau">
-                <h1>Trouve rapidement un dépanneur fiable. </h1>
+                <h1>Trouvez rapidement un dépanneur fiable. </h1>
                 <div class="bandeau"><%= image_tag "Homepage.jpg", alt: "Homepage", title: "homepage" %> </div>
                 <div class="bandeau-light"><%= image_tag "Homepage-light.jpg", alt: "Homepage-light", title: "Homepage-light" %> </div>
                 <div class="bandeau-mobile"><%= image_tag "Homepage-mobile.jpg", alt: "Homepage-mobile", title: "Homepage-mobile" %> </div>
                 <div class="search"><%= link_to "TROUVER UN DÉPANNEUR", 'portail' %></div>
             </section>
+
+
 <!--Les Etapes-->
+
             <section id="etape123">
                 <h2>Comment ça marche</h2>
                 <ol>
                     <li class="etape">
                         <p> <%= image_tag "etape-1.png", alt: "Etape 1", title: "Etape 1" %></p>
-                        <h4>Décris ton problème</h4>
-                        <p>Répond à notre questionnaire et cible ton problème en moins d'une minute</p>
+                        <h4>Décrivez votre problème</h4>
+                        <p>Répondez à notre questionnaire et ciblez rapidement votre problème</p>
                     </li>
                     <li class="etape">
                         <p> <%= image_tag "etape-2.png", alt:"Etapes 2", title:"Etape 2" %></p>
-                        <h4>Obtiens une estimation</h4>
-                        <p>Elle comprend le prix, le temps et les détails de ton intervention</p>
+                        <h4>Obtenez une estimation</h4>
+                        <p>Elle comprend le prix, le temps et les détails de votre intervention</p>
                     </li>
                     <li class="etape">
                         <p> <%= image_tag "etape-3.png", alt: "Etape 3", title: "Etape 3" %></p>
-                        <h4>Fais-toi dépanner</h4>
-                        <p>Un de nos dépanneurs viens à ton secours dans les plus brefs délais</p>
+                        <h4>Faites-vous dépanner</h4>
+                        <p>Un de nos dépanneurs viens à votre secours dans les plus brefs délais</p>
                     </li>
                 </ol>
             </section>
+
+
+
 <!--Les dirigeants-->
+
             <script>
             function resize()
             {
@@ -47,33 +54,62 @@
             }
                 window.onresize = resize
             </script>
+
+
+
 <!--Avis-->
-<div class='wrap'>
-<div class='controls'>
-  <button class='toggle' id="prev"><</button>
-  <button class='toggle' id="next" data-toggle='next'>></button>
-</div>
-  <ul class='carousel is-set'>
-    <li class='carousel-seat'>
-      <h2>1</h2>
-    </li>
-    <li class='carousel-seat'>
-      <h2>2</h2>
-    </li>
-    <li class='carousel-seat'>
-      <h2>3</h2>
-    </li>
-    <li class='carousel-seat'>
-      <h2>4</h2>
-    </li>
-    <li class='carousel-seat'>
-      <h2>5</h2>
-    </li>
-    <li class='carousel-seat is-ref'>
-      <h2>6</h2>
-    </li>
-  </ul>
-</div>
+
+<section class="avis">
+
+  <div class='wrap'>
+
+    <h2> Ce que nos clients pensent de nous </h2>
+
+    <ul class='carousel is-set'>
+
+      <li class='carousel-seat'>
+        <div class="carousel-box">
+          <p>Je suis très contente du service rendu, l’artisan qui est venu me dépanner était très gentil.</p>
+          <p class="gras">DEBOUCHAGE DE WC SIMPLES</p>
+          <p class="gras">Marthe T. 92160, le 16/10/2016</p>
+        </div>
+      </li>
+
+      <li class='carousel-seat'>
+      <div class="carousel-box">
+        <p>Le serrurier a ouvert ma porte pour 140€, je ne pensais pas que le prix pouvait être aussi bas. Merci à Fix Runners !</p>
+        <p class="gras">MA PORTE BLINDÉE À ÉTÉ CLAQUÉE</p>
+        <p class="gras">Ugo P. 75014, le 25/10/2016</p>
+      </div>
+      </li>
+
+      <li class='carousel-seat'>
+      <div class="carousel-box">
+        <p>Electricien très professionnel, prix honnête, je recommande vivement la prestation.</p>
+        <p class="gras">PLUSIEURS PRISES NE FONCTIONNENT PLUS</p>
+        <p class="gras">Nathan O. 75009, le 08/11/2016</p>
+      </div>
+      </li>
+
+      <li class='carousel-seat'>
+      <div class="carousel-box">
+        <p>J’ai enfin de l’eau chaude et ma chaudière à été réparé pour un prix tout à fait honnête. L’artisan n’était pas très chaleureux mais cependant très efficace.</p>
+        <p class="gras">MA CHAUDIÈRE NE FONCTIONNE PLUS</p>
+        <p class="gras">Pauline B. 75011, le 07/12/2016</p>
+      </div>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class='controls'>
+  <button class='toggle' id="prev">préc</button>
+    <button class='toggle' id="next" data-toggle='next'>suiv</button>
+  </div>
+
+</section>
+
 <script type="text/javascript">
     (function () {
     var carousel, next, prev, seats;
@@ -114,3 +150,50 @@
     });
 }.call(this));
 </script>
+
+
+<!-- Carte de France -->
+
+<section class="zone">
+
+  <h2>Zone d'intervention</h2>
+
+  <section class="zone2">
+    <div class="carte">
+      <%= image_tag "carte-france.jpg", alt: "Zone d'intervention", title: "Zone d'intervention" %> </div>
+    </div>
+
+    <ul class="text">
+      <li>Nous opérons dans toute l'<strong>Ile-de-France</strong></li>
+      <br>
+      <li>Ce qui est une très bonne nouvelle pour ses habitants</li>
+      <br>
+      <li>Nous serons bientot disponible dans le reste de la France</li>
+    </ul>
+  </section>
+
+</section>
+
+
+<section id="etape123">
+  <div class="pourquoi">
+    <h2>Pourquoi faire appel à nous</h2>
+    <ol>
+        <li class="etape">
+            <p> <%= image_tag "artisan.png", alt: "artisan", title: "artisan" %></p>
+            <h4>Dépanneurs fiables</h4>
+            <p>Nos artisans sont triés sur le volet, nous les avons choisi pour leurs <strong>compétences</strong> et leur <strong>honnêteté</strong></p>
+        </li>
+        <li class="etape">
+            <p> <%= image_tag "euro.png", alt:"euro", title:"euro" %></p>
+            <h4>Prix connu à l'avance</h4>
+            <p>Vous connaissez le prix de l'intervention avant de passer commande, prenez ainsi une <strong>meilleure décision</strong></p>
+        </li>
+        <li class="etape">
+            <p> <%= image_tag "temps.png", alt: "temps", title: "temps" %></p>
+            <h4>Réponse dans les 20min</h4>
+            <p>En cas d'urgence, nos artisans vous rappellent dans les <strong>20 minutes</strong> qui suivent votre commande</p>
+        </li>
+    </ol>
+  </div>
+</section>

@@ -1,87 +1,251 @@
 <section id="dashboard">
     <div id="div_dashboard">
-    <nav class="dashboard" tabindex="0">
+      <nav class="dashboard" tabindex="0">
         <div class="smartphone-menu-trigger"></div>
         <ul>
-        <li tabindex="0" class="icon-dashboard" onclick="OpenTabs('table-dashboard')"><span>Dashboard</span></li>
-        <li tabindex="0" class="icon-commande" onclick="OpenTabs('table-commande')"><span>Commande</span></li>
-        <li tabindex="0" class="icon-users" onclick="OpenTabs('table-users')"><span>Utilisateurs</span></li>
-        <li tabindex="0" class="icon-pro" onclick="OpenTabs('table-pro')"><span>Professionnels</span></li>
-        <li tabindex="0" class="icon-edit" onclick="OpenTabs('table-edit')"><span>Edit</span></li>
-      </ul>
-    </nav>
+          <li tabindex="0" class="icon-dashboard" onclick="OpenTabs('table-dashboard')"><span>Dashboard</span></li>
+          <li tabindex="0" class="icon-commande" onclick="OpenTabs('table-commande')"><span>Commande</span></li>
+          <li tabindex="0" class="icon-pro" onclick="OpenTabs('table-pro')"><span>Professionnels</span></li>
+          <li tabindex="0" class="icon-pro" onclick="OpenTabs('table-pro-dom')"><span>Demandes Professionnels</span></li>
+          <li tabindex="0" class="icon-edit" onclick="OpenTabs('table-estim')"><span>Edit Estimation</span></li>
+          <li tabindex="0" class="icon-cate" onclick="OpenTabs('table-cate')"><span>Edit Catégorie</span></li>
+          <li tabindex="0" class="icon-avis" onclick="OpenTabs('avis_client')"><span>Avis</span></li>
+          <li tabindex="0" class="icon-add_s" onclick="OpenTabs('add_new_site')"><span>Add Site</span></li>
+          <li tabindex="0" class="icon-add_s" onclick="OpenTabs('add_new_cate')"><span>Add Categorie</span></li>
+	</ul>
+      </nav>
     </div>
     <div id="div-table">
-        <table class="tabs" id="table-commande">
-            <tr>
-             <th>Client</th>
-             <th>Commande</th>
-             <th>Wallet</th>
-             <th>Pro</th>
-             <th>Total payé</th>
-             <th>Status</th>
-            </tr>
-                <%@users.each do |user|%>
-            <tr>
-             <td><%= link_to user.mail, "/admin/commande/edit/#{user.id}"%></td>
-             <td><%= get_name_product(user.id_prod)%></td>
-             <td><%= get_wallet_value(user.mail)%></td>
-             <td><%= get_name_pro(user.id_pro)%></td>
-             <td><%= user.total%></td>
-             <td><%= user.state %></td>
-            </tr>
-                <%end%>
-        </table>
-        <table class="tabs" id="table-users">
-        </table>
-        <table class="tabs" id="table-pro">
-            <tr>
-                <th>Nom</th>
-                <th>Mail</th>
-                <th>Entreprise</th>
-                <th>Téléphone</th>
-                <th>Profession</th>
-            </tr>
-            <%@pro.each do |pro|%>
-            <tr>
-                <td><%=pro.nom + " " + pro.prenom%></td>
-                <td><%=pro.mail%></td>
-                <%if pro.nom_entreprise == nil%>
+      <div class="add_new" id="table-dashboard">
+	<div id="commandes">
+	  <h1>Commandes:</h1>
+	  <h1 style="color:black;">Nombre de commandes passées: <%=Info.all.length%></h1>
+	  <h1 style="color:black;">Nombre de nouvelles commandes: <%= nb_comm("Nouveau")%></h1>
+	  <h1 style="color:black;">Nombre de commandes en cours: <%= nb_comm("En cours")%></h1>
+	  <h1 style="color:black;">Nombre de commandes terminées: <%= nb_comm("Terminé")%></h1>
+	</div>
+	<div id="Pro">
+	  <h1>Pro:</h1>
+	  <h1 style="color:black;">Nombre de Pro Validés: <%= nb_pro("1")%></h1>
+	  <h1 style="color:black;">Nombre de demandes Pro: <%= nb_pro("0")%></h1>
+	  <h1 style="color:black;">Nombre d'éléctriciens: <%= nb_pro_typ("ÉLECTRICITÉ")%></h1>
+	  <h1 style="color:black;">Nombre de plombiers: <%= nb_pro_typ("PLOMBERIE")%></h1>
+	  <h1 style="color:black;">Nombre de sérruriers: <%= nb_pro_typ("SERRURERIE")%></h1>
+	  <h1 style="color:black;">Nombre de vitriers: <%= nb_pro_typ("VITRERIE")%></h1>
+	  <h1 style="color:black;">Nombre de chauffagistes: <%= nb_pro_typ("CHAUFFAGE")%></h1>
+	</div>
+      </div>
+      <table class="tabs" id="avis_client">
+	<tr>
+	  <th>Service</th>
+          <th>Avi</th>
+	</tr>
+	<% Info.all.each do |comm| %>
+	<% if comm.avis_ind != nil %>
+	<tr>
+	  <td><%= Site.find(comm.id_prod).title %></td>
+	  <td><%= comm.avis %></td>
+	</tr>
+	<% end %>
+	<% end %>
+      </table>
+      <table class="tabs" id="table-commande">
+        <tr>
+          <th>N°</th>
+          <th>Client</th>
+	  <th>Téléphone</th>
+	  <th>préférence</th>
+          <th>Commande</th>
+          <th>Wallet</th>
+          <th>Pro</th>
+          <th>Total payé</th>
+          <th>Status</th>
+          <th>Détails</th>
+        </tr>
+        <%@users.each do |user|%>
+        <tr>
+          <td><%= user.id%></td>
+          <td><%= link_to user.mail, "/admin/commande/edit/#{user.id}"%></td>
+	  <td><%= user.tel%></td>
+	  <td><%= user.preference %></td>
+          <td><%= get_name_product(user.id_prod).downcase %></td>
+          <td><%= get_wallet_value(user.mail)%></td>
+          <td><%= get_name_pro(user.id_pro)%></td>
+          <td><%= user.total%></td>
+          <td><%= user.state %></td>
+	  <td><%= user.details %></td>
+        </tr>
+        <%end%>
+      </table>
+      <table class="tabs" id="table-pro">
+        <tr>
+          <th>Nom</th>
+          <th>Mail</th>
+          <th>Entreprise</th>
+	  <th>Addr Entreprise</th>
+          <th>Téléphone</th>
+          <th>Profession</th>
+          <th>Lieux d'interv</th>
+          <th>Statut Juridique</th>
+	  <th>Actions</th>
+      </tr>
+        <%@pro.each do |pro|%>
+        <% if pro.state == 1%>
+          <tr>
+            <td><%=pro.nom + " " + pro.prenom%></td>
+            <td><%=pro.mail%></td>
+            <%if pro.nom_entreprise == nil%>
                 <td>Aucune</td>
-                <%else%>
-                <td><%=pro.nom_entreprise%></td>
-                <%end%>
-                <td><%=pro.telephone%></td>
-                <td><%=pro.cate%></td>
-            </tr>
+            <%else%>
+            <td><%=pro.nom_entreprise%></td>
             <%end%>
-        </table>
-        <table class="tabs" id="table-edit">
-            <tr>
-                <th></th>
-            </tr>
-        </table>
+	    <%if pro.entre_add == nil%>
+            <td>Aucun</td>
+            <%else%>
+            <td><%=pro.entre_add + " " + pro.postal_code%></td>
+            <%end%>
+            <td><%=pro.telephone%></td>
+            <td><%=pro.cate%></td>
+            <td><%=pro.interv_dep%></td>
+            <td><%=pro.statut_juridique%></td>
+	    <td>
+	      <%= link_to image_tag("http://image.flaticon.com/icons/svg/61/61456.svg", width:"20px", heigth: "20px"), "/admin/edit_pro/#{pro.id}"%>
+	      <%= link_to image_tag("https://image.freepik.com/free-icon/cross-close-or-delete-circular-interface-button-symbol_318-70281.jpg", width:"20px", heigth: "20px"), "/admin/delete_dom_pro/#{pro.id}"%>
+	    </td>
+          </tr>
+        <% end %>
+        <%end%>
+      </table>
+      <table class="tabs" id="table-pro-dom">
+        <tr>
+          <th>Nom</th>
+          <th>Mail</th>
+          <th>Entreprise</th>
+	  <th>Addr Entreprise</th>
+          <th>Téléphone</th>
+          <th>Profession</th>
+          <th>Lieux d'interv</th>
+          <th>Statut Juridique</th>
+          <th>Actions</th>
+        </tr>
+        <%@pro.each do |pro|%>
+        <% if pro.state == 0  %>
+          <tr>
+            <td><%=pro.nom + " " + pro.prenom%></td>
+            <td><%=pro.mail%></td>
+            <%if pro.nom_entreprise == nil%>
+                <td>Aucune</td>
+            <%else%>
+            <td><%=pro.nom_entreprise%></td>
+            <%end%>
+	    <%if pro.entre_add == nil%>
+            <td>Aucun</td>
+            <%else%>
+            <td><%=pro.entre_add%></td>
+            <%end%>
+            <td><%=pro.telephone%></td>
+            <td><%=pro.cate%></td>
+            <td><%=pro.interv_dep%></td>
+            <td><%=pro.statut_juridique%></td>
+            <td>
+              <%= link_to image_tag("http://image.flaticon.com/icons/svg/61/61685.svg", width:"20px", heigth: "20px", :class => "style_image"), "/admin/validate_dom_pro/#{pro.id}"%>
+              <%= link_to image_tag("https://image.freepik.com/free-icon/cross-close-or-delete-circular-interface-button-symbol_318-70281.jpg", width:"20px", heigth: "20px"), "/admin/delete_dom_pro/#{pro.id}"%>
+            </td>
+          </tr>
+        <% end %>
+        <%end%>
+      </table>
+      <table class="tabs" id="table-estim">
+        <tr>
+          <th>Nom</th>
+          <th>Catégorie</th>
+          <th id="delete">Delete</th>
+        </tr>
+        <%@site.each do |estim|%>
+        <tr>
+          <td><a href="/admin/edit_site/<%=estim.id%>"><%=estim.title%></a></td>
+          <td><%=@category.find(estim.category_id).name%></td>
+          <td> <%= link_to image_tag("http://www.ushareit.com/public/images/close.png", width:"20px", heigth: "20px"), "/admin/delete_site/#{estim.id}"%></td>
+        </tr>
+        <div class="add_new" id="add_new_site">
+          <center><section id="edit_add">
+          <%= form_tag "/admin/add_site", method: "post" do %>
+             <input type="string" name="title" placeholder="title"/>
+             <input type="string" name="link" placeholder="link"/>
+             <input type="string" name="image" placeholder="image"/>
+             <input type="integer" name="min_price" placeholder="min_price"/>
+             <input type="integer" name="max_price" placeholder="max_price"/>
+             <input type="string" name="time" placeholder="time"/>
+             <input class="def-txt" type="text" name="def" placeholder="def"/>
+             <select name="category_id">
+               <% @category.each do |category| %>
+                <option value="<%= category.id %>"><%= category.name %></option>
+               <% end %>
+             </select>
+             <input type="submit" value="Ajouter" class="add_button">
+          <% end %>
+      </section></center>
     </div>
+    <div class="add_new" id="add_new_cate">
+      <center><section id="edit_add">
+      <%= form_tag "/admin/add_cate", method: "post" do %>
+        <input type="string" name="name" placeholder="name"/>
+        <select name="sub_id">
+          <% @category.each do |category| %>
+            <option value="<%= category.id %>"><%= category.name %></option>
+          <% end %>
+        <input type="submit" value="Ajouter" class="add_button">
+     <% end %>
+    </section>
+    </div>
+</a>
+<%end%>
+</table>
+<table class="tabs" id="table-cate">
+  <tr>
+    <th>Nom</th>
+    <th id="delete">Delete</th>
+  </tr>
+  <%@category.each do |cate|%>
+  <tr>
+    <td><a href="/admin/edit_cate/<%=cate.id%>"><%=cate.name%></a></td>
+    <td> <%= link_to image_tag("http://www.ushareit.com/public/images/close.png", width:"20px", heigth: "20px"), "/admin/delete_cate/#{cate.id}"%></td>
+  </tr>
+</a>
+<%end%>
+</table>
+</div>
 </section>
 <script>
-function OpenDefault(tab){
-    var def;
-    alert(tab);
-    def = document.getElementById(tab);
-    def.style.display = "block";
-}
-function OpenTabs(tabs) {
-    var i;
-    var tab;
-    var classe;
-    i = 0;
-    tab = document.getElementById(tabs);
-    classe = document.getElementsByClassName('tabs');
-    while (i < classe.length)
-    {
-        classe[i].style.display = "none";
-        i = i + 1;
-    }
-    tab.style.display = "table";
-}
+  function OpenDefault(tab){
+  var def;
+  alert(tab);
+  def = document.getElementById(tab);
+  def.style.display = "block";
+  }
+
+  function OpenTabs(tabs) {
+  var i;
+  var tab;
+  var classe;
+  i = 0;
+  tab = document.getElementById(tabs);
+  classe = document.getElementsByClassName('tabs');
+  while (i < classe.length)
+	     {
+             classe[i].style.display = "none";
+             i = i + 1;
+	     }
+	     classe = document.getElementsByClassName('add_new')
+	     i = 0;
+	     while (i < classe.length)
+			{
+			classe[i].style.display = "none";
+			i = i + 1;
+			}
+			if (tabs != "add_new_site" && tabs != "add_new_cate") {
+	                tab.style.display = "table";}
+			else {
+			tab.style.display = "block";}
+			}
 </script>

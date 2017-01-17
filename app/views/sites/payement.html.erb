@@ -1,12 +1,12 @@
 <section id="pay">
   <div type="hidden" id="error_msg" style="display:none"><%= flash[:test]%></div>
-  
+
   <script type="text/javascript">
     var err = document.getElementById("error_msg");
-    
+
     if (err.textContent.length > 0)
     alert(err.textContent);
-    
+
   </script>
   <div class='container'>
     <div class='infopay'>
@@ -35,18 +35,18 @@
       <div class='form'>
         <div class='form-row'>
           <div class='input-group'>
-            <label for=''>Card Number</label>
-            <input maxlength='16' placeholder='' type='string' name="card_number">
+            <label for=''>Numéro de la carte</label>
+            <input maxlength='16' placeholder='xxxx-xxxx-xxxx-xxxx' type='string' name="card_number" autofocus>
           </div>
         </div>
         <div class='form-row'>
           <div class='input-group'>
-            <label for=''>Expiry Date</label>
-            <input placeholder='' type='month' name="dead" id="dead">
+            <label for=''>Date d'expiration</label>
+            <input type='string' name="dead" id="dead" placeholder="">
           </div>
           <div class='input-group'>
-            <label for=''>CVS</label>
-            <input maxlenght='4' placeholder='' type='string' name="crypto">
+            <label for=''>Code de sécurité</label>
+            <input maxlenght='4' placeholder='934' type='string' name="crypto">
           </div>
         </div>
       </div>
@@ -57,6 +57,8 @@
     <%end%>
   </div>
 </section>
+
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script>
   $('.card_p').click(function() {
@@ -70,7 +72,7 @@
   var input = document.getElementById('card_type');
   input.value = type;
   }
-  
+
   function create_date() {
   var full_date = document.getElementById('dead');
   var table = full_date.value.split("-");

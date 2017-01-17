@@ -9,4 +9,17 @@ module SitesHelper
       @new_price = @prod.max_price - ((5 * @prod.max_price) / 100)
     end
   end
+  
+  def remplace_it(string)
+    i = 0
+    str = string
+    while (i < str.length)
+      if (str[i] == ' ' || str[i] == '\'')
+        str[i] = '_'
+      end
+      i = i + 1
+    end
+    return (str)
+  end
+
 end

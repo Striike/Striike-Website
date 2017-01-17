@@ -1,0 +1,14 @@
+<nav class="ento">
+  <% @category.each do |cate|%>
+  <% if cate.sub_id == 1 && cate.name != "CHAUFFAGE/PLOMBERIE" && cate.name != "CHAUFFAGE/ÉLECTRICITÉ"%>
+  <h1> <%= cate.name%></h1>
+  <nav id="three">
+  <% @site.each do |site| %>
+  <% if site.origin_id.to_s == cate.id.to_s %>
+  <div class="search"><a href="/Pages/<%= remplace_it(site.title).downcase %>/<%= site.id%>"><%= site.link %></a> </div>
+  <% end %>
+  <% end %>
+  </nav>
+  <% end %>
+  <% end %>
+</nav>

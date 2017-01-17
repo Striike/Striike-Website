@@ -1,20 +1,28 @@
 <section id="block">
   <section id="payement">
-<%= form_tag "/admin/update_site", method: "patch" do %>
-<h2> Ajouter une estimation</h2>
-  <input type="hidden" name="id" value="<%= @site.id %>"></p>
-  <input type="string" name="title" placeholder="title" value="<%= @site.title%>"/>
-  <input type="string" name="link" placeholder="link" value="<%= @site.link%>"/>
-  <input type="string" name="image" placeholder="image" value="<%= @site.image%>"/>
-  <input type="integer" name="min_price" placeholder="min_price" value="<%= @site.min_price%>"/>
-  <input type="integer" name="max_price" placeholder="max_price" value="<%= @site.max_price%>"/>
-  <input type="string" name="time" placeholder="time" value="<%= @site.time%>"/>
-  <input type="text" name="def" placeholder="def" value="<%= @site.def%>"/>
-  <select name="category_id">
-    <% @category.each do |category| %>
+    <%= form_tag "/admin/update_site", method: "patch" do %>
+    <h2>Editer une estimation</h2>
+    <input type="hidden" name="id" value="<%= @site.id %>">
+    <input type="string" name="title" placeholder="title" value="<%= @site.title%>"/>
+    <input type="string" name="link" placeholder="link" value="<%= @site.link%>"/>
+    <input type="string" name="image" placeholder="image" value="<%= @site.image%>"/>
+    <input type="integer" name="min_price" placeholder="min_price" value="<%= @site.min_price%>"/>
+    <input type="integer" name="max_price" placeholder="max_price" value="<%= @site.max_price%>"/>
+    <input type="string" name="time" placeholder="time" value="<%= @site.time%>"/>
+    <textarea rows="10" class= "def-txt" type="text" name="def" placeholder="def" value="<%= @site.def%>"> </textarea>
+    <select name="origin_id">
+         <option value="8">PLOMBERIE</option>
+         <option value="9">SERRURERIE</option>
+         <option value="11">ÉLECTRICITÉ</option>
+	 <option value="5">CHAUFFAGE</option>
+	 <option value="2">VITRERIE</option>
+    </select>
+
+    <select name="category_id">
+      <% @category.each do |category| %>
       <option value="<%= category.id %>" <% if category.id == @site.category_id%> selected="selected"<%end%>><%= category.name %></option>
-    <% end %>
-<input type="submit" value="Edit" id="add_button">
-<% end %>
+      <% end %>
+      <input type="submit" value="Edit" id="add_button">
+      <% end %>
   </section>
 </section>

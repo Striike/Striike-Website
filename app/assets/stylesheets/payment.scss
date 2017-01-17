@@ -10,7 +10,7 @@
 }
 .container {
   display: block;
-  max-width: 480px;
+  max-width: 600px;
   margin: 40px auto;
 }
 .modal {
@@ -56,7 +56,7 @@
   display: block;
   width: 100%;
   margin: 0 0 10px;
-  color: #00a6ea;
+  color: #00ccbc;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -84,7 +84,7 @@
   box-sizing: border-box;
 }
 .modal .header_pay {
-  background: #0CC;
+  background: #00ccbc;
   padding: 30px;
   text-align: center;
 }
@@ -95,7 +95,7 @@
 }
 #title_pay_com
 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-family: 'CircularStd-Bold.otf', arial;
   color: #606060;
   letter-spacing: - 1px;
@@ -185,7 +185,7 @@
   padding: 20px 30px;
   color: #ffffff;
   font-weight: 700;
-  font-size: 1.3em; 
+  font-size: 1.3em;
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;

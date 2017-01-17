@@ -1,0 +1,104 @@
+<!--Le Bandeau-->
+            <section id="bandeau">
+                <h1>Trouve rapidement un dépanneur fiable. </h1>
+                <div class="bandeau"><%= image_tag "Homepage.jpg", alt: "Homepage", title: "homepage" %> </div>
+                <div class="bandeau-light"><%= image_tag "Homepage-light.jpg", alt: "Homepage-light", title: "Homepage-light" %> </div>
+                <div class="bandeau-mobile"><%= image_tag "Homepage-mobile.jpg", alt: "Homepage-mobile", title: "Homepage-mobile" %> </div>
+                <div class="search"><%= link_to "TROUVER UN DÉPANNEUR", 'portail' %></div>
+            </section>
+<!--Les Etapes-->
+            <section id="etape123">
+                <h2>Comment ça marche</h2>
+                <ol>
+                    <li class="etape">
+                        <p> <%= image_tag "etape-1.png", alt: "Etape 1", title: "Etape 1" %></p>
+                        <h4>Décris ton problème</h4>
+                        <p>Répond à notre questionnaire et cible ton problème en moins d'une minute</p>
+                    </li>
+                    <li class="etape">
+                        <p> <%= image_tag "etape-2.png", alt:"Etapes 2", title:"Etape 2" %></p>
+                        <h4>Obtiens une estimation</h4>
+                        <p>Elle comprend le prix, le temps et les détails de ton intervention</p>
+                    </li>
+                    <li class="etape">
+                        <p> <%= image_tag "etape-3.png", alt: "Etape 3", title: "Etape 3" %></p>
+                        <h4>Fais-toi dépanner</h4>
+                        <p>Un de nos dépanneurs viens à ton secours dans les plus brefs délais</p>
+                    </li>
+                </ol>
+            </section>
+<!--Les dirigeants-->
+            <script>
+            function resize()
+            {
+                var img = document.getElementsByClassName("img2")
+                var i = 0
+                var ratio;
+                while (i < img.length)
+                {
+                    ratio = 190 * window.innerWidth / 1920;
+                    if (ratio > 120)
+                    {
+                        img[i].style.height = ratio + "px";
+                        img[i].style.width = ratio + "px";
+                    }
+                    i = i + 1;
+                }
+            }
+                window.onresize = resize
+            </script>
+<!----Avis--->
+<div class='wrap'>
+<div class='controls'>
+  <button class='toggle' id="prev"><</button>
+  <button class='toggle' id="next" data-toggle='next'>></button>
+</div>
+  <ul class='carousel is-set'>
+    
+    <li class='carousel-seat'>
+    </li>
+    <li class='carousel-seat is-ref'>
+      <h2>6</h2>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript">
+    (function () {
+    var carousel, next, prev, seats;
+    carousel = $('.carousel');
+    seats = $('.carousel-seat');
+    next = function (el) {
+        if (el.next().length > 0) {
+            return el.next();
+        } else {
+            return seats.first();
+        }
+    };
+    prev = function (el) {
+        if (el.prev().length > 0) {
+            return el.prev();
+        } else {
+            return seats.last();
+        }
+    };
+    $('.toggle').on('click', function (e) {
+        var el, i, j, new_seat, ref;
+        el = $('.is-ref').removeClass('is-ref');
+        if ($(e.currentTarget).data('toggle') === 'next') {
+            new_seat = next(el);
+            carousel.removeClass('is-reversing');
+        } else {
+            new_seat = prev(el);
+            carousel.addClass('is-reversing');
+        }
+        new_seat.addClass('is-ref').css('order', 1);
+        for (i = j = 2, ref = seats.length; 2 <= ref ? j <= ref : j >= ref; i = 2 <= ref ? ++j : --j) {
+            new_seat = next(new_seat).css('order', i);
+        }
+        carousel.removeClass('is-set');
+        return setTimeout(function () {
+            return carousel.addClass('is-set');
+        }, 50);
+    });
+}.call(this));
+</script>

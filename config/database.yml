@@ -5,10 +5,8 @@ development:
   database: my_production
   pool: 5
   username: root
-  password: a
-  socket: /run/mysqld/mysqld.sock
-
-
+  password:
+  host: localhost
 test:
   adapter: mysql2
   encoding: utf8
@@ -18,8 +16,6 @@ test:
   username: root
   password:
   socket: /run/mysqld/mysqld.sock
-
-
 production:
   adapter: mysql2
   encoding: utf8
@@ -27,5 +23,5 @@ production:
   database: my_production
   pool: 5
   username: root
-  password: a
-  socket: /var/run/mysqld/mysqld.sock
+  password:
+  host: localhost

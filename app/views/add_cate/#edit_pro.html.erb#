@@ -1,0 +1,31 @@
+<section id="block">
+  <section id="payement">
+    <%= form_tag "/admin/update_pro", method: "patch" do %>
+    <h2>Editer une estimation</h2>
+    <input type="hidden" name="id" value="<%= @pro.id %>">
+    <input type="string" name="nom" placeholder="Nom" value="<%= @pro.nom%>"/>
+    <input type="string" name="prenom" placeholder="Prenom" value="<%= @pro.prenom%>"/>
+    <input type="string" name="telephone" placeholder="Téléphone" value="<%= @pro.telephone%>"/>
+    <input type="string" name="postal_code" placeholder="Code postal" value="<%= @pro.postal_code%>"/>
+    <input type="string" name="nom_entreprise" placeholder="Nom de l'entreprise" value="<%= @pro.nom_entreprise%>"/>
+    <input type="string" name="mail" placeholder="Mail" value="<%= @pro.mail%>"/>
+    <input type="string" name="statut_juridique" placeholder="Statut Juridique" value="<%= @pro.statut_juridique%>"/>
+            <select name="competence" class="competence">
+
+          <option value="PLOMBERIE">PLOMBERIE</option>
+
+          <option value="SERRURERIE">SERRURERIE</option>
+
+          <option value="
+    <input type="string" name="interv_dep" placeholder="Interv dep" value="<%= @pro.interv_dep%>"/>
+    <select name="category_id">
+      <% @category.each do |category| %>
+      <% if category.sub_id == 1%>
+      <option value="<%= category.name %>"><%= category.name %></option>
+      <% end %>
+      <% end %>
+    </select>
+    <input type="submit" value="Submit"/>
+    <% end %>
+  </section>
+</section>

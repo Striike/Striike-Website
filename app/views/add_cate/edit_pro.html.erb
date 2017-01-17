@@ -1,0 +1,46 @@
+<section id="block">
+  <section id="payement">
+    <%= form_tag "/admin/update_pro", method: "patch" do %>
+    <h2>Editer un Pro</h2>
+    <input type="hidden" name="id" value="<%= @pro.id %>">
+    <input type="string" name="nom" placeholder="Nom" value="<%= @pro.nom%>"/>
+    <input type="string" name="prenom" placeholder="Prenom" value="<%= @pro.prenom%>"/>
+    <input type="string" name="telephone" placeholder="Téléphone" value="<%= @pro.telephone%>"/>
+    <input type="string" name="postal_code" placeholder="Code postal" value="<%= @pro.postal_code%>" id="postal_code"/>
+    <input type="string" name="nom_entreprise" placeholder="Nom de l'entreprise" value="<%= @pro.nom_entreprise%>"/>
+    <input type="string" name="entre_add" placeholder="Etre_add" value="<%= @pro.entre_add%>" id="add"/>
+    <input type="string" name="mail" placeholder="Mail" value="<%= @pro.mail%>"/>
+    <select name="statut_juridique">
+         <option value="Auto-entrepreneur">Auto-entrepreneur</option>
+         <option value="Artisan">Artisan</option>
+         <option value="Demain">Autre forme (SAS, SARL …)</option>
+    </select>
+    <input type="string" name="interv_dep" placeholder="Interv dep" value="<%= @pro.interv_dep%>"/>
+    <select name="category_id">
+      <% @category.each do |category| %>
+      <% if category.sub_id == 1%>
+      <option value="<%= category.name %>"><%= category.name %></option>
+      <% end %>
+      <% end %>
+    </select>
+    <input type="submit" value="Submit"/>
+    <% end %>
+  </section>
+</section>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD2BUI6-p-syQwH6-74jxc6vY7A3P8wubg"></script>
+<script type="text/javascript">
+  var ac = new google.maps.places.Autocomplete(document.getElementById('add'), {
+    componentRestrictions: { country:'fr' }, types: ['geocode']
+  });
+  google.maps.event.addListener(ac, 'place_changed', function() {
+  var place = ac.getPlace();
+    for (var i = 0; i < place.address_components.length; i++) {
+      for (var j = 0; j < place.address_components[i].types.length; j++) {
+        if (place.address_components[i].types[j] == "postal_code") {
+          document.getElementById('postal_code').value = place.address_components[i].long_name;
+          console.log( place.address_components[i].long_name);
+        }
+      }
+    }
+  });
+</script>

@@ -8,14 +8,16 @@
     alert(err.textContent);
 
   </script>
-<h2> Modifier la commande</h2>
+<center><h2> Modifier la commande</h2></center>
 <% if Info.find(params[:id]).state == "Nouveau"%>
   <%= form_tag "/admin/commande/update/#{params[:id]}", method: "patch" do %>
     <%if Info.find(params[:id]).state == "Nouveau" %>
       <%@pro = Pro.all%>
       <select name="pro" >
         <%@pro.each do |pro| %>
-          <option value=<%= pro.id %>><%=pro.nom + " " + pro.prenom %></option>
+          <% if pro.state == 1 || pro.state == nil%>
+            <option value=<%= pro.id %>><%=pro.nom + " " + pro.prenom %></option>
+          <% end %>
         <% end %>
       </select>
   <input type="submit" value="Edit" id="add_button">

@@ -1,8 +1,16 @@
+#preview
+{
+    display: none;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    background-color: #FFFFFF;
+    z-index: 14;
+}
 #edit_add
 {
-    margin: 50px;
     display: inline-block;
-    width: 35%;
+    width: 300px;
     background-color: #F8F8F8;
     padding: 2em;
     padding-bottom: 8%;
@@ -13,7 +21,7 @@
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 20%;
+    width: 300px;
     background-color: #F8F8F8;
     padding: 2em;
     padding-bottom: 8%;
@@ -66,6 +74,18 @@
     width: 80%;
     margin: auto;
 }
+
+#block .def-txt
+{
+  height: 500px;
+}
+
+#edit_add .def-txt
+{
+  height: 300px;
+
+}
+
 #edit_add h1
 {
     text-align: center;
@@ -133,6 +153,12 @@
   box-sizing: border-box;
 }
 /* Nav Admin */
+#delete
+{
+  text-align: right;
+  right: 0px;
+}
+
  #hidden-table
  {
     display: none;
@@ -179,11 +205,17 @@
 .dashboard ul li.icon-commande {
   background-image: url("http://www.entypo.com/images/list.svg");
 }
-.dashboard ul li.icon-users {
-  background-image: url("http://www.entypo.com/images/users.svg");
-}
 .dashboard ul li.icon-edit {
   background-image: url("http://www.entypo.com/images/tools.svg");
+}
+.dashboard ul li.icon-cate {
+  background-image: url("http://www.entypo.com/images/book.svg");
+}
+.dashboard ul li.icon-add_s {
+  background-image: url("http://www.entypo.com/images/plus.svg");
+}
+.dashboard ul li.icon-avis {
+  background-image: url("http://www.entypo.com/images/chat.svg");
 }
 .dashboard ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -271,6 +303,14 @@
     pointer-events: none;
   }
 }
+#dashboard a {
+      color: black;
+      text-decoration: none;
+}
+#dashboard a:hover {
+      color: #0CC;
+      text-decoration: none;
+}
 #div-table
 {
     vertical-align: top;
@@ -299,4 +339,14 @@ th {
 {
     width: 100%;
     display: flex;
+}
+
+.add_new {
+
+  position: relative;
+  display: none;
+  margin: auto;
+  margin-top: 3%;
+  width: calc(100% - 240px);
+  z-index: 6;
 }

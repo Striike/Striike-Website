@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 module CategoryHelper
 
   def check_shared_cat(target, id)
@@ -25,6 +26,18 @@ module CategoryHelper
     else
       return false
     end
+  end
+  
+  def remplace_it(string)
+    i = 0
+    str = string
+    while (i < str.length)
+      if (str[i] == ' ' || str[i] == '\'')
+        str[i] = '_'
+      end
+      i = i + 1
+    end
+    return (str)
   end
 
 end

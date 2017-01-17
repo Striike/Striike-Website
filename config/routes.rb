@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+
   get 'pros_inscr/inscription'
+
+  get '/plan' => 'pages#plan'
+  get '/a_propos' => 'sites#a_propos'
+  get '/contacts' => 'sites#contacts'
+  get '/cgu' => 'sites#cgu'
+  get '/avis/:id_comm' => 'pages#avis'
+  post '/avis/update' => 'pages#update_avis'
 
   match "/404" => "errors#error404", via: [ :get, :post, :patch, :delete ]
 
@@ -53,16 +61,20 @@ Rails.application.routes.draw do
 
   post 'admin/add_site' => 'add_cate#create_sites'
   post 'admin/add_cate' => 'add_cate#create_cat'
-  delete 'admin/delete_cate' => 'add_cate#delete_item'
-  delete 'admin/delete_site' => 'add_cate#delete_site'
-  post 'admin/edit_site' => 'add_cate#edit_site'
-  post 'admin/edit_cate' => 'add_cate#edit_cate'
+  patch 'admin/update_pro' => 'add_cate#update_pro'
+  get 'admin/edit_pro/:id_pro' => 'add_cate#edit_pro'
+  get 'admin/delete_cate/:sub_id' => 'add_cate#delete_item'
+  get 'admin/delete_site/:sub_id' => 'add_cate#delete_site'
+  get 'admin/edit_site/:id' => 'add_cate#edit_site'
+  get 'admin/edit_cate/:id' => 'add_cate#edit_cate'
+  get 'admin/validate_dom_pro/:pro_id' => 'add_cate#validate_pro'
+  get 'admin/delete_dom_pro/:pro_id' => 'add_cate#delete_pro'
   patch '/admin/update_site' => 'add_cate#update_site'
   patch '/admin/update_cate' => 'add_cate#update_cate'
 
   get 'books/:id' => 'books#show'
 
-  get 'Pages/:id' => 'sites#estimations'
+  get 'Pages/:name_prod_target/:id' => 'sites#estimations'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

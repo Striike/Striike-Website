@@ -1,10 +1,14 @@
 # coding: utf-8
 class SitesController < ApplicationController
-    DIRECKIT_URL  = "https://sandbox-api.lemonway.fr/mb/demo/dev/directkitjson2/Service.asmx"
-    LOGIN       = "riadh.meghenem@epitech.eu"
-    PASSWORD    = "riadh.meghenem@epitech.eu"
+    DIRECKIT_URL  = "https://sandbox-api.lemonway.fr/mb/maneo/dev/directkitjson2/service.asmx"
+    LOGIN       = "society"
+    PASSWORD    = "123456"
     LANGUAGE    = "fr"
     IS_SANDBOX    = true
+
+  def a_propos
+  end
+
   def index
   end
 
@@ -52,13 +56,12 @@ end
     }
     @rawRegisterPayerWallet = registerWallet(@reqRegisterPayerWallet)
     @resultRegisterPayerWallet  = handleResponse(@rawRegisterPayerWallet, "WALLET")
-    flash[:test] = @resultRegisterPayerWallet
-    if (@resultRegisterPayerWallet == nil && params[:adresse].length > 5 && params[:postal].length == 5 && only_letters(params[:prenom]) == 0 && params[:prenom].length > 2 && only_letters(params[:nom]) == 0 && params[:nom].length > 2 && only_numbers(params[:tel]) == 0 && params[:tel].length == 10 && params[:mail].length > 8 && check_precode(params[:promo]))
+    if (params[:adresse].length > 5 && params[:postal].length == 5 && only_letters(params[:prenom]) == 0 && params[:prenom].length > 2 && only_letters(params[:nom]) == 0 && params[:nom].length > 2 && only_numbers(params[:tel]) == 0 && params[:tel].length == 10 && params[:mail].length > 8 && check_precode(params[:promo]))
       create()
-      session[:id_client] = Info.last.id
+      session[:end] = Info.last.id
       redirect_to "/commande/payement"
     else
-      flash[:success] = "Mauvaise informations"
+      flash[:test] = "Mauvaise informations"
       redirect_to :back
     end
   end
@@ -139,7 +142,9 @@ def create
                   id_prod: params[:id_prod],
                   state: "Nouveau",
                   code_promo: SecureRandom.hex(3),
-                  promo: value
+  details: params[:date],
+  preference: params[:prefe],
+  promo: value
       session[:mail] = params[:mail]
 end
 

@@ -1,0 +1,10 @@
+<% if @commande.avis_ind == nil && @commande.state == "Terminé"%>
+<h1><%= Site.find(@commande.id_prod).title %></h1>
+<%= form_tag "/avis/update", method: "post" do %>
+    <input type="hidden" name="id_comm" value="<%= params[:id_comm] %>">
+    <input type="string" name="avis" placeholder="avis" required/>
+    <input type="submit" value="Noter"/>
+<% end %>
+<% else %>
+<h1>ahha</h1>
+<% end %>
